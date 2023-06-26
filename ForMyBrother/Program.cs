@@ -12,19 +12,23 @@ namespace ForMyBrother
         {
             Button button = new Button();
             User user = new User();
-
+            mainUI ui = new mainUI();
+            ui.setUi();
+            ui.PrintUi();
+            //ui.PrintTitle();
             //button.PrintButton();
-            //while (true) 
+            //while (true)
             //{
             //    button.ControlButton();
+
+            //    Console.WriteLine(button.controlNum);
             //}
-
-            Console.WriteLine(user.exp);
-            Console.WriteLine(user.attack);
-
+            ui.PrintStatus(user.healthPoint, user.willPower, user.strong,user.wisdom, user.speed, user.luck); //능력치 변환 ui 테스트 
             user.LevelUp();
-            Console.WriteLine(user.exp);
-            Console.WriteLine(user.attack);
+            Console.ReadLine();
+            ui.PrintStatus(user.healthPoint, user.willPower, user.strong, user.wisdom, user.speed, user.luck);
+
+
         }
     }
 }

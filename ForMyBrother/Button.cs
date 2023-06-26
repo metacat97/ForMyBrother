@@ -6,57 +6,72 @@ using System.Threading.Tasks;
 
 namespace ForMyBrother
 {
-    public class Button
+    public class Button : mainUI
     {
         string startBt = "게임 시작"; // 시작 버튼 문자열 변수입니다.
         string endBt = "게임 종료"; // 게임 종료 문자열 변수입니다.
 
+        public int xbuttonPo { get; private set; } //가로
+        public int ybuttonPo { get; private set; } // 세로
+
+        public int controlNum { get; set; }//컨트롤하기 위해
+
+
         public void PrintButton()
         {
-            Console.SetCursorPosition(0, 0); //처음이 x 두번째가 y
+            xbuttonPo = 82;
+            ybuttonPo = 40;
+            Console.SetCursorPosition(xbuttonPo, ybuttonPo); //처음이 가로x 두번째가 세로y
             Console.WriteLine("=>");
-            Console.SetCursorPosition(3, 0);
+            Console.SetCursorPosition(xbuttonPo+3, ybuttonPo);
             Console.WriteLine($"{startBt}");
-            Console.SetCursorPosition(3, 2);
+            Console.SetCursorPosition(xbuttonPo+3, ybuttonPo+2);
             Console.WriteLine($"{endBt}");
+            controlNum = 0;
 
         }
         public void ControlButton()
         {
-            int controlNum = 0;
-            ConsoleKeyInfo upDown = Console.ReadKey();
-            if (upDown.Key == ConsoleKey.W || upDown.Key == ConsoleKey.UpArrow)
+
+
+
+            ConsoleKeyInfo userInput = Console.ReadKey();
+            if (userInput.Key == ConsoleKey.W || userInput.Key == ConsoleKey.UpArrow)
             {
                 controlNum = 0;
                 if (controlNum == 0)
                 {
-                    Console.SetCursorPosition(0, 2);
+                    Console.SetCursorPosition(xbuttonPo, ybuttonPo+2);
                     Console.WriteLine("  ");
-                    Console.SetCursorPosition(0, 0); //처음이 x 두번째가 y
+                    Console.SetCursorPosition(xbuttonPo, ybuttonPo); //처음이 x 두번째가 y
                     Console.WriteLine("=>");
-                    Console.SetCursorPosition(3, 0);
+                    Console.SetCursorPosition(xbuttonPo+3, ybuttonPo);
                     Console.WriteLine($"{startBt}");
-                    Console.SetCursorPosition(3, 2);
+                    Console.SetCursorPosition(xbuttonPo+3, ybuttonPo + 2);
                     Console.WriteLine($"{endBt}");
+                    
                 }
             }
-            else if (upDown.Key == ConsoleKey.S || upDown.Key == ConsoleKey.DownArrow)
+            else if (userInput.Key == ConsoleKey.S || userInput.Key == ConsoleKey.DownArrow)
             {
                 controlNum = 1;
                 if (controlNum == 1)
                 {
-                    Console.SetCursorPosition(0, 0);
+                    Console.SetCursorPosition(xbuttonPo, ybuttonPo);
                     Console.WriteLine("  ");
-                    Console.SetCursorPosition(0, 2); //처음이 x 두번째가 y
+                    Console.SetCursorPosition(xbuttonPo, ybuttonPo + 2); //처음이 x 두번째가 y
                     Console.WriteLine("=>");
-                    Console.SetCursorPosition(3, 0);
+                    Console.SetCursorPosition(xbuttonPo + 3, ybuttonPo);
                     Console.WriteLine($"{startBt}");
-                    Console.SetCursorPosition(3, 2);
+                    Console.SetCursorPosition(xbuttonPo + 3, ybuttonPo+ 2);
                     Console.WriteLine($"{endBt}");
+                    if (userInput.Key == ConsoleKey.Spacebar)
+                    {
+                        controlNum = 6;
+                    }
                 }
-
             }
-        }
 
+        }
     }
 }
