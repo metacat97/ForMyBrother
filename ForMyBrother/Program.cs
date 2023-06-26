@@ -10,6 +10,18 @@ namespace ForMyBrother
     {
         static void Main(string[] args)
         {
+            Button button = new Button();
+
+
+            button.PrintButton();
+            while (true) 
+            {
+                button.ControlButton();
+            }
+
+            
+
+
         }
     }
 }
