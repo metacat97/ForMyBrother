@@ -28,50 +28,58 @@ namespace ForMyBrother
             Console.SetCursorPosition(xbuttonPo+3, ybuttonPo+2);
             Console.WriteLine($"{endBt}");
             controlNum = 0;
-
         }
         public void ControlButton()
         {
+            //mainUI printUi = new mainUI();
+            //User user = new User();
 
-
-
-            ConsoleKeyInfo userInput = Console.ReadKey();
-            if (userInput.Key == ConsoleKey.W || userInput.Key == ConsoleKey.UpArrow)
+            while (controlNum != 6)
             {
-                controlNum = 0;
-                if (controlNum == 0)
+                ConsoleKeyInfo userInput = Console.ReadKey();
+                if (userInput.Key == ConsoleKey.W || userInput.Key == ConsoleKey.UpArrow)
                 {
-                    Console.SetCursorPosition(xbuttonPo, ybuttonPo+2);
-                    Console.WriteLine("  ");
-                    Console.SetCursorPosition(xbuttonPo, ybuttonPo); //처음이 x 두번째가 y
-                    Console.WriteLine("=>");
-                    Console.SetCursorPosition(xbuttonPo+3, ybuttonPo);
-                    Console.WriteLine($"{startBt}");
-                    Console.SetCursorPosition(xbuttonPo+3, ybuttonPo + 2);
-                    Console.WriteLine($"{endBt}");
-                    
+                    controlNum = 0;
+                    if (controlNum == 0)
+                    {
+                        Console.SetCursorPosition(xbuttonPo, ybuttonPo+2);
+                        Console.WriteLine("  ");
+                        Console.SetCursorPosition(xbuttonPo, ybuttonPo); //처음이 x 두번째가 y
+                        Console.WriteLine("=>");
+                        Console.SetCursorPosition(xbuttonPo+3, ybuttonPo);
+                        Console.WriteLine($"{startBt}");
+                        Console.SetCursorPosition(xbuttonPo+3, ybuttonPo + 2);
+                        Console.WriteLine($"{endBt}");
+                    }
                 }
-            }
-            else if (userInput.Key == ConsoleKey.S || userInput.Key == ConsoleKey.DownArrow)
-            {
-                controlNum = 1;
-                if (controlNum == 1)
+                else if (userInput.Key == ConsoleKey.S || userInput.Key == ConsoleKey.DownArrow)
                 {
-                    Console.SetCursorPosition(xbuttonPo, ybuttonPo);
-                    Console.WriteLine("  ");
-                    Console.SetCursorPosition(xbuttonPo, ybuttonPo + 2); //처음이 x 두번째가 y
-                    Console.WriteLine("=>");
-                    Console.SetCursorPosition(xbuttonPo + 3, ybuttonPo);
-                    Console.WriteLine($"{startBt}");
-                    Console.SetCursorPosition(xbuttonPo + 3, ybuttonPo+ 2);
-                    Console.WriteLine($"{endBt}");
-                    if (userInput.Key == ConsoleKey.Spacebar)
+                    controlNum = 1;
+                    if (controlNum == 1)
+                    {
+                        Console.SetCursorPosition(xbuttonPo, ybuttonPo);
+                        Console.WriteLine("  ");
+                        Console.SetCursorPosition(xbuttonPo, ybuttonPo + 2); //처음이 x 두번째가 y
+                        Console.WriteLine("=>");
+                        Console.SetCursorPosition(xbuttonPo + 3, ybuttonPo);
+                        Console.WriteLine($"{startBt}");
+                        Console.SetCursorPosition(xbuttonPo + 3, ybuttonPo+ 2);
+                        Console.WriteLine($"{endBt}");
+                    }
+                }
+                else if (userInput.Key == ConsoleKey.Enter)
+                {
+                    if (controlNum == 1) 
+                    {
+                        Environment.Exit(0);
+                    }
+                    else if(controlNum == 0) 
                     {
                         controlNum = 6;
                     }
                 }
+        //        Console.WriteLine(controlNum);
             }
-
         }
     }
 }

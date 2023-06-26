@@ -47,6 +47,8 @@
     <Compile Include="mainUI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="items.cs" />
+    <Compile Include="Shop.cs" />
     <Compile Include="StatsBase.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>

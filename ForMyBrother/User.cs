@@ -9,6 +9,7 @@ namespace ForMyBrother
     public class User : StatsBase
     {
         
+        public List<items> userInven = new List<items>();
         public string user { get; private set; } //맵에서 보이는 캐릭터의 모습입니다.
         public int uxPos { get; private set; } //유저의 x 좌표를 받습니다.
         public int uyPos { get; private set;} // 유저의 y좌표를 받습니다.
