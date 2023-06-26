@@ -27,8 +27,6 @@ namespace ForMyBrother
             ConsoleKeyInfo upDown = Console.ReadKey();
             if (upDown.Key == ConsoleKey.W || upDown.Key == ConsoleKey.UpArrow)
             {
-                
-
                 controlNum = 0;
                 if (controlNum == 0)
                 {
@@ -58,8 +56,6 @@ namespace ForMyBrother
                 }
 
             }
-
-
         }
 
     }
