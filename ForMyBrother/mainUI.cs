@@ -17,6 +17,12 @@ namespace ForMyBrother
             consoleHeight = 50;
             Console.SetWindowSize(consoleWidth, consoleHeight); 
         }
+        public void resizeUi(int x, int y)//맵 그려줄 때 사이즈 조정을 위해
+        {
+            consoleWidth = x; 
+            consoleHeight = y; 
+            Console.SetWindowSize(consoleWidth, consoleHeight);
+        }
         public void PrintUi()
         {
             Console.SetCursorPosition(0, 0);

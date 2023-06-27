@@ -48,9 +48,26 @@ namespace ForMyBrother
             expMax += (int)(expMax*1.1f);
         }
 
-        
-
-
-
+        public void setuxyPos(int y, int x)
+        {
+            uyPos = y; 
+            uxPos = x;
+        }
+        public void SumxPos(int x)
+        {
+            uxPos += x;
+        }
+        public void SubxPos(int x)
+        {
+            uxPos -= x;
+        }
+        public void SumyPos(int y)
+        {
+            uyPos += y;
+        }
+        public void SubyPos(int y)
+        {
+            uyPos -= y;
+        }
     }
 }
