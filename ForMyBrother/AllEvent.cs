@@ -12,6 +12,14 @@ namespace ForMyBrother
         mainUI Ui = new mainUI();
         everyText pText = new everyText();
         
+        public void prolog()
+        {
+            for (int j = 0; j < 2; j++)
+            {
+                Ui.uiPrintEvent(pText.etc1Text[j].chName, pText.etc1Text[j].chText, 50);
+                Console.ReadLine();
+            }
+        }
         public void event001()
         {
             for (int j = 0; j < 10; j++)

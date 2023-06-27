@@ -38,9 +38,9 @@ namespace ForMyBrother
                 ui.userProfileBorder();
                 ui.PrintText();
                 Console.ReadLine();
-                allEvent.event001();
-                //ui.rollText(pText.userText[0].chName, pText.userText[0].chText);
                 #endregion;
+                allEvent.prolog();
+                //allEvent.event001(); //이벤트 텍스트 모음 출력
                 //게임의 시작
                 //user.LevelUp(); //테스트 레벨업 
                 //Console.ReadLine();

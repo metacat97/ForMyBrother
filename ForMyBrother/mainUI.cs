@@ -132,7 +132,24 @@ namespace ForMyBrother
                 Thread.Sleep(textSpeed);
             }
         }
-        
+        public void uiPrintEvent(string name, string text, int textSpeed)
+        {
+
+            Console.SetCursorPosition(30, 20);
+            Console.WriteLine("                                                                             ");
+            Console.SetCursorPosition(30, 20);
+            Console.Write(name + " :");
+
+            Console.SetCursorPosition(42, 20);
+            for (int j = 0; j < text.Length; j++)
+            {
+                Console.Write(text[j]);
+                Thread.Sleep(textSpeed);
+            }
+
+
+        }
+
         public void PrintText()
         {
             Console.SetCursorPosition(consoleWidth-150, consoleHeight-10);

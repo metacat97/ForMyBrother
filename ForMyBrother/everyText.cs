@@ -9,10 +9,11 @@ namespace ForMyBrother
     public class everyText
     { 
         public List<textBase> userText = new List<textBase>(); 
-        public static string userText001 = "주인공 : 잘 모르겠어.";
+        public List<textBase> etc1Text = new List<textBase>();
        
         public everyText() 
         {
+            #region 주인공 대사 모음집
             textBase utext000 = new textBase();
             utext000.InitText(1, "주인공", "나는... 집으로 돌아가는 길에");
             userText.Add(utext000);
@@ -52,6 +53,18 @@ namespace ForMyBrother
             textBase utext009 = new textBase();
             utext009.InitText(1, "주인공", "언제까지 떨어져야 하는건데?");
             userText.Add(utext009);
+            #endregion
+
+            #region 기타1 대사 모음집
+            textBase etcText000 = new textBase();
+            etcText000.InitText(3, "기타", "시작을 해보죠1");
+            etc1Text.Add(etcText000);
+            textBase etcText001 = new textBase();
+            etcText001.InitText(3, "기타", "시작을 해보자2");
+            etc1Text.Add(etcText001);
+            #endregion
+
+
         }
 
 
