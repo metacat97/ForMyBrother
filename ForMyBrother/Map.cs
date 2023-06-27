@@ -77,12 +77,12 @@ namespace ForMyBrother
                     {
                         if (map[(player.uyPos-1), player.uxPos] == "■")
                         {
-                            
+
                         }
                         else if (map[(player.uyPos-1), player.uxPos] == "＠")
                         {
                             Console.WriteLine("클로버 문양 발견");
-                          
+
                             //player.SubyPos(1);
                             //Map[player.uyPos, player.uxPos] ="♥";
                             //Map[player.uyPos+1, player.uxPos] ="　";
@@ -90,8 +90,8 @@ namespace ForMyBrother
                         else if (player.uyPos >5 && player.uyPos < 17 && player.uxPos > 53 && player.uxPos<74)
                         {
 
-                            
-                            
+
+
                             player.SubyPos(1);
                             map[player.uyPos, player.uxPos] ="♥";
                             map[player.uyPos+1, player.uxPos] ="※";
@@ -103,14 +103,14 @@ namespace ForMyBrother
                             map[player.uyPos, player.uxPos] ="♥";
                             map[player.uyPos+1, player.uxPos] ="　";
                         }
-                        
-                        
+
+
 
 
                     }
                     else
                     {
-                        player.setuxyPos(1,player.uxPos);
+                        player.setuxyPos(1, player.uxPos);
                         Console.WriteLine("\n 벽에 막혀 더 이상 갈 수 없어요");
                     }
 
@@ -129,7 +129,7 @@ namespace ForMyBrother
                         else if (map[(player.uyPos+1), player.uxPos] == "＠")
                         {
                             Console.WriteLine("클로버 문양 발견");
-                           
+
 
                             //player.SumyPos(1);
                             //map[player.uyPos, player.uxPos] ="♥";
@@ -145,12 +145,12 @@ namespace ForMyBrother
                     }
                     else
                     {
-                        player.setuxyPos(yFirst_Map_Area-2,player.uxPos);
+                        player.setuxyPos(yFirst_Map_Area-2, player.uxPos);
                         Console.WriteLine("\n 벽에 막혀 더 이상 갈 수 없어요");
                     }
 
                 }//하단 이동
-                else if (UserInput.Key == ConsoleKey.A)
+                else if (UserInput.Key == ConsoleKey.A || UserInput.Key == ConsoleKey.LeftArrow)
                 {
                     if (player.uxPos > 1)
                     {
@@ -164,57 +164,9 @@ namespace ForMyBrother
                         else if (map[player.uyPos, (player.uxPos-1)] == "＠")
                         {
                             Console.WriteLine("클로버 발견");
-                            accept.questStart(ref questState, ref questCount, 25, 30);
-
                             //player.SubxPos(1);
                             //map[player.uyPos, player.uxPos] ="♥";
                             //map[player.uyPos, player.uxPos+1] ="　";
-
-                        }
-                        else if (player.uyPos >5 && player.uyPos < 17 && player.uxPos > 53 && player.uxPos<74)
-                        {
-
-                            battleCounting = rand.Next(1, 100);
-                            if (battleCounting > 1 && battleCounting < 37)
-                            {
-                                Console.Clear();
-                                Console.WriteLine("{0}", battleCounting);
-                                orcMonster.Initilize("오크", 30, 5);
-                                Console.WriteLine("전투를 시작합니다.\n");
-
-                                while (true)
-                                {
-
-                                    if (userHp == 0)
-                                    {
-                                        Console.WriteLine("사용자의 체력이 {0}이 되어 게임을 종료합니다",
-                                            userHp);
-                                        break;
-                                    }
-                                    else if (orcMonster.hp == 0)
-                                    {
-                                        Console.WriteLine("\n{0}의 체력이 {1}이 되어 싸움에서 승리하였습니다.",
-                                            orcMonster.name, orcMonster.hp);
-                                        questCount += 1;
-                                        break;
-                                    }
-                                    Thread.Sleep(1000);
-
-                                    fight.battle(ref userHp, ref orcMonster.damage);
-                                    Console.WriteLine("현재 유저의 hp 는 ={0},  대미지 = {1}",
-                                        userHp, orcMonster.damage);
-                                    Thread.Sleep(1500);
-
-                                    fight.battle(ref orcMonster.hp, ref userDamage);
-                                    Console.WriteLine("현재 {0}의 hp 는 ={1},  대미지 = {2}",
-                                        orcMonster.name, orcMonster.hp, userDamage);
-                                }
-
-                            }
-
-                            player.SubxPos(1);
-                            map[player.uyPos, player.uxPos] ="♥";
-                            map[player.uyPos, player.uxPos+1] ="※";
 
                         }
                         else
@@ -226,14 +178,14 @@ namespace ForMyBrother
                     }
                     else
                     {
-                        player.uxPos = 1;
+                        player.setuxyPos(player.uyPos, 1);
                         Console.WriteLine("\n 벽에 막혀 더 이상 갈 수 없어요");
                     }
 
                 }//좌측 이동
-                else if (UserInput.Key == ConsoleKey.D)
+                else if (UserInput.Key == ConsoleKey.D || UserInput.Key == ConsoleKey.RightArrow)
                 {
-                    if (player.uxPos < xFirst_map_Area-2)
+                    if (player.uxPos < xFirst_Map_Area-2)
                     {
                         if (map[player.uyPos, (player.uxPos+1)] == "■")
                         {
@@ -245,12 +197,9 @@ namespace ForMyBrother
                         else if (map[player.uyPos, (player.uxPos+1)] == "@")
                         {
                             Console.WriteLine("카드 게임을 시작합니다.");
-                            accept.questStart(ref questState, ref questCount, 25, 33);
-
                             //player.SumxPos(1);
                             //map[player.uyPos, player.uxPos] ="&";
                             //map[player.uyPos, player.uxPos-1] ="　";
-                        }
                         }
                         else
                         {
@@ -262,7 +211,7 @@ namespace ForMyBrother
                     }
                     else
                     {
-                        player.uxPos = xFirst_Map_Area-2;
+                        player.setuxyPos(player.uyPos, xFirst_Map_Area-2);
                         Console.WriteLine("\n 벽에 막혀 더 이상 갈 수 없어요");
                     }
                 }//우측 이동
@@ -285,7 +234,6 @@ namespace ForMyBrother
                             {
                                 map[i, j] = "♥";
                             }
-                            
                         }
                     }
                 }//맵 리셋
@@ -315,16 +263,13 @@ namespace ForMyBrother
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
                         }
-                        if (i == questNpc_y_Position && j == questNpc_x_Position)
-                        {
-                            Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        }
-                        Console.Write("{0}", Map[i, j]);
+                        
+                        Console.Write("{0}", map[i, j]);
                         Console.ResetColor();
                     }
                     Console.WriteLine();
                 }//while안에서 출력 끝나는 부분
-                    Console.WriteLine("퀘스트 카운트 누적={0}  퀘스트 받았는지={1} ",questCount,questState);
+                   
 
             }//main while 끝나는 부분
 
