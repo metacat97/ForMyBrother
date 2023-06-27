@@ -112,7 +112,58 @@ namespace ForMyBrother
 
 
         }
+        public void statBorder()
+        {
+            Console.SetCursorPosition(0, consoleHeight-47);//주인공 대사
+            Console.WriteLine("├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤");
+        }
+        public void PrintText()
+        {
+            Console.SetCursorPosition(consoleWidth-150, consoleHeight-12);
+            Console.WriteLine("┌────────────────────────────────────────────────────────────────────────┐");
+            Console.SetCursorPosition(consoleWidth-150, consoleHeight-11);
+            Console.WriteLine("│                                                                        │");
+            Console.SetCursorPosition(consoleWidth-150, consoleHeight-10);
+            Console.WriteLine("│                            텍스트 들어갈 자리                          │");
+            Console.SetCursorPosition(consoleWidth-150, consoleHeight-9);
+            Console.WriteLine("│                                                                        │");
+            Console.SetCursorPosition(consoleWidth-150, consoleHeight-8);
+            Console.WriteLine("└────────────────────────────────────────────────────────────────────────┘");
+        }
+        public void userTextBorder()
+        {
+            Console.SetCursorPosition(0,consoleHeight-14 );//주인공 대사
+            Console.WriteLine("├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤");
+        }
+        public void userProfileBorder()
+        {
+            Console.SetCursorPosition(0, consoleHeight-14);//주인공 대사
+            Console.WriteLine("├────────────────────────┐");
+            Console.SetCursorPosition(0, consoleHeight-13);//주인공 대사
+            Console.WriteLine("│                        │");
+            Console.SetCursorPosition(0, consoleHeight-12);//주인공 대사
+            Console.WriteLine("│                        │");
+            Console.SetCursorPosition(0, consoleHeight-11);//주인공 대사
+            Console.WriteLine("│                        │");
+            Console.SetCursorPosition(0, consoleHeight-10);//주인공 대사
+            Console.WriteLine("│                        │");
+            Console.SetCursorPosition(0, consoleHeight-9);//주인공 대사
+            Console.WriteLine("│                        │");
+            Console.SetCursorPosition(0, consoleHeight-8);//주인공 대사
+            Console.WriteLine("│                        │");
+            Console.SetCursorPosition(0, consoleHeight-7);//주인공 대사
+            Console.WriteLine("│                        │");
+            Console.SetCursorPosition(0, consoleHeight-6);//주인공 대사
+            Console.WriteLine("│                        │");
+            Console.SetCursorPosition(0, consoleHeight-5);//주인공 대사
+            Console.WriteLine("│                        │");
+            Console.SetCursorPosition(0, consoleHeight-4);//주인공 대사
+            Console.WriteLine("│                        │");
+            Console.SetCursorPosition(0, consoleHeight-3);//주인공 대사
+            Console.WriteLine("│                        │");
+            Console.SetCursorPosition(0, consoleHeight-2);//주인공 대사
+            Console.WriteLine("└────────────────────────┘");
 
-
+        }
     }
 }

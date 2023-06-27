@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Button.cs" />
+    <Compile Include="EventText.cs" />
     <Compile Include="mainUI.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="Program.cs" />
