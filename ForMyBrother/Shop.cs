@@ -31,7 +31,7 @@ namespace ForMyBrother
         {
             Console.WriteLine("{0}", Item[0].itemPrice);
             Console.WriteLine("{0}",Item[1].itemName);
-
+            Console.WriteLine(Item[1].itemCount);
         }
 
     }

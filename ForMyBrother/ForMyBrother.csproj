@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllEvent.cs" />
     <Compile Include="Button.cs" />
-    <Compile Include="EventText.cs" />
+    <Compile Include="textBase.cs" />
+    <Compile Include="everyText.cs" />
     <Compile Include="mainUI.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="Program.cs" />

@@ -15,8 +15,9 @@ namespace ForMyBrother
             mainUI ui = new mainUI();
             Shop showItems = new Shop();
             Map map = new Map();
-            EventText printEvent = new EventText();
-
+            textBase printEvent = new textBase();
+            everyText pText = new everyText();
+            AllEvent allEvent = new AllEvent();
             //showItems.addItem();
             ui.setUi();//콘솔창 크기 고정
             ui.PrintUi();//처음 도화지 출력
@@ -30,14 +31,17 @@ namespace ForMyBrother
                 /*
                  여기는 스토리 프롤로그 출력 명령문 들어가야합니다.
                  */
+                ui.statBorder();
+                ui.PrintStatus(user.healthPoint, user.willPower, user.strong, user.wisdom, user.speed, user.luck); //능력치 변환 ui 테스트 
                 #region 유저 텍스트 테두리
                 ui.userTextBorder();
                 ui.userProfileBorder();
                 ui.PrintText();
+                Console.ReadLine();
+                allEvent.event001();
+                //ui.rollText(pText.userText[0].chName, pText.userText[0].chText);
                 #endregion;
                 //게임의 시작
-                ui.statBorder();
-                ui.PrintStatus(user.healthPoint, user.willPower, user.strong, user.wisdom, user.speed, user.luck); //능력치 변환 ui 테스트 
                 //user.LevelUp(); //테스트 레벨업 
                 //Console.ReadLine();
                 //ui.PrintStatus(user.healthPoint, user.willPower, user.strong, user.wisdom, user.speed, user.luck);// 다시 스텟 출력

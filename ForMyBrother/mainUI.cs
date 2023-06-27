@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace ForMyBrother 
 {
     public class mainUI
     {
+        
         public int consoleWidth {get; private set;}
         public int consoleHeight { get; private set; }
         
@@ -117,18 +119,24 @@ namespace ForMyBrother
             Console.SetCursorPosition(0, consoleHeight-47);//주인공 대사
             Console.WriteLine("├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤");
         }
+        public void rollText(string name , string text, int textSpeed)//대화 한줄씩 출력 대사 위치는 임의로 조정
+        {
+            Console.SetCursorPosition(30, 40);
+            Console.WriteLine("                                                                             ");
+            Console.SetCursorPosition(32, 40);
+            Console.Write(name + " :");
+            Console.SetCursorPosition(42, 40);
+            for (int i = 0; i < text.Length; i++)
+            {
+                Console.Write(text[i]);
+                Thread.Sleep(textSpeed);
+            }
+        }
+        
         public void PrintText()
         {
-            Console.SetCursorPosition(consoleWidth-150, consoleHeight-12);
-            Console.WriteLine("┌────────────────────────────────────────────────────────────────────────┐");
-            Console.SetCursorPosition(consoleWidth-150, consoleHeight-11);
-            Console.WriteLine("│                                                                        │");
             Console.SetCursorPosition(consoleWidth-150, consoleHeight-10);
-            Console.WriteLine("│                            텍스트 들어갈 자리                          │");
-            Console.SetCursorPosition(consoleWidth-150, consoleHeight-9);
-            Console.WriteLine("│                                                                        │");
-            Console.SetCursorPosition(consoleWidth-150, consoleHeight-8);
-            Console.WriteLine("└────────────────────────────────────────────────────────────────────────┘");
+            Console.WriteLine("│   본인   │    무엇을 하면 좋을까?                                      ");
         }
         public void userTextBorder()
         {
