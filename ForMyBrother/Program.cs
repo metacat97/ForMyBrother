@@ -28,7 +28,8 @@ namespace ForMyBrother
             //user.LevelUp(); //테스트 레벨업 
             //Console.ReadLine();
             //ui.PrintStatus(user.healthPoint, user.willPower, user.strong, user.wisdom, user.speed, user.luck);// 다시 스텟 출력
-            ui.resizeUi(80, 42); //사이즈 재조정
+           // Console.ReadLine();
+            ui.resizeUi(60, 38); //사이즈 재조정
             map.drawMap();
 
         }

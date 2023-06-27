@@ -14,14 +14,25 @@ namespace ForMyBrother
             //랜덤 인스턴스 생성
             Random rand = new Random();
             //메인 맵 초기 크기 선언
-            int yFirst_Map_Area = 40;
-            int xFirst_Map_Area = 40;
+            int yFirst_Map_Area = 30;
+            int xFirst_Map_Area = 30;
             //유저 위치 선언
-            player.setuxyPos(37, 20);
+            player.setuxyPos(27, 20);
             //맵 배열 만들기
             string[,] map = new string[yFirst_Map_Area, xFirst_Map_Area];
+            //장애물(벽)담을 배열
+            int[] wallY = new int[200];
+            int[] wallX = new int[200];
+            //아이템 담을 배열
+            int[] mapItemY = new int[100];
+            int[] mapItemX = new int[100];
+            //이벤트 담을 배열
+            int[] eventY = new int[100];
+            int[] eventX = new int[100];
+            //escape count 만들기
+            int escCount = 1;
 
-
+            #region 맵과 아이템 생성
             for (int i = 0; i < yFirst_Map_Area; i++)
             {
                 for (int j = 0; j < xFirst_Map_Area; j++)
@@ -42,8 +53,28 @@ namespace ForMyBrother
                     
                 }
             }
-
-
+            //벽 생성
+            for (int i = 0; i < 50; i++)
+            {
+                wallY[i]=rand.Next(2, yFirst_Map_Area-2);
+                wallX[i]=rand.Next(2, xFirst_Map_Area-2);
+                map[wallY[i], wallX[i]] = "■";
+            }
+            //아이템 생성
+            for (int i = 0; i <3; i++)
+            {
+                mapItemY[i]=rand.Next(2, yFirst_Map_Area-2);
+                mapItemX[i]=rand.Next(2, xFirst_Map_Area-2);
+                map[mapItemY[i], mapItemX[i]] = "ⓐ";
+            }
+            //이벤트 생성
+            for (int i = 0; i <1; i++)
+            {
+                mapItemY[i]=rand.Next(2, yFirst_Map_Area-2);
+                mapItemX[i]=rand.Next(2, xFirst_Map_Area-2);
+                map[mapItemY[i], mapItemX[i]] = "？";
+            }
+            #endregion;
             Console.SetCursorPosition(0, 0);
             for (int i = 0; i < yFirst_Map_Area; i++)
             {
@@ -66,12 +97,35 @@ namespace ForMyBrother
                 }
                 Console.WriteLine();
             }//처음 출력 끝나는 부분
-
-            while (true)
+            //주 반복문 시작
+            while (escCount != 0)
             {
                 ConsoleKeyInfo UserInput = Console.ReadKey();
                 //Console.Clear();
-                if (UserInput.Key == ConsoleKey.W || UserInput.Key == ConsoleKey.UpArrow)
+                if (UserInput.Key == ConsoleKey.Escape)//esc 입력의 경우
+                {
+                    Console.WriteLine("정말 나가시겠습니까? (y/n 입력)");
+                    string escQuestion = Console.ReadLine();
+                    if (escQuestion == "y")
+                    {
+                        escCount -= 1;
+                    }
+                    else if (escQuestion == "n")
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Press any key...");
+
+                        continue;
+                    }
+                    else
+                    {
+                        Console.WriteLine(" y 혹은 n 으로 다시 입력해주시길 바랍니다");
+                        Console.ReadLine();
+                        Console.Clear();
+                        Console.WriteLine("Press any key...");
+                    }
+                }
+                else if (UserInput.Key == ConsoleKey.W || UserInput.Key == ConsoleKey.UpArrow)
                 {
                     if (player.uyPos > 1)
                     {
@@ -79,7 +133,7 @@ namespace ForMyBrother
                         {
 
                         }
-                        else if (map[(player.uyPos-1), player.uxPos] == "＠")
+                        else if (map[(player.uyPos-1), player.uxPos] == "ⓐ")
                         {
                             Console.WriteLine("클로버 문양 발견");
 
@@ -87,14 +141,8 @@ namespace ForMyBrother
                             //Map[player.uyPos, player.uxPos] ="♥";
                             //Map[player.uyPos+1, player.uxPos] ="　";
                         }
-                        else if (player.uyPos >5 && player.uyPos < 17 && player.uxPos > 53 && player.uxPos<74)
+                        else if(map[(player.uyPos-1), player.uxPos] == "？")
                         {
-
-
-
-                            player.SubyPos(1);
-                            map[player.uyPos, player.uxPos] ="♥";
-                            map[player.uyPos+1, player.uxPos] ="※";
 
                         }
                         else
@@ -126,7 +174,16 @@ namespace ForMyBrother
                             //map[player.uyPos, player.uxPos] ="♥";
                             //map[player.uyPos-1, player.uxPos] ="　";
                         }
-                        else if (map[(player.uyPos+1), player.uxPos] == "＠")
+                        else if (map[(player.uyPos+1), player.uxPos] == "ⓐ")
+                        {
+                            Console.WriteLine("클로버 문양 발견");
+
+
+                            //player.SumyPos(1);
+                            //map[player.uyPos, player.uxPos] ="♥";
+                            //map[player.uyPos-1, player.uxPos] ="　";
+                        }
+                        else if (map[(player.uyPos+1), player.uxPos] == "？")
                         {
                             Console.WriteLine("클로버 문양 발견");
 
@@ -161,7 +218,15 @@ namespace ForMyBrother
                             //map[player.uyPos, player.uxPos] ="♥";
                             //map[player.uyPos, player.uxPos+1] ="　";
                         }
-                        else if (map[player.uyPos, (player.uxPos-1)] == "＠")
+                        else if (map[player.uyPos, (player.uxPos-1)] == "ⓐ")
+                        {
+                            Console.WriteLine("클로버 발견");
+                            //player.SubxPos(1);
+                            //map[player.uyPos, player.uxPos] ="♥";
+                            //map[player.uyPos, player.uxPos+1] ="　";
+
+                        }
+                        else if (map[player.uyPos, (player.uxPos-1)] == "？")
                         {
                             Console.WriteLine("클로버 발견");
                             //player.SubxPos(1);
@@ -194,7 +259,14 @@ namespace ForMyBrother
                             //map[player.uyPos, player.uxPos] ="&";
                             //map[player.uyPos, player.uxPos-1] ="　";
                         }
-                        else if (map[player.uyPos, (player.uxPos+1)] == "@")
+                        else if (map[player.uyPos, (player.uxPos+1)] == "ⓐ")
+                        {
+                            Console.WriteLine("카드 게임을 시작합니다.");
+                            //player.SumxPos(1);
+                            //map[player.uyPos, player.uxPos] ="&";
+                            //map[player.uyPos, player.uxPos-1] ="　";
+                        }
+                        else if (map[player.uyPos, (player.uxPos+1)] == "？")
                         {
                             Console.WriteLine("카드 게임을 시작합니다.");
                             //player.SumxPos(1);
@@ -215,6 +287,10 @@ namespace ForMyBrother
                         Console.WriteLine("\n 벽에 막혀 더 이상 갈 수 없어요");
                     }
                 }//우측 이동
+                else if (UserInput.Key == ConsoleKey.Spacebar || UserInput.Key == ConsoleKey.Enter)
+                {
+                    //미구현
+                }//엔터 혹은 스페이스바 입력의 경우
                 else if (UserInput.Key == ConsoleKey.R)
                 {
                     for (int i = 0; i < yFirst_Map_Area; i++)
@@ -237,10 +313,6 @@ namespace ForMyBrother
                         }
                     }
                 }//맵 리셋
-
-                
-
-
                 //출력하는 부분
                 Console.SetCursorPosition(0, 0);
                 for (int i = 0; i < yFirst_Map_Area; i++)
@@ -269,8 +341,6 @@ namespace ForMyBrother
                     }
                     Console.WriteLine();
                 }//while안에서 출력 끝나는 부분
-                   
-
             }//main while 끝나는 부분
 
         }
