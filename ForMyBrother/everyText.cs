@@ -47,11 +47,11 @@ namespace ForMyBrother
             userText.Add(utext007);
 
             textBase utext008 = new textBase();
-            utext008.InitText(1, "주인공", "래서 ");
+            utext008.InitText(1, "주인공", "래서 언제까지 떨어져야 하는건데?");
             userText.Add(utext008);
 
             textBase utext009 = new textBase();
-            utext009.InitText(1, "주인공", "언제까지 떨어져야 하는건데?");
+            utext009.InitText(1, "주인공", "후..일단 자세를 바로 잡아볼까?");
             userText.Add(utext009);
             #endregion
 

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AllEvent.cs" />
     <Compile Include="Button.cs" />
+    <Compile Include="choiceButton.cs" />
     <Compile Include="textBase.cs" />
     <Compile Include="everyText.cs" />
     <Compile Include="mainUI.cs" />
