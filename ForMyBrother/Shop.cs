@@ -10,12 +10,10 @@ namespace ForMyBrother
     public class Shop
     {
         List<items> Item = new List<items>();
-
-        //items setItem1 = new items();
-
+        List<items> SpecialItem = new List<items>();
         public Shop() 
         {
-
+            #region 일반 아이템
             items wood = new items();
             wood.InitItem("나무", 300, 10);
             Item.Add(wood);
@@ -23,16 +21,15 @@ namespace ForMyBrother
             items steel = new items();
             steel.InitItem("철강", 300, 10);
             Item.Add(steel);
+            #endregion
 
-            
+            #region 특별한 아이템
+            items LifeTree = new items();
+            LifeTree.InitSpItem("생명의나무", 1000, 1);
+            SpecialItem.Add(LifeTree);
+
+            #endregion
 
         }
-        public void addItem()
-        {
-            Console.WriteLine("{0}", Item[0].itemPrice);
-            Console.WriteLine("{0}",Item[1].itemName);
-            Console.WriteLine(Item[1].itemCount);
-        }
-
     }
 }

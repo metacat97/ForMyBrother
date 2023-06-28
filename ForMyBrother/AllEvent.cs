@@ -29,12 +29,12 @@ namespace ForMyBrother
             }
             chBtn.SettingTwoChoice("몸에 힘을 주고 팔을 벌린다.", "모르겠다 그냥 포기하자");
             chBtn.PrintChoice();
-            chBtn.ControlChoice(8,9);
-            if (chBtn.choiceControlNum == 8)
+            chBtn.ControlChoice(9,10);
+            if (chBtn.choiceControlNum == 9)
             {
                 endingCount = 1;
             }
-            else if (chBtn.choiceControlNum == 9)
+            else if (chBtn.choiceControlNum == 10)
             { 
                 endingCount = 2;
             }

@@ -146,8 +146,6 @@ namespace ForMyBrother
                 Console.Write(text[j]);
                 Thread.Sleep(textSpeed);
             }
-
-
         }
 
         public void PrintText()
@@ -190,10 +188,15 @@ namespace ForMyBrother
             Console.WriteLine("└────────────────────────┘");
 
         }
-        public void battleUi()
+        public void BattleUi()
         {
             //배틀 시작시 UI입니다.
         }
+        public void MarketUi()
+        {
+            
+        }
+
 
     }
 }

@@ -46,9 +46,9 @@ namespace ForMyBrother
                     Console.ReadLine();
                     #endregion;
                     allEvent.prolog();
-                    chButton.SettingTwoChoice("무작위 이벤트", "던전");
-                    chButton.PrintChoice();
-                    chButton.ControlChoice(6, 7);
+                    chButton.SetThree("무작위 이벤트", "던전","상점");
+                    chButton.PrintThree();
+                    chButton.ControlThree(6, 7,8);
                     if (chButton.choiceControlNum == 6)//6이면 무작위 이벤트 출력
                     {
                         //여기다가 중앙화면만 지워주는 공백 그려줄려고요
@@ -62,6 +62,10 @@ namespace ForMyBrother
                         ui.resizeUi(60, 38); //사이즈 재조정
                         map.drawMap(user);
 
+                    }
+                    else if (chButton.choiceControlNum ==8)
+                    {
+                        //상점을 보여줄 차례
                     }
                     //Console.ReadLine();
                     if (allEvent.endingCount == 1)

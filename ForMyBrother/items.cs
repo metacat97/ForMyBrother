@@ -12,27 +12,19 @@ namespace ForMyBrother
         public string itemName { get; private set; }
         public int itemPrice { get; private set; }
         public int itemCount;
-
-        //public int shopStock;
-        //public int userStock;
-
-        //public void shopInitItem(string name, int price, int stock)
-        //{
-        //    itemName = name;
-        //    itemPrice = price;
-        //    shopStock = stock;
-        //}
-        //public void userInitItem(string name, int price, int stock) 
-        //{ 
-        //    itemName = name;
-        //    itemPrice = price;
-        //    userStock = stock;
-        //}
+        public int itemCode;
+        
         public void InitItem(string name,  int price, int count)
         {
             itemName = name;
             itemPrice = price;
             itemCount = count;
+        }
+        public void InitSpItem(string name, int price, int code) 
+        {
+            itemName = name;
+            itemPrice = price;
+            itemCode = code;
         }
         //public void TotalItem()
         //{
