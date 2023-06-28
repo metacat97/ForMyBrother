@@ -15,7 +15,7 @@ namespace ForMyBrother
         public int uyPos { get; private set;} // 유저의 y좌표를 받습니다.
 
         public int expMax { get; private set; }//경험치 상한치입니다.
-
+        goblin test = new goblin();
         public User()
         {
             user = "♥";
@@ -32,6 +32,7 @@ namespace ForMyBrother
             exp =  0;
             expMax = 50;
         }
+       
         public void LevelUp()
         {
             level += 1;
@@ -47,7 +48,14 @@ namespace ForMyBrother
             exp -= expMax;
             expMax += (int)(expMax*1.1f);
         }
-
+        public void UserHit (int damage)
+        {
+            healthPoint -= damage;
+            if (healthPoint < 0)
+            {
+                healthPoint = 0;
+            }
+        }
         public void setuxyPos(int y, int x)
         {
             uyPos = y; 
@@ -69,5 +77,6 @@ namespace ForMyBrother
         {
             uyPos -= y;
         }
+        
     }
 }

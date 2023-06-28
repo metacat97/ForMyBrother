@@ -44,8 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AllEvent.cs" />
+    <Compile Include="Battle.cs" />
     <Compile Include="Button.cs" />
     <Compile Include="choiceButton.cs" />
+    <Compile Include="goblin.cs" />
+    <Compile Include="MonsterBase.cs" />
+    <Compile Include="sister.cs" />
     <Compile Include="textBase.cs" />
     <Compile Include="everyText.cs" />
     <Compile Include="mainUI.cs" />

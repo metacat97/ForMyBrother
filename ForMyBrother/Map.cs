@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ForMyBrother
 {
     public class Map
     {
-        public void drawMap()
+            //User player = new User(); //유저 클래스 소환
+        public void drawMap(User player)
         {
-            User player = new User(); //유저 클래스 소환
+            goblin mob1 = new goblin();
+            Battle battle = new Battle();  
             //랜덤 인스턴스 생성
             Random rand = new Random();
             //메인 맵 초기 크기 선언
@@ -101,6 +104,7 @@ namespace ForMyBrother
             while (escCount != 0)
             {
                 ConsoleKeyInfo UserInput = Console.ReadKey();
+                Console.WriteLine("현재 사용자의 체력 = {0} --- 의지 ={1}", player.healthPoint, player.willPower);
                 //Console.Clear();
                 if (UserInput.Key == ConsoleKey.Escape)//esc 입력의 경우
                 {
@@ -135,11 +139,13 @@ namespace ForMyBrother
                         }
                         else if (map[(player.uyPos-1), player.uxPos] == "ⓐ")
                         {
-                            Console.WriteLine("클로버 문양 발견");
 
-                            //player.SubyPos(1);
-                            //Map[player.uyPos, player.uxPos] ="♥";
-                            //Map[player.uyPos+1, player.uxPos] ="　";
+                          
+                            battle.startBattle(player);
+
+                            player.SubyPos(1);
+                            map[player.uyPos, player.uxPos] ="♥";
+                            map[player.uyPos+1, player.uxPos] ="　";
                         }
                         else if(map[(player.uyPos-1), player.uxPos] == "？")
                         {
@@ -169,19 +175,19 @@ namespace ForMyBrother
                     {
                         if (map[(player.uyPos+1), player.uxPos] == "■")
                         {
-                            Console.WriteLine("적 문양 잘 만남");
+                            //Console.WriteLine("적 문양 잘 만남");
                             //player.SumyPos(1);
                             //map[player.uyPos, player.uxPos] ="♥";
                             //map[player.uyPos-1, player.uxPos] ="　";
                         }
                         else if (map[(player.uyPos+1), player.uxPos] == "ⓐ")
                         {
-                            Console.WriteLine("클로버 문양 발견");
+                            //Console.WriteLine("클로버 문양 발견");
+                            battle.startBattle(player);
 
-
-                            //player.SumyPos(1);
-                            //map[player.uyPos, player.uxPos] ="♥";
-                            //map[player.uyPos-1, player.uxPos] ="　";
+                            player.SumyPos(1);
+                            map[player.uyPos, player.uxPos] ="♥";
+                            map[player.uyPos-1, player.uxPos] ="　";
                         }
                         else if (map[(player.uyPos+1), player.uxPos] == "？")
                         {
@@ -213,17 +219,18 @@ namespace ForMyBrother
                     {
                         if (map[player.uyPos, (player.uxPos-1)] == "■")
                         {
-                            Console.WriteLine("벽 발견");
+                            //Console.WriteLine("벽 발견");
                             //player.SubxPos(1);
                             //map[player.uyPos, player.uxPos] ="♥";
                             //map[player.uyPos, player.uxPos+1] ="　";
                         }
                         else if (map[player.uyPos, (player.uxPos-1)] == "ⓐ")
                         {
-                            Console.WriteLine("클로버 발견");
-                            //player.SubxPos(1);
-                            //map[player.uyPos, player.uxPos] ="♥";
-                            //map[player.uyPos, player.uxPos+1] ="　";
+                            //Console.WriteLine("적 발견");
+                            battle.startBattle(player);
+                            player.SubxPos(1);
+                            map[player.uyPos, player.uxPos] ="♥";
+                            map[player.uyPos, player.uxPos+1] ="　";
 
                         }
                         else if (map[player.uyPos, (player.uxPos-1)] == "？")
@@ -256,15 +263,15 @@ namespace ForMyBrother
                         {
                             Console.WriteLine("전투를 시작합니다.\n");
                             //player.SumxPos(1);
-                            //map[player.uyPos, player.uxPos] ="&";
+                            //map[player.uyPos, player.uxPos] ="♥";
                             //map[player.uyPos, player.uxPos-1] ="　";
                         }
                         else if (map[player.uyPos, (player.uxPos+1)] == "ⓐ")
                         {
-                            Console.WriteLine("카드 게임을 시작합니다.");
-                            //player.SumxPos(1);
-                            //map[player.uyPos, player.uxPos] ="&";
-                            //map[player.uyPos, player.uxPos-1] ="　";
+                            battle.startBattle(player);
+                            player.SumxPos(1);
+                            map[player.uyPos, player.uxPos] ="♥";
+                            map[player.uyPos, player.uxPos-1] ="　";
                         }
                         else if (map[player.uyPos, (player.uxPos+1)] == "？")
                         {

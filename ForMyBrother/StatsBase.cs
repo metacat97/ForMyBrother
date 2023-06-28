@@ -8,6 +8,7 @@ namespace ForMyBrother
 {
     public class StatsBase
     {
+        
         public int level { get; protected set;} //레벨
         public string name { get; protected set;} //이름
         public int healthPointMax { get; protected set;} // 최대 hp

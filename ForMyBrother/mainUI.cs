@@ -93,24 +93,24 @@ namespace ForMyBrother
             Console.WriteLine("└────────────────────────────────────────────────────────────────────────┘");
         }
 
-        public void PrintStatus(int hp, int will, int str, int wisdom, int speed, int luck)
+        public void PrintStatus(User UiPlayer)
         {
             
 
             Console.SetCursorPosition(consoleWidth-178, consoleHeight-49);  //좌측 상단에 출력 
-            Console.WriteLine($"체력 = {hp}"); //이름을 출력합니다.
+            Console.WriteLine($"체력 = {UiPlayer.healthPoint}"); //이름을 출력합니다.
             Console.SetCursorPosition(consoleWidth-178, consoleHeight-48);  //좌측 상단에 출력 
-            Console.WriteLine($"의지 = {will}"); //의지를 출력합니다.
+            Console.WriteLine($"의지 = {UiPlayer.willPower}"); //의지를 출력합니다.
             Console.SetCursorPosition(consoleWidth-55, consoleHeight-49);  //좌측 상단에 출력 
-            Console.WriteLine($"  힘 = {str}"); //힘 출력합니다.
+            Console.WriteLine($"  힘 = {UiPlayer.strong}"); //힘 출력합니다.
             Console.SetCursorPosition(consoleWidth-54, consoleHeight-48);  //우측 상단에 출력 
-            Console.WriteLine($"지혜 = {wisdom}"); //지혜를 출력합니다.
+            Console.WriteLine($"지혜 = {UiPlayer.wisdom}"); //지혜를 출력합니다.
 
             Console.SetCursorPosition(consoleWidth-35, consoleHeight-49);   
-            Console.WriteLine($"민첩 = {speed}"); //민첨를 출력합니다.
+            Console.WriteLine($"민첩 = {UiPlayer.speed}"); //민첨를 출력합니다.
 
             Console.SetCursorPosition(consoleWidth-34, consoleHeight-48);  //우측 상단에 출력 
-            Console.WriteLine($"  운 = {luck}"); //운을 출력합니다.
+            Console.WriteLine($"  운 = {UiPlayer.luck}"); //운을 출력합니다.
 
 
         }
@@ -190,5 +190,10 @@ namespace ForMyBrother
             Console.WriteLine("└────────────────────────┘");
 
         }
+        public void battleUi()
+        {
+            //배틀 시작시 UI입니다.
+        }
+
     }
 }

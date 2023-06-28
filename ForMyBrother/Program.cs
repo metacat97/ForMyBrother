@@ -19,6 +19,8 @@ namespace ForMyBrother
             textBase printEvent = new textBase();
             everyText pText = new everyText();
             AllEvent allEvent = new AllEvent();
+            Battle test = new Battle();
+
             while (true)
             {
                 allEvent.endingCount = 0;
@@ -36,7 +38,7 @@ namespace ForMyBrother
                      여기는 스토리 프롤로그 출력 명령문 들어가야합니다.
                      */
                     ui.statBorder();
-                    ui.PrintStatus(user.healthPoint, user.willPower, user.strong, user.wisdom, user.speed, user.luck); //능력치 변환 ui 테스트 
+                    ui.PrintStatus(user); //능력치 변환 ui 테스트 
                     #region 유저 텍스트 테두리
                     ui.userTextBorder();
                     ui.userProfileBorder();
@@ -58,8 +60,7 @@ namespace ForMyBrother
 
                         Console.Clear();
                         ui.resizeUi(60, 38); //사이즈 재조정
-                        map.drawMap();
-                        
+                        map.drawMap(user);
 
                     }
                     //Console.ReadLine();
