@@ -12,6 +12,7 @@ namespace ForMyBrother
         mainUI Ui = new mainUI();
         everyText pText = new everyText();
         choiceButton chBtn = new choiceButton(); //chBtn은 choiceButton의 약자 입니다.
+        #region 프롤로그 이벤트
         public void prolog()
         {
             for (int j = 0; j < 2; j++)
@@ -20,6 +21,8 @@ namespace ForMyBrother
                 Console.ReadLine();
             }
         }
+        #endregion
+        #region 메인 이벤트
         public void event001()
         {
             for (int j = 0; j < 10; j++)
@@ -44,7 +47,8 @@ namespace ForMyBrother
         {
             
         }
-
+        #endregion
+        #region 엔딩 이벤트
         public void ending001()
         {
             Console.Clear();
@@ -69,5 +73,34 @@ namespace ForMyBrother
 
 
         }
+        #endregion
+        #region 던전 이벤트
+        public void DGEvent001()
+        {
+            Console.Clear();
+            Console.WriteLine("덕분에 좋아졌어");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Happy End");
+            Console.ReadLine();
+
+        }
+        public void DGEvent002()
+        {
+            Console.Clear();
+            Console.WriteLine("덕분에 좋아졌어");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Happy End");
+            Console.ReadLine();
+
+        }
+
+
+        #endregion
     }
 }

@@ -192,10 +192,45 @@ namespace ForMyBrother
         {
             //배틀 시작시 UI입니다.
         }
-        public void MarketUi()
+        public void MiddleClearUi()
         {
-            
+            Console.SetCursorPosition(0, 3);
+           
+            Console.WriteLine("├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
+            Console.WriteLine("│                                                                                                                                                                                 │");
         }
+        
 
 
     }

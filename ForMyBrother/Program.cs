@@ -60,12 +60,18 @@ namespace ForMyBrother
 
                         Console.Clear();
                         ui.resizeUi(60, 38); //사이즈 재조정
-                        map.drawMap(user);
+                        map.drawMap(user, showItems);
 
                     }
                     else if (chButton.choiceControlNum ==8)
                     {
+                        //Console.Clear();
                         //상점을 보여줄 차례
+                        ui.MiddleClearUi();
+
+                        showItems.MarketUi(showItems.Item);
+                        showItems.Purchase(showItems.Item, user);
+                        Console.ReadLine();
                     }
                     //Console.ReadLine();
                     if (allEvent.endingCount == 1)

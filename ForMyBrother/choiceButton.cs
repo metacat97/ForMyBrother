@@ -231,7 +231,7 @@ namespace ForMyBrother
                     }
 
                 }
-                Console.WriteLine(choiceControlNum);
+                Console.WriteLine("│");
             }
         }
 

@@ -56,6 +56,10 @@ namespace ForMyBrother
                 healthPoint = 0;
             }
         }
+        public void UserBuy (Shop shop)
+        {
+            //userInven.Add();
+        }
         public void setuxyPos(int y, int x)
         {
             uyPos = y; 
