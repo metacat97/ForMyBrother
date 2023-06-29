@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ForMyBrother
 {
     public class everyText
-    { 
+    {   //test source tree
         public List<textBase> prololog = new List<textBase>();
         public List<textBase> pllQuestion = new List<textBase>();//프롤로그 질문 스크립트 담아놓은 리스트입니다.
         public List<textBase> userText = new List<textBase>();
