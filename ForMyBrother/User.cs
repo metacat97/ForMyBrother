@@ -65,10 +65,10 @@ namespace ForMyBrother
             else if (statUp ==3 ) { speed +=1; }
             else if (statUp ==4 ) { luck +=1; }
         }
-        public void UserSelluy (Shop shop)
-        {
-            //userInven.Add();
-        }
+        //public void UserBuy (Shop shop)
+        //{
+        //    userInven.Add();
+        //}
         public void setuxyPos(int y, int x)
         {
             uyPos = y; 

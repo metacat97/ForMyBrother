@@ -21,18 +21,22 @@ namespace ForMyBrother
             AllEvent allEvent = new AllEvent();
             Battle test = new Battle();
 
+            Random rand = new Random();
+           
             while (true) // 엔딩 보면 다시 돌아오게끔
             {
-                //allEvent.endingCount = 0;
-                ////showItems.addItem();
-                //ui.setUi();//콘솔창 크기 고정
-                //ui.PrintUi();//처음 도화지 출력
-                //ui.PrintTitle(); // 타이틀 로고 출력
-                //button.PrintButton();//버튼 첫 출력
-                //button.ControlButton();//버튼 제어 기능 - 게임 종료를 누르면 break
-                
-                //Console.Clear();//지워주고
-                
+                int shopMeetCount = 0; //상점에 처음 왔는지 아닌지 체크 하는 
+                allEvent.endingCount = 0;
+                int normalCount = 0;
+                int alleventCount = 0;
+                ui.setUi();//콘솔창 크기 고정
+                ui.PrintUi();//처음 도화지 출력
+                ui.PrintTitle(); // 타이틀 로고 출력
+                button.PrintButton();//버튼 첫 출력
+                button.ControlButton();//버튼 제어 기능 - 게임 종료를 누르면 break
+
+                Console.Clear();//지워주고
+
                 //ui.resizeUi(110, 40);//사이즈 재조정
                 //allEvent.Prololog();//프롤로그 텍스트 출력
                 //allEvent.PllQ1(user);//스테이터스 질문 1
@@ -45,25 +49,30 @@ namespace ForMyBrother
                 {
                     ui.setUi();//콘솔창 크기 고정
                     ui.PrintUi(); //비유하자면 도화지  출력
-                    /*
-                     여기는 스토리 프롤로그 출력 명령문 들어가야합니다.
-                     */
-                    ui.statBorder();
+
+                    ui.statBorder();//스테이터스 밑 줄
                     ui.PrintStatus(user); //능력치 변환 ui 테스트 
                     #region 유저 텍스트 테두리
                     ui.userTextBorder();
                     ui.userProfileBorder();
                     ui.PrintText();
-                    Console.ReadLine();
+                    //Console.ReadLine();
                     #endregion;
-                    allEvent.GuideMessage();
+                    //allEvent.GuideMessage();
                     chButton.SetThree("무작위 이벤트", "던전","상점");
                     chButton.PrintThree();
                     chButton.ControlThree(6, 7,8);
                     if (chButton.choiceControlNum == 6)//6이면 무작위 이벤트 출력
                     {
+                        alleventCount += 1;
                         ui.MiddleClearUi();//여기다가 중앙화면만 지워주는 공백 그려줄려고요
-                        allEvent.event001(); //이벤트 텍스트 모음 출력
+                        if (alleventCount == 1)
+                        {
+                            allEvent.event001(); //이벤트 텍스트 모음 출력
+                        }
+                        normalCount = rand.Next(1, 10);
+                       // Console.ReadLine();
+                        allEvent.EventControl(normalCount);
                     }
                     else if (chButton.choiceControlNum == 7)
                     {
@@ -76,21 +85,32 @@ namespace ForMyBrother
                     }
                     else if (chButton.choiceControlNum ==8)
                     {
-                        //Console.Clear();
+
                         //상점을 보여줄 차례
                         ui.MiddleClearUi();
-
+                        if (shopMeetCount == 0)
+                        {
+                            allEvent.ShopOpen1();
+                            shopMeetCount = 1;
+                        }
+                        else if (shopMeetCount == 1)
+                        {
+                            allEvent.ShopOpen2();
+                        }
                         showItems.MarketUi(showItems.Item);
-                        showItems.Purchase(showItems.Item, user);
-                        Console.ReadLine();
+                        showItems.Purchase(user);
+                        ui.MiddleClearUi();
+                        allEvent.ShopClose();
+
+                        
                     }
-                    //Console.ReadLine();
-                    if (allEvent.endingCount == 1)
+                    
+                    if (allEvent.endingCount == 4)
                     {
                         allEvent.ending001();
                         break;
                     }
-                    else if (allEvent.endingCount == 2)
+                    else if (allEvent.endingCount == 5)
                     {
                         allEvent.ending002();
                         break;

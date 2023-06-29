@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace ForMyBrother
 {
+    //컨트롤 넘버 20까지 쓰임
     public class AllEvent
     {
+        
         public int endingCount { get; set; }
         mainUI Ui = new mainUI();
         everyText pText = new everyText();
         choiceButton chBtn = new choiceButton(); //chBtn은 choiceButton의 약자 입니다.
-        #region 프롤로그 이벤트
+        #region 프롤로그와 질문 이벤트
         public void Prololog()
         {
             for (int j = 0; j < 15; j++)
@@ -100,6 +102,34 @@ namespace ForMyBrother
             }
         }
         #endregion
+        #region 상점 이벤트
+        public void ShopOpen1()
+        {
+            for (int j = 0; j < 14; j++)
+            {
+                Ui.rollText(pText.shopText[j].chName, pText.shopText[j].chText, 60);
+                Console.ReadLine();
+            }
+        }
+        public void ShopOpen2()
+        {
+            for (int j = 8; j < 14; j++)
+            {
+                Ui.rollText(pText.shopText[j].chName, pText.shopText[j].chText, 50);
+                Console.ReadLine();
+            }
+        }
+
+        public void ShopClose()
+        {
+            for (int j = 14; j < 18; j++)
+            {
+                Ui.rollText(pText.shopText[j].chName, pText.shopText[j].chText, 60);
+                Console.ReadLine();
+            }
+        }
+        #endregion
+
         #region 메인 이벤트
         public void event001()
         {
@@ -108,7 +138,7 @@ namespace ForMyBrother
                 Ui.rollText(pText.userText[j].chName, pText.userText[j].chText,50);
                 Console.ReadLine();
             }
-            chBtn.SettingTwoChoice("몸에 힘을 주고 팔을 벌린다.", "모르겠다 그냥 포기하자");
+            chBtn.SettingTwoChoice(" 왼쪽 ", "오른쪽");
             chBtn.PrintChoice();
             chBtn.ControlChoice(9,10);
             if (chBtn.choiceControlNum == 9)
@@ -126,6 +156,29 @@ namespace ForMyBrother
             
         }
         #endregion
+        #region 노멀이벤트
+        public void Nevent001()
+        {
+            
+            for (int j = 0; j < 28; j++)
+            {
+                Ui.rollText(pText.normalEvent001[j].chName, pText.normalEvent001[j].chText, 50);
+                Console.ReadLine();
+            }
+            chBtn.SettingTwoChoice("그들이 올 때까지 기다린다", "내가 찾아간다.");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(21, 22);
+            if (chBtn.choiceControlNum == 21)
+            {
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 22)
+            {
+                endingCount +=1;
+            }
+        }
+        #endregion
+
         #region 엔딩 이벤트
         public void ending001()
         {
@@ -152,6 +205,7 @@ namespace ForMyBrother
 
         }
         #endregion
+
         #region 던전 이벤트
         public void DGEvent001()
         {
@@ -180,5 +234,43 @@ namespace ForMyBrother
 
 
         #endregion
+
+        public void EventControl(int randomNumber)
+        {
+            if (randomNumber == 1)
+            {
+                Nevent001();
+            }
+            else if(randomNumber == 2) { }
+            else if(randomNumber == 3) { }
+            else if(randomNumber == 4) { }
+            else if(randomNumber == 5) { }
+            else if(randomNumber == 6) { }
+            else if(randomNumber == 7) { }
+            else if(randomNumber == 8) { }
+            else if(randomNumber == 9) { }
+            else if(randomNumber == 10) { }
+            else if(randomNumber == 11) { }
+            else if(randomNumber == 12) { }
+            else if(randomNumber == 13) { }
+            else if(randomNumber == 14) { }
+            else if(randomNumber == 15) { }
+            else if(randomNumber == 16) { }
+            else if(randomNumber == 17) { }
+            else if(randomNumber == 18) { }
+            else if(randomNumber == 19) { }
+            else if(randomNumber == 20) { }
+            else if(randomNumber == 21) { }
+            else if(randomNumber == 22) { }
+            else if(randomNumber == 23) { }
+            else if(randomNumber == 24) { }
+            else if(randomNumber == 25) { }
+            else if(randomNumber == 26) { }
+            else if(randomNumber == 27) { } 
+            else if(randomNumber == 28) { }
+            else if(randomNumber == 29) { }
+            else if(randomNumber == 30) { }
+
+        }
     }
 }

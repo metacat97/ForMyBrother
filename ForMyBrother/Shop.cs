@@ -21,7 +21,7 @@ namespace ForMyBrother
             Item.Add(wood);
             
             items steel = new items();
-            steel.InitItem("철강", 300, 10);
+            steel.InitItem("철강   ", 300, 10);
             Item.Add(steel);
 
             items normal01 = new items();
@@ -51,11 +51,12 @@ namespace ForMyBrother
 
         }
 
-        public void Purchase(List<items> Item,User player)
+        public void Purchase(User player)
         {
-                Console.SetCursorPosition(25,17);
-
+            Console.SetCursorPosition(30,20);
             Console.WriteLine("사고 싶은걸 입력해주세요");
+            
+            Console.SetCursorPosition(30, 22);
             string userPut = Console.ReadLine();
             for (int i = 0; i < Item.Count; i++)
             {
@@ -73,7 +74,7 @@ namespace ForMyBrother
                 Console.SetCursorPosition(30,10+i);
                 Console.WriteLine("아이템명[ {0,10}    ]   가격[ {1,6} ]", Item[i].itemName, Item[i].itemPrice);
             }
-            Console.ReadLine();
+           // Console.ReadLine();
         }
         public void PrintInventory(User player)
         {

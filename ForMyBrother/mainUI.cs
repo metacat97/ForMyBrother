@@ -95,22 +95,38 @@ namespace ForMyBrother
 
         public void PrintStatus(User UiPlayer)
         {
-            
 
-            Console.SetCursorPosition(consoleWidth-178, consoleHeight-49);  //좌측 상단에 출력 
+            Console.SetCursorPosition(5, 1);  //좌측 상단에 출력 
+            Console.WriteLine($"Lv = {UiPlayer.level}"); //이름을 출력합니다.
+            Console.SetCursorPosition(30, 1);  //좌측 상단에 출력 
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine($"체력 = {UiPlayer.healthPoint}"); //이름을 출력합니다.
-            Console.SetCursorPosition(consoleWidth-178, consoleHeight-48);  //좌측 상단에 출력 
+            Console.ResetColor();
+
+            Console.SetCursorPosition(30, 2);  //좌측 상단에 출력 
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"의지 = {UiPlayer.willPower}"); //의지를 출력합니다.
-            Console.SetCursorPosition(consoleWidth-55, consoleHeight-49);  //좌측 상단에 출력 
-            Console.WriteLine($"  힘 = {UiPlayer.strong}"); //힘 출력합니다.
-            Console.SetCursorPosition(consoleWidth-54, consoleHeight-48);  //우측 상단에 출력 
-            Console.WriteLine($"지혜 = {UiPlayer.wisdom}"); //지혜를 출력합니다.
+            Console.ResetColor();
 
-            Console.SetCursorPosition(consoleWidth-35, consoleHeight-49);   
+            Console.SetCursorPosition(126, 1);  //좌측 상단에 출력 
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine($"힘 = {UiPlayer.strong}"); //힘 출력합니다.
+            Console.ResetColor();
+
+            Console.SetCursorPosition(126, 2);  //우측 상단에 출력 
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"운 =  {UiPlayer.luck}"); //지혜를 출력합니다.
+            Console.ResetColor();
+
+            Console.SetCursorPosition(145, 2);
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"민첩 = {UiPlayer.speed}"); //민첨를 출력합니다.
+            Console.ResetColor();
 
-            Console.SetCursorPosition(consoleWidth-34, consoleHeight-48);  //우측 상단에 출력 
-            Console.WriteLine($"  운 = {UiPlayer.luck}"); //운을 출력합니다.
+            Console.SetCursorPosition(145, 1);  //우측 상단에 출력 
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"지혜 = {UiPlayer.wisdom}"); //운을 출력합니다.
+            Console.ResetColor();
 
 
         }
@@ -151,7 +167,7 @@ namespace ForMyBrother
         public void PrintText()
         {
             Console.SetCursorPosition(30,40);
-            Console.WriteLine("│   본인   │    무엇을 하면 좋을까?                                      ");
+            Console.WriteLine("천천히 눈을 감았다가 뜬다.                                      ");
         }
         public void userTextBorder()
         {
