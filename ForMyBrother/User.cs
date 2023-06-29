@@ -56,7 +56,16 @@ namespace ForMyBrother
                 healthPoint = 0;
             }
         }
-        public void UserBuy (Shop shop)
+        public void UpStat() 
+        { 
+            Random rand = new Random();
+            int statUp = rand.Next(1,4);
+            if (statUp ==1 ){ strong += 1; }
+            else if (statUp ==2 ) { wisdom +=1; }
+            else if (statUp ==3 ) { speed +=1; }
+            else if (statUp ==4 ) { luck +=1; }
+        }
+        public void UserSelluy (Shop shop)
         {
             //userInven.Add();
         }

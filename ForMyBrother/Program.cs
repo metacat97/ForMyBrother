@@ -21,16 +21,27 @@ namespace ForMyBrother
             AllEvent allEvent = new AllEvent();
             Battle test = new Battle();
 
-            while (true)
+            while (true) // 엔딩 보면 다시 돌아오게끔
             {
-                allEvent.endingCount = 0;
-                //showItems.addItem();
-                ui.setUi();//콘솔창 크기 고정
-                ui.PrintUi();//처음 도화지 출력
-                ui.PrintTitle(); // 타이틀 로고 출력
-                button.PrintButton();//버튼 첫 출력
-                button.ControlButton();//버튼 제어 기능 - 게임 종료를 누르면 break
-                while (true)
+                //allEvent.endingCount = 0;
+                ////showItems.addItem();
+                //ui.setUi();//콘솔창 크기 고정
+                //ui.PrintUi();//처음 도화지 출력
+                //ui.PrintTitle(); // 타이틀 로고 출력
+                //button.PrintButton();//버튼 첫 출력
+                //button.ControlButton();//버튼 제어 기능 - 게임 종료를 누르면 break
+                
+                //Console.Clear();//지워주고
+                
+                //ui.resizeUi(110, 40);//사이즈 재조정
+                //allEvent.Prololog();//프롤로그 텍스트 출력
+                //allEvent.PllQ1(user);//스테이터스 질문 1
+                //Console.Clear();
+                //allEvent.PllQ2(user);// 스테이터스 질문 2
+                //Console.Clear();
+                //allEvent.PllQ3(user);//스테이터스 질문 3
+
+                while (true)//주 게임 반복문 시작
                 {
                     ui.setUi();//콘솔창 크기 고정
                     ui.PrintUi(); //비유하자면 도화지  출력
@@ -45,13 +56,13 @@ namespace ForMyBrother
                     ui.PrintText();
                     Console.ReadLine();
                     #endregion;
-                    allEvent.prolog();
+                    allEvent.GuideMessage();
                     chButton.SetThree("무작위 이벤트", "던전","상점");
                     chButton.PrintThree();
                     chButton.ControlThree(6, 7,8);
                     if (chButton.choiceControlNum == 6)//6이면 무작위 이벤트 출력
                     {
-                        //여기다가 중앙화면만 지워주는 공백 그려줄려고요
+                        ui.MiddleClearUi();//여기다가 중앙화면만 지워주는 공백 그려줄려고요
                         allEvent.event001(); //이벤트 텍스트 모음 출력
                     }
                     else if (chButton.choiceControlNum == 7)
@@ -85,14 +96,7 @@ namespace ForMyBrother
                         break;
                     }
 
-
-
-                    //게임의 시작
-                    //user.LevelUp(); //테스트 레벨업 
-                    //Console.ReadLine();
-                    //ui.PrintStatus(user.healthPoint, user.willPower, user.strong, user.wisdom, user.speed, user.luck);// 다시 스텟 출력
-
-                    //printEvent.eventText01();
+                   
                 }
             }
         }

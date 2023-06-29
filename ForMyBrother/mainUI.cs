@@ -116,7 +116,7 @@ namespace ForMyBrother
         }
         public void statBorder()
         {
-            Console.SetCursorPosition(0, consoleHeight-47);//주인공 대사
+            Console.SetCursorPosition(0, 3);//스테이터스 밑 줄
             Console.WriteLine("├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤");
         }
         public void rollText(string name , string text, int textSpeed)//대화 한줄씩 출력 대사 위치는 임의로 조정
@@ -135,12 +135,12 @@ namespace ForMyBrother
         public void uiPrintEvent(string name, string text, int textSpeed)
         {
 
-            Console.SetCursorPosition(30, 20);
-            Console.WriteLine("                                                                             ");
-            Console.SetCursorPosition(30, 20);
+            Console.SetCursorPosition(20, 20);
+            Console.WriteLine("                                                                                ");
+            Console.SetCursorPosition(20, 20);
             Console.Write(name + " :");
 
-            Console.SetCursorPosition(42, 20);
+            Console.SetCursorPosition(32, 20);
             for (int j = 0; j < text.Length; j++)
             {
                 Console.Write(text[j]);
@@ -150,7 +150,7 @@ namespace ForMyBrother
 
         public void PrintText()
         {
-            Console.SetCursorPosition(consoleWidth-150, consoleHeight-10);
+            Console.SetCursorPosition(30,40);
             Console.WriteLine("│   본인   │    무엇을 하면 좋을까?                                      ");
         }
         public void userTextBorder()
