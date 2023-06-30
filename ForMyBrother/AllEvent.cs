@@ -32,7 +32,7 @@ namespace ForMyBrother
             }
             chBtn.SetThree("심준보", "유준호", "박준오");
             chBtn.PrintThree();
-            chBtn.ControlThree(11, 12, 13);
+            chBtn.ControlThree(11, 12, 13,player);
             if (chBtn.choiceControlNum == 11)
             {
                 player.UpStat();
@@ -55,7 +55,7 @@ namespace ForMyBrother
             }
             chBtn.SetThree("답변1", "답변2", "답변3");
             chBtn.PrintThree();
-            chBtn.ControlThree(14, 15, 16);
+            chBtn.ControlThree(14, 15, 16,player);
             if (chBtn.choiceControlNum == 14)
             {
                 player.UpStat();
@@ -78,7 +78,7 @@ namespace ForMyBrother
             }
             chBtn.SetThree("답변1", "답변2", "답변3");
             chBtn.PrintThree();
-            chBtn.ControlThree(17, 18, 19);
+            chBtn.ControlThree(17, 18, 19, player);
             if (chBtn.choiceControlNum == 17)
             {
                 player.UpStat();

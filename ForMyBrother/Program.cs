@@ -61,7 +61,7 @@ namespace ForMyBrother
                     //allEvent.GuideMessage();
                     chButton.SetThree("무작위 이벤트", "던전","상점");
                     chButton.PrintThree();
-                    chButton.ControlThree(6, 7,8);
+                    chButton.ControlThree(6, 7,8,user);
                     if (chButton.choiceControlNum == 6)//6이면 무작위 이벤트 출력
                     {
                         alleventCount += 1;
@@ -88,19 +88,19 @@ namespace ForMyBrother
 
                         //상점을 보여줄 차례
                         ui.MiddleClearUi();
-                        if (shopMeetCount == 0)
-                        {
-                            allEvent.ShopOpen1();
-                            shopMeetCount = 1;
-                        }
-                        else if (shopMeetCount == 1)
-                        {
-                            allEvent.ShopOpen2();
-                        }
+                        //if (shopMeetCount == 0)
+                        //{
+                        //    allEvent.ShopOpen1();
+                        //    shopMeetCount = 1;
+                        //}
+                        //else if (shopMeetCount == 1)
+                        //{
+                        //    allEvent.ShopOpen2();
+                        //}
                         showItems.MarketUi(showItems.Item);
                         showItems.Purchase(user);
                         ui.MiddleClearUi();
-                        allEvent.ShopClose();
+                       // allEvent.ShopClose();
 
                         
                     }

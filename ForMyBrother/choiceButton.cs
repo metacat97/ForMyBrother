@@ -9,6 +9,7 @@ namespace ForMyBrother
 {
     public class choiceButton
     {
+        mainUI ui = new mainUI();
         public int choiceControlNum {  get; set; } 
         /*
          6 = 던전
@@ -119,7 +120,7 @@ namespace ForMyBrother
             Console.WriteLine($"{choice3}");
             choiceControlNum = 0;
         }
-        public void ControlThree(int ch1, int ch2, int ch3)
+        public void ControlThree(int ch1, int ch2, int ch3,User player)
         {
             //mainUI printUi = new mainUI();
             //User user = new User();
@@ -214,6 +215,17 @@ namespace ForMyBrother
                         Console.SetCursorPosition(xchoicePo, ychoicePo + 4); 
                         Console.WriteLine("=>");
                     }
+                }
+                else if (userInput.Key == ConsoleKey.I)
+                {
+                    
+                    for (int i = 0; i < player.userInven.Count; i++)
+                    {
+                        Console.SetCursorPosition(30, 10+i);
+                        Console.WriteLine("아이템명[ {0,10}    ]   가격[ {1,6} ]", player.userInven[i].itemName, player.userInven[i].itemPrice);
+                    }
+                    Console.ReadKey();
+                    ui.InvenClear(player);
                 }
                 else if (userInput.Key == ConsoleKey.Enter)
                 {

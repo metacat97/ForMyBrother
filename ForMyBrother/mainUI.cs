@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Media;
 
 namespace ForMyBrother 
 {
@@ -129,12 +130,12 @@ namespace ForMyBrother
             Console.ResetColor();
 
 
-        }
+        } //스텟 출력 
         public void statBorder()
         {
             Console.SetCursorPosition(0, 3);//스테이터스 밑 줄
             Console.WriteLine("├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤");
-        }
+        }//스테이터스 보더
         public void rollText(string name , string text, int textSpeed)//대화 한줄씩 출력 대사 위치는 임의로 조정
         {
             Console.SetCursorPosition(30, 40);
@@ -163,12 +164,34 @@ namespace ForMyBrother
                 Thread.Sleep(textSpeed);
             }
         }
+        public void TextAPEvent( string text, int textSpeed)//AP   all print 한다는 의미이빈다.
+        {
+
+            Console.SetCursorPosition(20, 20);
+            Console.WriteLine("                                                                                ");
+           
+
+            Console.SetCursorPosition(32, 20);
+            for (int j = 0; j < text.Length; j++)
+            {
+                Console.Write(text[j]);
+                Thread.Sleep(textSpeed);
+            }
+        }
+        public void InvenClear(User player)
+        {
+            for (int i = 0; i < player.userInven.Count; i++)
+            {
+                Console.SetCursorPosition(30, 10+i);
+                Console.WriteLine("                                                 ");
+            }
+        }
 
         public void PrintText()
         {
             Console.SetCursorPosition(30,40);
             Console.WriteLine("천천히 눈을 감았다가 뜬다.                                      ");
-        }
+        }//메인화면에 항상 보여줄
         public void userTextBorder()
         {
             Console.SetCursorPosition(0,consoleHeight-14 );//주인공 대사
