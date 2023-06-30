@@ -10,7 +10,7 @@ namespace ForMyBrother
     {
 
         public int Speed { get; private set; }
-
+        
         //public goblin() 
         //{
         //    Name = "고블린";

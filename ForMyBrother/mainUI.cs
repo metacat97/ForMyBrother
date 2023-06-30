@@ -129,6 +129,10 @@ namespace ForMyBrother
             Console.WriteLine($"지혜 = {UiPlayer.wisdom}"); //운을 출력합니다.
             Console.ResetColor();
 
+            Console.SetCursorPosition(163, 2);
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine($"소지금 = {UiPlayer.coin}"); //민첨를 출력합니다.
+            Console.ResetColor();
 
         } //스텟 출력 
         public void statBorder()

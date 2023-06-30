@@ -21,7 +21,7 @@ namespace ForMyBrother
             Item.Add(wood);
             
             items steel = new items();
-            steel.InitItem("철강   ", 300, 10);
+            steel.InitItem("철강", 300, 10);
             Item.Add(steel);
 
             items normal01 = new items();
@@ -62,11 +62,13 @@ namespace ForMyBrother
             {
                 if (userPut == Item[i].itemName)
                 {
+                    player.UserPurchace(Item[i].itemPrice);
                     player.userInven.Add(Item[i]);
                     Item.Remove(Item[i]);
                 }
             }
         }
+        
         public void MarketUi(List<items> Item)
         {
             for (int i = 0; i < Item.Count; i++)
@@ -78,10 +80,14 @@ namespace ForMyBrother
         }
         public void PrintInventory(User player)
         {
-            Console.WriteLine("아이템명[ {0,10}    ]   가격[ {1,6} ]", player.userInven[0].itemName, player.userInven[0].itemPrice);
-            Console.WriteLine("아이템명[ {0}    ]   가격[ {1} ]", player.userInven[1].itemName, player.userInven[1].itemPrice);
-
-
+            //Console.SetCursorPosition(30, 9);
+            Console.WriteLine("유저의 소지금 = {0}", player.coin);
+            for (int i = 0; i < player.userInven.Count; i++)
+            {
+                //Console.SetCursorPosition(30, 10+i);
+                Console.WriteLine("아이템명[ {0,10}    ]   가격[ {1,6} ]", player.userInven[i].itemName, player.userInven[i].itemCount) ;
+            }
+            Console.ReadKey();
         }
 
     }

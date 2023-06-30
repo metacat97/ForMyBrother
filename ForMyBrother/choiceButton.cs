@@ -216,13 +216,14 @@ namespace ForMyBrother
                         Console.WriteLine("=>");
                     }
                 }
-                else if (userInput.Key == ConsoleKey.I)
+                else if (userInput.Key == ConsoleKey.I)//유저의 인벤토리를 보여주는 키입니다.
                 {
-                    
+                    Console.SetCursorPosition(30, 9);
+                    Console.WriteLine("유저의 소지금 = {0}",player.coin);
                     for (int i = 0; i < player.userInven.Count; i++)
                     {
                         Console.SetCursorPosition(30, 10+i);
-                        Console.WriteLine("아이템명[ {0,10}    ]   가격[ {1,6} ]", player.userInven[i].itemName, player.userInven[i].itemPrice);
+                        Console.WriteLine("아이템명[ {0,10}    ]   [ {1,6} ]개 소지", player.userInven[i].itemName, player.userInven[i].itemCount);
                     }
                     Console.ReadKey();
                     ui.InvenClear(player);

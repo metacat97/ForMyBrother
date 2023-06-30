@@ -13,8 +13,9 @@ namespace ForMyBrother
         public string user { get; private set; } //맵에서 보이는 캐릭터의 모습입니다.
         public int uxPos { get; private set; } //유저의 x 좌표를 받습니다.
         public int uyPos { get; private set;} // 유저의 y좌표를 받습니다.
-
         public int expMax { get; private set; }//경험치 상한치입니다.
+        public int coin { get; private set; }
+
         goblin test = new goblin();
         public User()
         {
@@ -31,6 +32,7 @@ namespace ForMyBrother
             luck = 5;
             exp =  0;
             expMax = 50;
+            coin = 1000;
         }
        
         public void LevelUp()
@@ -55,6 +57,14 @@ namespace ForMyBrother
             {
                 healthPoint = 0;
             }
+        }
+        public void UserSetCoin(int Othercoin)
+        {
+            coin += Othercoin;
+        }
+        public void UserPurchace(int Shopcoin)
+        {
+            coin -= Shopcoin;
         }
         public void UpStat() 
         { 

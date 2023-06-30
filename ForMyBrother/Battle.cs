@@ -13,7 +13,8 @@ namespace ForMyBrother
         //User player = new User();
         public void startBattle(User player)
         {
-        
+            Random randcoin = new Random();
+            int otherCoin = randcoin.Next(100, 500);
             //player.UserHit(10);
             //ConsoleKeyInfo UserInput = Console.ReadKey();
             //if (UserInput.Key == ConsoleKey.Enter)
@@ -39,6 +40,7 @@ namespace ForMyBrother
                 {
                     Console.WriteLine("\n{0}의 체력이 {1}이 되어 싸움에서 승리하였습니다.",
                         mob1.Name, mob1.Hp);
+                    player.UserSetCoin(otherCoin);
                     break;
                 }
                 Thread.Sleep(1000);
