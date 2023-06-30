@@ -10,6 +10,7 @@ namespace ForMyBrother
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             Button button = new Button();
             choiceButton chButton = new choiceButton();
             User user = new User();
