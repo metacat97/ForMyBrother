@@ -143,7 +143,7 @@ namespace ForMyBrother
         public void rollText(string name , string text, int textSpeed)//대화 한줄씩 출력 대사 위치는 임의로 조정
         {
             Console.SetCursorPosition(30, 40);
-            Console.WriteLine("                                                                             ");
+            Console.WriteLine("                                                                                                          ");
             Console.SetCursorPosition(32, 40);
             Console.Write(name + " :");
             Console.SetCursorPosition(42, 40);
@@ -156,8 +156,8 @@ namespace ForMyBrother
         public void uiPrintEvent(string name, string text, int textSpeed)
         {
 
-            Console.SetCursorPosition(20, 20);
-            Console.WriteLine("                                                                                ");
+            Console.SetCursorPosition(20, 20); 
+            Console.WriteLine("                                                                                                  ");
             Console.SetCursorPosition(20, 20);
             Console.Write(name + " :");
 
@@ -168,18 +168,20 @@ namespace ForMyBrother
                 Thread.Sleep(textSpeed);
             }
         }
-        public void TextAPEvent( string text, int textSpeed)//AP   all print 한다는 의미이빈다.
+        public void TextAPEvent(int arrNum ,string text, int textSpeed)//AP   all print 한다는 의미이빈다.
         {
 
             Console.SetCursorPosition(20, 20);
-            Console.WriteLine("                                                                                ");
-           
+            Console.WriteLine("                                                                                                  ");
 
-            Console.SetCursorPosition(32, 20);
-            for (int j = 0; j < text.Length; j++)
+            for (int i = 0; i < arrNum; i++)
             {
-                Console.Write(text[j]);
-                Thread.Sleep(textSpeed);
+                Console.SetCursorPosition(32, 20+i*2);
+                for (int j = 0; j < text.Length; j++)
+                {
+                    Console.Write(text[j]);
+                    Thread.Sleep(textSpeed);
+                }
             }
         }
         public void InvenClear(User player)

@@ -160,7 +160,7 @@ namespace ForMyBrother
         public void Nevent001()
         {
             
-            for (int j = 0; j < 28; j++)
+            for (int j = 0; j < 81; j++)
             {
                 Ui.rollText(pText.normalEvent001[j].chName, pText.normalEvent001[j].chText, 50);
                 Console.ReadLine();

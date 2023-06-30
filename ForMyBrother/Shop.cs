@@ -62,9 +62,16 @@ namespace ForMyBrother
             {
                 if (userPut == Item[i].itemName)
                 {
-                    player.UserPurchace(Item[i].itemPrice);
-                    player.userInven.Add(Item[i]);
-                    Item.Remove(Item[i]);
+                    if (Item[i].itemPrice > player.coin)
+                    {
+                        Console.WriteLine("소지금이 부족합니다.");
+                    }
+                    else
+                    {
+                        player.UserPurchace(Item[i].itemPrice);
+                        player.userInven.Add(Item[i]);
+                        Item.Remove(Item[i]);
+                    }
                 }
             }
         }
