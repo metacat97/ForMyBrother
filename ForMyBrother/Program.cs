@@ -37,13 +37,13 @@ namespace ForMyBrother
 
                 Console.Clear();//지워주고
 
-                //ui.resizeUi(110, 40);//사이즈 재조정
-                //allEvent.Prololog();//프롤로그 텍스트 출력
-                //allEvent.PllQ1(user);//스테이터스 질문 1
-                //Console.Clear();
-                //allEvent.PllQ2(user);// 스테이터스 질문 2
-                //Console.Clear();
-                //allEvent.PllQ3(user);//스테이터스 질문 3
+                ui.resizeUi(110, 40);//사이즈 재조정
+                allEvent.Prololog();//프롤로그 텍스트 출력
+                allEvent.PllQ1(user);//스테이터스 질문 1
+                Console.Clear();
+                allEvent.PllQ2(user);// 스테이터스 질문 2
+                Console.Clear();
+                allEvent.PllQ3(user);//스테이터스 질문 3
 
                 while (true)//주 게임 반복문 시작
                 {
@@ -55,23 +55,24 @@ namespace ForMyBrother
                     #region 유저 텍스트 테두리
                     ui.userTextBorder();
                     ui.userProfileBorder();
-                    ui.PrintText();
-                    //Console.ReadLine();
+                    ui.PrintText("천천히 눈을 뜬다");
+                    Console.ReadLine();
                     #endregion;
-                    //allEvent.GuideMessage();
-                    chButton.SetThree("무작위 이벤트", "던전","상점");
+                    allEvent.GuideMessage();
+                    chButton.SetThree("집을 나선다", "던전에 입장한다","상점을 방문한다");
                     chButton.PrintThree();
                     chButton.ControlThree(6, 7,8,user);
                     if (chButton.choiceControlNum == 6)//6이면 무작위 이벤트 출력
                     {
                         alleventCount += 1;
                         ui.MiddleClearUi();//여기다가 중앙화면만 지워주는 공백 그려줄려고요
-                        if (alleventCount == 1)
-                        {
-                            allEvent.event001(); //이벤트 텍스트 모음 출력
-                        }
-                        normalCount = rand.Next(1, 10);
+                        //if (alleventCount == 1)
+                        //{
+                        //    allEvent.event001(); //이벤트 텍스트 모음 출력
+                        //}
+                        //normalCount = 3;
                        // Console.ReadLine();
+                        normalCount = rand.Next(1, 10);
                         allEvent.EventControl(normalCount);
                     }
                     else if (chButton.choiceControlNum == 7)
@@ -88,19 +89,19 @@ namespace ForMyBrother
 
                         //상점을 보여줄 차례
                         ui.MiddleClearUi();
-                        //if (shopMeetCount == 0)
-                        //{
-                        //    allEvent.ShopOpen1();
-                        //    shopMeetCount = 1;
-                        //}
-                        //else if (shopMeetCount == 1)
-                        //{
-                        //    allEvent.ShopOpen2();
-                        //}
+                        if (shopMeetCount == 0)
+                        {
+                            allEvent.ShopOpen1();
+                            shopMeetCount = 1;
+                        }
+                        else if (shopMeetCount == 1)
+                        {
+                            allEvent.ShopOpen2();
+                        }
                         showItems.MarketUi(showItems.Item);
                         showItems.Purchase(user);
                         ui.MiddleClearUi();
-                       // allEvent.ShopClose();
+                        allEvent.ShopClose();
 
                         
                     }

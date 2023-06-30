@@ -13,7 +13,7 @@ namespace ForMyBrother
         
         public int consoleWidth {get; private set;}
         public int consoleHeight { get; private set; }
-        
+        //public int cutline { get; private set; }
         public void setUi()
         {
             consoleWidth = 180;
@@ -168,21 +168,14 @@ namespace ForMyBrother
                 Thread.Sleep(textSpeed);
             }
         }
-        public void TextAPEvent(int arrNum ,string text, int textSpeed)//AP   all print 한다는 의미이빈다.
+        public void TextAPEvent(string text, int textSpeed)//AP   all print 한다는 의미이빈다.
         {
-
-            Console.SetCursorPosition(20, 20);
-            Console.WriteLine("                                                                                                  ");
-
-            for (int i = 0; i < arrNum; i++)
-            {
-                Console.SetCursorPosition(32, 20+i*2);
+                //Console.SetCursorPosition(1, cutline+line*2);
                 for (int j = 0; j < text.Length; j++)
                 {
                     Console.Write(text[j]);
                     Thread.Sleep(textSpeed);
                 }
-            }
         }
         public void InvenClear(User player)
         {
@@ -193,10 +186,10 @@ namespace ForMyBrother
             }
         }
 
-        public void PrintText()
+        public void PrintText(string text)
         {
             Console.SetCursorPosition(30,40);
-            Console.WriteLine("천천히 눈을 감았다가 뜬다.                                      ");
+            Console.WriteLine(" "+text+"                                                               ");
         }//메인화면에 항상 보여줄
         public void userTextBorder()
         {

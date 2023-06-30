@@ -73,7 +73,7 @@ namespace ForMyBrother
             prololog.Add(pll000);
 
             textBase pll001 = new textBase();
-            pll001.InitText(2, "누군가", "아..(lament) 염치없지만 제 소개는 나중에 해드리겠습니다.");
+            pll001.InitText(2, "누군가", "죄송합니다");
             prololog.Add(pll001);
 
             textBase pll002 = new textBase();
@@ -319,6 +319,7 @@ namespace ForMyBrother
             #endregion
 
             #region 노멀 이벤트 
+           
             textBase noEvent201 = new textBase();
             noEvent201.InitText(11, "시스템", " 숲 속에서 정적을 깨는 알 수 없는 동물의 울부짖음이 들렸다.");
             normalEvent002.Add(noEvent201);
@@ -362,7 +363,7 @@ namespace ForMyBrother
             normalEvent003.Add(noEvent306);
 
             textBase noEvent307 = new textBase();
-            noEvent307.InitText(11, "시스템", "당신은 그것이 석탄이라는 것을 알아챘다");
+            noEvent307.InitText(11, "시스템", "당신은 그것이 석탄이라는 것을 알아챈다.");
             normalEvent003.Add(noEvent307);
             //지나친다, 무슨 일입니까?
 
@@ -907,22 +908,19 @@ namespace ForMyBrother
             normalEvent030.Add(noEvent3001);
 
             #endregion
-
-           
-
             #endregion
 
             #region 엔딩 대사 모음
             #region ending1
             textBase ending101 = new textBase();
-            ending101.InitText(11, "시스템", "");
+            ending101.InitText(11, "시스템", "엔딩1. 행복한 결말");
             ending01.Add(ending101);
 
             #endregion
 
             #region ending2
             textBase ending201 = new textBase();
-            ending201.InitText(11, "시스템", "");
+            ending201.InitText(11, "시스템", "엔딩2. 불행한 결말");
             ending02.Add(ending201);
 
             #endregion

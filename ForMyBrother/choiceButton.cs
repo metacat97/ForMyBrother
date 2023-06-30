@@ -222,8 +222,8 @@ namespace ForMyBrother
                     Console.WriteLine("유저의 소지금 = {0}",player.coin);
                     for (int i = 0; i < player.userInven.Count; i++)
                     {
-                        Console.SetCursorPosition(30, 10+i);
-                        Console.WriteLine("아이템명[ {0,10}    ]   [ {1,6} ]개 소지", player.userInven[i].itemName, player.userInven[i].itemCount);
+                        Console.SetCursorPosition(20, 10+i);
+                        Console.WriteLine("아이템명[{0,10}]   [ {1,6} ]개 소지", player.userInven[i].itemName, player.userInven[i].itemCount);
                     }
                     Console.ReadKey();
                     ui.InvenClear(player);

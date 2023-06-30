@@ -50,6 +50,8 @@ namespace ForMyBrother
                         Console.WriteLine($"{startBt}");
                         Console.SetCursorPosition(xbuttonPo+3, ybuttonPo + 2);
                         Console.WriteLine($"{endBt}");
+                        Console.SetCursorPosition(0,0);
+
                     }
                 }
                 else if (userInput.Key == ConsoleKey.S || userInput.Key == ConsoleKey.DownArrow)
