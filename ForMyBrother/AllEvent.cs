@@ -27,7 +27,8 @@ namespace ForMyBrother
         {
             for (int j = 0; j < 2; j++)
             {
-                Ui.uiPrintEvent(pText.pllQuestion[j].chName, pText.pllQuestion[j].chText, 60);
+                Console.SetCursorPosition(8, 10+(j%4)*2);
+                Ui.uiPrintEvent(pText.pllQuestion1[j].chName, pText.pllQuestion1[j].chText, 60);
                 Console.ReadLine();
             }
             chBtn.SetThree("심준보", "유준호", "박준오");
@@ -48,9 +49,10 @@ namespace ForMyBrother
         }
         public void PllQ2(User player)
         {
-            for (int j = 2; j < 6; j++)
+            for (int j = 0; j < 4; j++)
             {
-                Ui.uiPrintEvent(pText.pllQuestion[j].chName, pText.pllQuestion[j].chText, 60);
+                Console.SetCursorPosition(8, 10+(j%4)*2);
+                Ui.uiPrintEvent(pText.pllQuestion2[j].chName, pText.pllQuestion2[j].chText, 60);
                 Console.ReadLine();
             }
             chBtn.SetThree("답변1", "답변2", "답변3");
@@ -71,9 +73,10 @@ namespace ForMyBrother
         }
         public void PllQ3(User player)
         {
-            for (int j = 6; j < 15; j++)
+            for (int j = 0; j < 9; j++)
             {
-                Ui.uiPrintEvent(pText.pllQuestion[j].chName, pText.pllQuestion[j].chText, 60);
+                Console.SetCursorPosition(8, 10+(j%10)*2);
+                Ui.uiPrintEvent(pText.pllQuestion3[j].chName, pText.pllQuestion3[j].chText, 60);
                 Console.ReadLine();
             }
             chBtn.SetThree("답변1", "답변2", "답변3");
@@ -97,6 +100,7 @@ namespace ForMyBrother
         {
             for (int j = 0; j < 2; j++)
             {
+                Console.SetCursorPosition(30, 10);
                 Ui.uiPrintEvent(pText.etc1Text[j].chName, pText.etc1Text[j].chText, 50);
                 Console.ReadLine();
             }
@@ -183,11 +187,7 @@ namespace ForMyBrother
                 Console.SetCursorPosition(1, 20+(j%4)*2);
                 Ui.TextAPEvent(pText.normalEvent002[j].chText, 50);
                 Console.ReadLine();
-
             }
-
-
-
             chBtn.SettingTwoChoice("기습한다", "지나친다");
             chBtn.PrintChoice();
             chBtn.ControlChoice(23, 24);

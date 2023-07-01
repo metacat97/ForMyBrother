@@ -9,7 +9,10 @@ namespace ForMyBrother
     public class everyText
     {   //test source tree
         public List<textBase> prololog = new List<textBase>();
-        public List<textBase> pllQuestion = new List<textBase>();//프롤로그 질문 스크립트 담아놓은 리스트입니다.
+        public List<textBase> pllQuestion1 = new List<textBase>();//프롤로그 질문 스크립트 담아놓은 리스트입니다.
+        public List<textBase> pllQuestion2 = new List<textBase>();//프롤로그 질문 스크립트 담아놓은 리스트입니다.
+        public List<textBase> pllQuestion3 = new List<textBase>();//프롤로그 질문 스크립트 담아놓은 리스트입니다.
+
         public List<textBase> userText = new List<textBase>();
         #region 메인 이벤트 5개 리스트
         public List<textBase> mainEvent = new List<textBase>();
@@ -69,15 +72,15 @@ namespace ForMyBrother
         {
             #region 프롤로그
             textBase pll000 = new textBase();//prololog = pll 로 줄여서 변수 선언 했습니다.
-            pll000.InitText(2, "누군가", "   안녕하세요.  ○○○님           ");
+            pll000.InitText(2, "누군가", "안녕하세요.");
             prololog.Add(pll000);
 
             textBase pll001 = new textBase();
-            pll001.InitText(2, "누군가", "죄송합니다");
+            pll001.InitText(2, "누군가", "......");
             prololog.Add(pll001);
 
             textBase pll002 = new textBase();
-            pll002.InitText(2, "누군가", "정말 혼란스러우시겠지만 시간이 없어서 본론만 말씀드릴게요");
+            pll002.InitText(2, "누군가", "......");
             prololog.Add(pll002);
 
             textBase pll003 = new textBase();
@@ -101,19 +104,19 @@ namespace ForMyBrother
             prololog.Add(pll008);
 
             textBase pll009 = new textBase();
-            pll009.InitText(2, "누군가", "특정 이벤트 분기에서 조건을 달성하시는 경우");
+            pll009.InitText(2, "누군가", "특정 이벤트에서 조건을 달성하시는 경우");
             prololog.Add(pll009);
 
             textBase pll010 = new textBase();
-            pll010.InitText(2, "누군가", "당신의 HP 혹은 WP가 '0'이 되실 경우에는 사망하시게 되어");
+            pll010.InitText(2, "누군가", "마지막으로 당신의 HP 혹은 WP가 '0'이 되실 경우에는");
             prololog.Add(pll010);
 
             textBase pll00 = new textBase();
-            pll00.InitText(2, "누군가", "게임이 끝나게 됩니다.");
+            pll00.InitText(2, "누군가", "사망하시게 되어 게임이 끝나게 됩니다.");
             prololog.Add(pll00);
 
             textBase pll011 = new textBase();
-            pll011.InitText(2, "누군가", "지금부터 당신의 특성을 결정하실 수 있는 질문 4가지를 드릴겁니다.");
+            pll011.InitText(2, "누군가", "지금부터 연습을 하실 수 있게끔 질문 3가지를 드릴겁니다.");
             prololog.Add(pll011); 
             
             textBase pll012 = new textBase();
@@ -121,74 +124,74 @@ namespace ForMyBrother
             prololog.Add(pll012);
 
             textBase pll013 = new textBase();
-            pll013.InitText(2, "누군가", "...................그러면");
+            pll013.InitText(2, "누군가", "..............그러면");
             prololog.Add(pll013);
 
             textBase pll014 = new textBase();
-            pll014.InitText(2, "누군가", "당신에게 행운이 있기를........");
+            pll014.InitText(2, "누군가", "당신에게 행운이 있기를..........");
             prololog.Add(pll014);
             #endregion
 
             #region 프롤로그 스텟 선택 질문
             textBase pllQ000 = new textBase();//prolologQuestion = pllQ 로 줄여서 변수 선언 했습니다.
             pllQ000.InitText(2, "질문", "당신은 길을 걷다가 파란 슬리퍼 한 짝을 발견했다.");
-            pllQuestion.Add(pllQ000);
+            pllQuestion1.Add(pllQ000);
 
             textBase pllQ001 = new textBase();
-            pllQ001.InitText(2, "질문", "누구의 슬리퍼일까?");
-            pllQuestion.Add(pllQ001);
+            pllQ001.InitText(2, "    ", "누구의 슬리퍼일까?");
+            pllQuestion1.Add(pllQ001);
 
             textBase pllQ002 = new textBase();
             pllQ002.InitText(2, "질문", "사람은 언제 죽는다고 생각하는가?");
-            pllQuestion.Add(pllQ002);
+            pllQuestion2.Add(pllQ002);
 
             textBase pllQ003 = new textBase();
             pllQ003.InitText(2, "답변1", "여러 가지 상황을 고려해 봐야 한다.");
-            pllQuestion.Add(pllQ003);
+            pllQuestion2.Add(pllQ003);
 
             textBase pllQ004 = new textBase();
             pllQ004.InitText(2, "답변2", "모두에게 잊혔을 때 죽었다고 볼 수 있다.");
-            pllQuestion.Add(pllQ004);
+            pllQuestion2.Add(pllQ004);
 
             textBase pllQ005 = new textBase();
             pllQ005.InitText(2, "답변3", "모르겠고, 지금 죽을 것 같다.");
-            pllQuestion.Add(pllQ005);
+            pllQuestion2.Add(pllQ005);
 
             textBase pllQ007 = new textBase();
             pllQ007.InitText(2, "질문", "사막을 걷다가 모래 폭풍 사이로 사람의 모습이 보였다.");
-            pllQuestion.Add(pllQ007);
+            pllQuestion3.Add(pllQ007);
 
             textBase pllQ008 = new textBase();
-            pllQ008.InitText(2, "질문", "가까이 다가가니 말을 걸어온다.");
-            pllQuestion.Add(pllQ008);
+            pllQ008.InitText(2, "　　", "가까이 다가가니 말을 걸어온다.");
+            pllQuestion3.Add(pllQ008);
 
             textBase pllQ009 = new textBase();
-            pllQ009.InitText(2, "질문", "자신은 사막의 탑을 정복한 이경민이라 소개한다.");
-            pllQuestion.Add(pllQ009);
+            pllQ009.InitText(2, "　　", "자신은 사막의 탑을 정복한 이경민이라 소개한다.");
+            pllQuestion3.Add(pllQ009);
 
             textBase pllQ010 = new textBase();
-            pllQ010.InitText(2, "질문", "마을로 돌아가는 길을 잃어서 곤란해 하던 중인데");
-            pllQuestion.Add(pllQ010);
+            pllQ010.InitText(2, "　　", "마을로 돌아가는 길을 잃어서 곤란해 하던 중인데");
+            pllQuestion3.Add(pllQ010);
 
             textBase pllQ011 = new textBase();
-            pllQ011.InitText(2, "질문", "도움을 받을 수 있는지 물어보며 괴로운 표정을 짓는다.");
-            pllQuestion.Add(pllQ011);
+            pllQ011.InitText(2, "　　", "도움을 받을 수 있는지 물어보며 괴로운 표정을 짓는다.");
+            pllQuestion3.Add(pllQ011);
 
             textBase pllQ012 = new textBase();
-            pllQ012.InitText(2, "질문", "어떻게 하면 좋을까?");
-            pllQuestion.Add(pllQ012);
+            pllQ012.InitText(2, "　　", "어떻게 하면 좋을까?");
+            pllQuestion3.Add(pllQ012);
 
             textBase pllQ013 = new textBase();
             pllQ013.InitText(2, "답변1", "당장 도와준다");
-            pllQuestion.Add(pllQ013);
+            pllQuestion3.Add(pllQ013);
 
             textBase pllQ014 = new textBase();
             pllQ014.InitText(2, "답변2", "사과하고 그냥 지나친다");
-            pllQuestion.Add(pllQ014);
+            pllQuestion3.Add(pllQ014);
 
             textBase pllQ015 = new textBase();
             pllQ015.InitText(2, "답변3", "물러나라!!");
-            pllQuestion.Add(pllQ015);
+            pllQuestion3.Add(pllQ015);
 
             #endregion
 
@@ -973,10 +976,10 @@ namespace ForMyBrother
 
             #region etc1 처음 메인화면 시스템 대사 모음집
             textBase etcText000 = new textBase();
-            etcText000.InitText(3, "시스템", "(소리가 들려온다)");
+            etcText000.InitText(3, "브레타", "...");
             etc1Text.Add(etcText000);
             textBase etcText001 = new textBase();
-            etcText001.InitText(3, "시스템", "오늘은 무엇을 하실 계획인가요?");
+            etcText001.InitText(3, "브레타", "오늘은 무엇을 하면 좋을까?");
             etc1Text.Add(etcText001);
             #endregion
 

@@ -39,12 +39,12 @@ namespace ForMyBrother
                 Console.Clear();//지워주고
 
                 ui.resizeUi(110, 40);//사이즈 재조정
-                allEvent.Prololog();//프롤로그 텍스트 출력
-                allEvent.PllQ1(user);//스테이터스 질문 1
+                //allEvent.Prololog();//프롤로그 텍스트 출력
+               // allEvent.PllQ1(user);//스테이터스 질문 1
                 Console.Clear();
-                allEvent.PllQ2(user);// 스테이터스 질문 2
+                //allEvent.PllQ2(user);// 스테이터스 질문 2
                 Console.Clear();
-                allEvent.PllQ3(user);//스테이터스 질문 3
+                //allEvent.PllQ3(user);//스테이터스 질문 3
 
                 while (true)//주 게임 반복문 시작
                 {

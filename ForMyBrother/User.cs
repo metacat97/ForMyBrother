@@ -22,7 +22,7 @@ namespace ForMyBrother
             user = "♥";
             name = "김형준";
             level = 1;
-            healthPointMax = 100;
+            healthPointMax = 40;
             healthPoint = healthPointMax;
             willPowerMax = 5;
             willPower = willPowerMax;
@@ -38,7 +38,7 @@ namespace ForMyBrother
         public void LevelUp()
         {
             level += 1;
-            healthPointMax += 10;
+            healthPointMax += 5;
             healthPoint = healthPointMax;
             willPowerMax += 1;
             willPower = willPowerMax;

@@ -33,13 +33,21 @@ namespace ForMyBrother
             Item.Add(normal02);
 
             items normal03 = new items();
-            normal03.InitItem("절망", 100, 3);
+            normal03.InitItem("아픔", 100, 3);
             Item.Add(normal03);
 
             items normal04 = new items();
             normal04.InitItem("분노", 100, 3);
             Item.Add(normal04);
 
+            items normal05 = new items();
+            normal05.InitItem("사랑", 100, 3);
+            Item.Add(normal05);
+
+
+            items normal06 = new items();
+            normal06.InitItem("바람", 100, 3);
+            Item.Add(normal06);
             #endregion
 
             #region 특별한 아이템

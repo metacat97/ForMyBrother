@@ -61,6 +61,7 @@ namespace ForMyBrother
 
             while (choiceControlNum < 5)
             {
+                Console.SetCursorPosition(xchoicePo, ychoicePo);
                 ConsoleKeyInfo userInput = Console.ReadKey();
                 if (userInput.Key == ConsoleKey.W || userInput.Key == ConsoleKey.UpArrow)
                 {
@@ -103,7 +104,8 @@ namespace ForMyBrother
                         choiceControlNum = ch2;
                     }
                 }
-                        Console.WriteLine(choiceControlNum);
+                Console.SetCursorPosition(xchoicePo, ychoicePo);
+                //Console.WriteLine(choiceControlNum); 확인을 위해 써놨던 것
             }
         }
         public void PrintThree()
@@ -124,6 +126,7 @@ namespace ForMyBrother
         {
             //mainUI printUi = new mainUI();
             //User user = new User();
+            Console.SetCursorPosition(xchoicePo, ychoicePo);
 
             while (choiceControlNum < 5)
             {
@@ -244,7 +247,8 @@ namespace ForMyBrother
                     }
 
                 }
-                Console.WriteLine("│");
+                Console.SetCursorPosition(xchoicePo, ychoicePo);
+                //Console.WriteLine("  ");
             }
         }
 
