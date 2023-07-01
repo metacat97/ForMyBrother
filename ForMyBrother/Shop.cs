@@ -17,57 +17,72 @@ namespace ForMyBrother
         {
             #region 일반 아이템
             items wood = new items();
-            wood.InitItem("사과", 300, 999);
+            wood.InitItem("사과", 300, 999,1);
             Item.Add(wood);
             
             items steel = new items();
-            steel.InitItem("사이다", 300, 999);
+            steel.InitItem("사이다", 300, 999, 1);
             Item.Add(steel);
 
             items normal01 = new items();
-            normal01.InitItem("기쁨", 100, 3);
+            normal01.InitItem("감기약", 100, 3, 1);
             Item.Add(normal01);
 
             items normal02 = new items();
-            normal02.InitItem("슬픔", 100, 3);
+            normal02.InitItem("기쁨", 100, 3, 1);
             Item.Add(normal02);
 
             items normal03 = new items();
-            normal03.InitItem("아픔", 100, 3);
+            normal03.InitItem("슬픔", 100, 3, 1);
             Item.Add(normal03);
 
             items normal04 = new items();
-            normal04.InitItem("분노", 100, 3);
+            normal04.InitItem("분노", 100, 3, 1);
             Item.Add(normal04);
 
             items normal05 = new items();
-            normal05.InitItem("사랑", 100, 3);
+            normal05.InitItem("사랑", 100, 3, 1);
             Item.Add(normal05);
 
 
             items normal06 = new items();
-            normal06.InitItem("바람", 100, 3);
+            normal06.InitItem("수정구", 5000, 3, 2);
             Item.Add(normal06);
             #endregion
 
             #region 특별한 아이템
             items Happy = new items();
-            Happy.InitSpItem("행복한 사람의 원념", 1000, 1);
-            SpecialItem.Add(Happy);
+            Happy.InitItem("행복한 사람의 원념", 2000, 1, 5);
+            Item.Add(Happy);
 
             items Sad = new items();
-            Sad.InitSpItem("슬픈 사람의 원념", 1000, 1);
-            SpecialItem.Add(Sad);
+            Sad.InitItem("슬픈 사람의 원념", 2000, 1,5);
+           Item.Add(Sad);
 
             items Angry = new items();
-            Angry.InitSpItem("분노한 사람의 원념", 1000, 1);
-            SpecialItem.Add(Angry);
+            Angry.InitItem("분노한 사람의 원념", 2000, 1,5);
+            Item.Add(Angry);
 
             items Rich = new items();
-            Rich.InitSpItem("부유한 사람의 원념", 1000, 1);
-            SpecialItem.Add(Rich);
+            Rich.InitItem("부유한 사람의 원념", 2000, 1,5);
+            Item.Add(Rich);
+            //items Happy = new items();
+            //Happy.InitSpItem("행복한 사람의 원념", 1000, 1);
+            //SpecialItem.Add(Happy);
 
-            
+            //items Sad = new items();
+            //Sad.InitSpItem("슬픈 사람의 원념", 1000, 1);
+            //SpecialItem.Add(Sad);
+
+            //items Angry = new items();
+            //Angry.InitSpItem("분노한 사람의 원념", 1000, 1);
+            //SpecialItem.Add(Angry);
+
+            //items Rich = new items();
+            //Rich.InitSpItem("부유한 사람의 원념", 1000, 1);
+            //SpecialItem.Add(Rich);
+
+
 
 
 
@@ -77,10 +92,11 @@ namespace ForMyBrother
 
         public void Purchase(User player)
         {
-            Console.SetCursorPosition(30,20);
+            player.shopIO = 0;
+            Console.SetCursorPosition(30,25);
             Console.WriteLine("사고 싶은걸 입력해주세요");
             
-            Console.SetCursorPosition(30, 22);
+            Console.SetCursorPosition(30, 26);
             string userPut = Console.ReadLine();
             for (int i = 0; i < Item.Count; i++)
             {
@@ -88,10 +104,12 @@ namespace ForMyBrother
                 {
                     if (Item[i].itemPrice > player.coin)
                     {
-                        Console.SetCursorPosition(30, 24);
-                        Console.WriteLine("소지금이 부족합니다.");
-                        Console.SetCursorPosition(30, 24);
+                        Console.SetCursorPosition(30, 27);
+                        Console.WriteLine("소지금이 부족하여 퇴출당합니다.");
+                        Console.SetCursorPosition(30, 25);
+                        player.shopIO +=1;
                         Console.ReadKey();
+                        
                     }
                     else
                     {
@@ -106,15 +124,34 @@ namespace ForMyBrother
                 }
             }
         }
-        
+
         public void MarketUi(List<items> Item)
         {
+
             for (int i = 0; i < Item.Count; i++)
             {
-                Console.SetCursorPosition(30,10+i);
-                Console.WriteLine("아이템명[{0,4}]   가격[{1,6}]", Item[i].itemName, Item[i].itemPrice);
+                if (Item[i].itemCode != 5)
+                { 
+                    Console.SetCursorPosition(30, 10+i);
+                    Console.WriteLine("아이템명[{0,4}]   가격[{1,6}]", Item[i].itemName, Item[i].itemPrice);
+                }
+                else if (Item[i].itemCode == 5 )
+                {
+                    Random rand = new Random();
+                    int oneshow = rand.Next(8, 11);
+                    Console.SetCursorPosition(70, 10);
+                    Console.WriteLine("아이템명[{0,4}]   가격[{1,6}]", Item[oneshow].itemName, Item[oneshow].itemPrice);
+                }
             }
-           // Console.ReadLine();
+            // Console.ReadLine();
+        }
+        public void SpecialUi(List<items> SpecialItem)
+        {
+            Random rand = new Random();
+            int oneshow = rand.Next(0, SpecialItem.Count);
+            Console.SetCursorPosition(70, 10);
+            Console.WriteLine("아이템명[{0,4}]   가격[{1,6}]", SpecialItem[oneshow].itemName, SpecialItem[oneshow].itemPrice);
+           
         }
         public void PrintInventory(User player)
         {

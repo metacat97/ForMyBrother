@@ -222,7 +222,7 @@ namespace ForMyBrother
                 else if (userInput.Key == ConsoleKey.I)//유저의 인벤토리를 보여주는 키입니다.
                 {
                     Console.SetCursorPosition(30, 9);
-                    Console.WriteLine("유저의 소지금 = {0}",player.coin);
+                   // Console.WriteLine("유저의 소지금 = {0}",player.coin);
                     for (int i = 0; i < player.userInven.Count; i++)
                     {
                         Console.SetCursorPosition(20, 10+i);

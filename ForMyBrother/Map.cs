@@ -139,8 +139,6 @@ namespace ForMyBrother
                         }
                         else if (map[(player.uyPos-1), player.uxPos] == "ⓐ")
                         {
-
-                          
                             battle.startBattle(player);
 
                             player.SubyPos(1);
@@ -157,10 +155,6 @@ namespace ForMyBrother
                             map[player.uyPos, player.uxPos] ="♥";
                             map[player.uyPos+1, player.uxPos] ="　";
                         }
-
-
-
-
                     }
                     else
                     {
@@ -300,28 +294,11 @@ namespace ForMyBrother
                 }//엔터 혹은 스페이스바 입력의 경우
                 else if (UserInput.Key == ConsoleKey.I)
                 {
-                    //for (int i = 0; i < yFirst_Map_Area; i++)
-                    //{
-                    //    for (int j = 0; j < xFirst_Map_Area; j++)
-                    //    {
-                    //        map[i, j] = "　";
-                    //        if (i == 0 || j == 0)
-                    //        {
-                    //            map[i, j] = "■";
-                    //        }
-                    //        if (i == yFirst_Map_Area-1 || j == xFirst_Map_Area-1)
-                    //        {
-                    //            map[i, j] = "■";
-                    //        }
-                    //        if (i == player.uyPos && j == player.uxPos)
-                    //        {
-                    //            map[i, j] = "♥";
-                    //        }
-                    //    }
-                    //}
+                    
                     shop.PrintInventory(player);
 
                 }//맵 리셋
+               
                 //출력하는 부분
                 Console.SetCursorPosition(0, 0);
                 for (int i = 0; i < yFirst_Map_Area; i++)

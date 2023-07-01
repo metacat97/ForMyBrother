@@ -90,21 +90,31 @@ namespace ForMyBrother
 
                         //상점을 보여줄 차례
                         ui.MiddleClearUi();
-                        if (shopMeetCount == 0)
-                        {
-                            allEvent.ShopOpen1();
-                            shopMeetCount = 1;
-                        }
-                        else if (shopMeetCount == 1)
-                        {
-                            allEvent.ShopOpen2();
-                        }
+                        //if (shopMeetCount == 0)
+                        //{
+                        //    allEvent.ShopOpen1();
+                        //    shopMeetCount = 1;
+                        //}
+                        //else if (shopMeetCount == 1)
+                        //{
+                        //    allEvent.ShopOpen2();
+                        //}
                         showItems.MarketUi(showItems.Item);
+                       // showItems.SpecialUi(showItems.SpecialItem); 
                         showItems.Purchase(user);
-                        ui.MiddleClearUi();
-                        allEvent.ShopClose();
 
+                        ui.MiddleClearUi();
                         
+                        switch (user.shopIO)
+                        {
+                            case 0:
+                                allEvent.ShopClose1();
+                                break;
+                            case 1:
+
+                                allEvent.ShopClose2();
+                                break;
+                        }
                     }
                     
                     if (allEvent.endingCount == 4)

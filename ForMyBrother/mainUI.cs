@@ -221,8 +221,8 @@ namespace ForMyBrother
         {
             for (int i = 0; i < player.userInven.Count; i++)
             {
-                Console.SetCursorPosition(30, 10+i);
-                Console.WriteLine("                                                 ");
+                Console.SetCursorPosition(20, 10+i);
+                Console.WriteLine("                                                                 ");
             }
         }
 

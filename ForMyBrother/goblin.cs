@@ -16,9 +16,9 @@ namespace ForMyBrother
         //    Name = "고블린";
         //    Speed = 5;
         //}
-        public override void Init(string name, int hp, int damage)
+        public override void Init(string name, int hp, int damage, int exp)
         {
-            base.Init(name, hp, damage);
+            base.Init(name, hp, damage, exp);
         }
         public override void HitDamage(int damage)
         {

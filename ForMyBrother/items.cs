@@ -14,11 +14,12 @@ namespace ForMyBrother
         public int itemCount;
         public int itemCode;
         
-        public void InitItem(string name,  int price, int count)
+        public void InitItem(string name,  int price, int count, int code)
         {
             itemName = name;
             itemPrice = price;
             itemCount = count;
+            itemCode = code;
         }
         public void InitSpItem(string name, int price, int code) 
         {

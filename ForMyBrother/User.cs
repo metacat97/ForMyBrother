@@ -15,7 +15,7 @@ namespace ForMyBrother
         public int uyPos { get; private set;} // 유저의 y좌표를 받습니다.
         public int expMax { get; private set; }//경험치 상한치입니다.
         public int coin { get; private set; }
-
+        public int shopIO { get; set; }//출입 관련 카운트 
         goblin test = new goblin();
         public User()
         {
@@ -31,8 +31,9 @@ namespace ForMyBrother
             speed = 10;
             luck = 5;
             exp =  0;
-            expMax = 50;
+            expMax = 20;
             coin = 1000;
+            shopIO = 0;
         }
        
         public void LevelUp()
@@ -61,6 +62,10 @@ namespace ForMyBrother
         public void UserSetCoin(int Othercoin)
         {
             coin += Othercoin;
+        }
+        public void UserSetExp(int MonsterExp) 
+        { 
+            exp += MonsterExp;
         }
         public void UserPurchace(int Shopcoin)
         {

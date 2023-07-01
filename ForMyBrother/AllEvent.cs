@@ -124,9 +124,17 @@ namespace ForMyBrother
             }
         }
 
-        public void ShopClose()
+        public void ShopClose1()
         {
             for (int j = 14; j < 18; j++)
+            {
+                Ui.rollText(pText.shopText[j].chName, pText.shopText[j].chText, 60);
+                Console.ReadLine();
+            }
+        }
+        public void ShopClose2()
+        {
+            for (int j = 18; j < 21; j++)
             {
                 Ui.rollText(pText.shopText[j].chName, pText.shopText[j].chText, 60);
                 Console.ReadLine();

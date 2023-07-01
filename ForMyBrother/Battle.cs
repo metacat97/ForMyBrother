@@ -24,23 +24,32 @@ namespace ForMyBrother
 
             Console.Clear();
             goblin mob1 = new goblin();
-            mob1.Init("고블린", 20, 10);
+            mob1.Init("고블린", 20, 10,10);
             
             Console.WriteLine("몬스터 접근   ");
             while (true)
             {
 
-                if (player.healthPoint == 0)
+                if (mob1.Hp <= 0)
+                {
+                    
+                    Console.WriteLine("\n{0}의 체력이 0이 되어 싸움에서 승리하였습니다.",
+                        mob1.Name);
+                    player.UserSetCoin(otherCoin);
+                    Console.WriteLine("\n{0}의 코인을 획득했습니다",otherCoin);
+                    player.UserSetExp(mob1.Exp);
+                    Console.WriteLine("\n{0}경험치 획득", mob1.Exp);
+                    if(player.exp == player.expMax) 
+                    { 
+                        player.LevelUp();
+                        Console.WriteLine("플레이어 레벨업!!!");
+                    }
+                    break;
+                }
+                else if (player.healthPoint <= 0)
                 {
                     Console.WriteLine("사용자의 체력이 {0}이 되어 게임을 종료합니다",
                         player.healthPoint);
-                    break;
-                }
-                else if (mob1.Hp == 0)
-                {
-                    Console.WriteLine("\n{0}의 체력이 {1}이 되어 싸움에서 승리하였습니다.",
-                        mob1.Name, mob1.Hp);
-                    player.UserSetCoin(otherCoin);
                     break;
                 }
                 Thread.Sleep(1000);
@@ -50,9 +59,11 @@ namespace ForMyBrother
                 Thread.Sleep(1100);
                 player.UserHit(mob1.Str);
                 Console.WriteLine("고블린의 공격 {0}의 데미지를 입혔다", mob1.Str);
-
+                
             }
             Console.WriteLine("현재 사용자의 체력 = {0} --- 의지 ={1}", player.healthPoint, player.willPower);
+            Console.WriteLine("Press any key");
+            Console.ReadLine();
 
         }
 

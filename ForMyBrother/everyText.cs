@@ -267,6 +267,20 @@ namespace ForMyBrother
             textBase shopText017 = new textBase();
             shopText017.InitText(5, "모이라", "세계의 의지가 당신을 이끌거에요.");
             shopText.Add(shopText017);
+
+            textBase shopText018 = new textBase();
+            shopText018.InitText(5, "모이라", "너, 돈이 없으면 못산답니다.");
+            shopText.Add(shopText018);
+
+            textBase shopText019 = new textBase();
+            shopText019.InitText(5, "모이라", "언젠가 또 놀러오세요?");
+            shopText.Add(shopText019);
+
+            textBase shopText020 = new textBase();
+            shopText020.InitText(5, "모이라", "세계의 의지가 당신을 이끌거에요.");
+            shopText.Add(shopText020);
+
+
             #endregion
 
             #region 주인공 대사 모음집
