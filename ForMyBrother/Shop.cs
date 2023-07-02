@@ -29,11 +29,11 @@ namespace ForMyBrother
             Item.Add(normal01);
 
             items normal02 = new items();
-            normal02.InitItem("기쁨", 100, 3, 1);
+            normal02.InitItem("고등어", 100, 3, 1);
             Item.Add(normal02);
 
             items normal03 = new items();
-            normal03.InitItem("슬픔", 100, 3, 1);
+            normal03.InitItem("초콜릿", 100, 3, 1);
             Item.Add(normal03);
 
             items normal04 = new items();
@@ -52,19 +52,19 @@ namespace ForMyBrother
 
             #region 특별한 아이템
             items Happy = new items();
-            Happy.InitItem("행복한 사람의 원념", 2000, 1, 5);
+            Happy.InitItem("에이~팟 프로", 2000, 1, 5);
             Item.Add(Happy);
 
             items Sad = new items();
-            Sad.InitItem("슬픈 사람의 원념", 2000, 1,5);
+            Sad.InitItem("소설:금단의 연애", 2000, 1,5);
            Item.Add(Sad);
 
             items Angry = new items();
-            Angry.InitItem("분노한 사람의 원념", 2000, 1,5);
+            Angry.InitItem("게임잡지:히트 걸즈", 2000, 1,5);
             Item.Add(Angry);
 
             items Rich = new items();
-            Rich.InitItem("부유한 사람의 원념", 2000, 1,5);
+            Rich.InitItem("고급 쿠키 세트", 2000, 1,5);
             Item.Add(Rich);
             //items Happy = new items();
             //Happy.InitSpItem("행복한 사람의 원념", 1000, 1);

@@ -61,7 +61,7 @@ namespace ForMyBrother
                     Console.ReadLine();
                     #endregion;
                     allEvent.GuideMessage();
-                    chButton.SetThree("집을 나선다", "던전에 입장한다","상점을 방문한다");
+                    chButton.SetThree("집을 나선다", "특수 임무 수행","편의점을 방문한다");
                     chButton.PrintThree();
                     chButton.ControlThree(6, 7,8,user);
                     if (chButton.choiceControlNum == 6)//6이면 무작위 이벤트 출력

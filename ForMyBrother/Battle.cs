@@ -39,9 +39,12 @@ namespace ForMyBrother
                     Console.WriteLine("\n{0}의 코인을 획득했습니다",otherCoin);
                     player.UserSetExp(mob1.Exp);
                     Console.WriteLine("\n{0}경험치 획득", mob1.Exp);
-                    if(player.exp == player.expMax) 
+                    
+                    if(player.exp >= player.expMax) 
                     { 
+                        Console.Clear() ;
                         player.LevelUp();
+                        Console.SetCursorPosition(10, 0);
                         Console.WriteLine("플레이어 레벨업!!!");
                     }
                     
@@ -63,6 +66,12 @@ namespace ForMyBrother
                 
             }
             Console.WriteLine("현재 사용자의 체력 = {0} --- 의지 ={1}", player.healthPoint, player.willPower);
+            Console.WriteLine("현재 경험치{0}", player.exp);
+            Console.WriteLine("현재 맥스 경험치{0}", player.expMax);
+            //Console.SetCursorPosition(5, 5);
+           // Console.SetCursorPosition(5, 6);
+
+
             Console.WriteLine("Press any key");
             Console.ReadLine();
 

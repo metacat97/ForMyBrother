@@ -47,7 +47,7 @@ namespace ForMyBrother
             speed += 1;
             wisdom += 1;    
             exp -= expMax;
-            expMax += (int)(expMax*1.1f);
+            expMax = (int)(expMax*1.2f);
         }
         public void Heal() //20% 회복시켜주는 함수
         {

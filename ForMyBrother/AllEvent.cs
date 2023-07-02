@@ -185,7 +185,7 @@ namespace ForMyBrother
         }
         #endregion
         #region 노멀이벤트
-        public void Nevent001()
+        public void Nevent001()//아니 이;건 사실 히든 이벤트다!
         {
             for (int j = 0; j < 81; j++)
             {
@@ -212,7 +212,7 @@ namespace ForMyBrother
                 Ui.TextAPEvent(pText.normalEvent002[j].chText, 50);
                 Console.ReadLine();
             }
-            chBtn.SettingTwoChoice("기습한다", "지나친다");
+            chBtn.SettingTwoChoice("주의를 준다", "지나친다");
             chBtn.PrintChoice();
             chBtn.ControlChoice(23, 24);
             if (chBtn.choiceControlNum == 23)
