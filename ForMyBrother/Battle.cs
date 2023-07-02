@@ -44,6 +44,7 @@ namespace ForMyBrother
                         player.LevelUp();
                         Console.WriteLine("플레이어 레벨업!!!");
                     }
+                    
                     break;
                 }
                 else if (player.healthPoint <= 0)

@@ -57,6 +57,11 @@ namespace ForMyBrother
                 healthPoint = healthPointMax;   
             }
         }
+        public void SubWill()
+        {
+            healthPoint = healthPointMax;
+            willPower -= 1;
+        }
         public void UserCritHit(int damage, int randomNum) // 30 % 확률로 크리티컬 피해를 입게끔
         {
             if (randomNum > 0 && randomNum < 4)
