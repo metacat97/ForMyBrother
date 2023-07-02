@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ForMyBrother
 {
     internal class Program
-    {
+    {//최종
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
