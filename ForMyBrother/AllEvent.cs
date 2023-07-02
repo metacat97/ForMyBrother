@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ForMyBrother
 {
-    //컨트롤 넘버 20까지 쓰임
+    //컨트롤 넘버 34까지 쓰임
     public class AllEvent
     {
 
@@ -292,33 +292,720 @@ namespace ForMyBrother
         }
         public void Nevent004()
         {
-
+            for (int j = 0; j < pText.normalEvent004.Count; j++)
+            {
+                if (pText.normalEvent004[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent004[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                   
+                    Ui.rollText(pText.normalEvent004[j].chName, pText.normalEvent004[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("고등어를 준다", "지나친다");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(33, 34);
+            if (chBtn.choiceControlNum == 33)
+            {
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 34)
+            {
+                endingCount +=1;
+            }
         }
         public void Nevent005()
         {
-
+            for (int j = 0; j < 7; j++)
+            {
+                if (pText.normalEvent005[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent005[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Ui.rollText(pText.normalEvent005[j].chName, pText.normalEvent005[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("음식을 준다", "지나친다");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(35, 36);
+            if (chBtn.choiceControlNum == 35)
+            {
+                for (int j = 7; j < pText.normalEvent005.Count; j++)
+                {
+                    if (pText.normalEvent005[j].chName == "시스템")
+                    {
+                        if (j %4 == 0)
+                        {
+                            Ui.MiddleClearUi();
+                        }
+                        Console.SetCursorPosition(3, 10+(j%4)*2);
+                        Ui.TextAPEvent(pText.normalEvent005[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Ui.rollText(pText.normalEvent005[j].chName, pText.normalEvent005[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                }
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 36)
+            {
+                endingCount +=1;
+            }
         }
         public void Nevent006()
         {
+            for (int j = 0; j < pText.normalEvent006.Count; j++)
+            {
+                if (pText.normalEvent006[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent006[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
 
+                    Ui.rollText(pText.normalEvent006[j].chName, pText.normalEvent006[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            //안좋은 이벤트 
+           
+            endingCount +=1;
         }
         public void Nevent007()
         {
+            for (int j = 0; j < pText.normalEvent007.Count; j++)
+            {
+                if (pText.normalEvent007[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent007[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
 
+                    Ui.rollText(pText.normalEvent007[j].chName, pText.normalEvent007[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("뭐가 있는지 살펴본다", "지나친다");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(37, 38);
+            if (chBtn.choiceControlNum == 37)
+            {
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 38)
+            {
+                endingCount +=1;
+            }
         }
         public void Nevent008()
         {
+            for (int j = 0; j < pText.normalEvent008.Count; j++)
+            {
+                if (pText.normalEvent008[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent008[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
 
+                    Ui.rollText(pText.normalEvent008[j].chName, pText.normalEvent008[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("기도한다", "부순다");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(39, 40);
+            if (chBtn.choiceControlNum == 39)
+            {
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 40)
+            {
+                endingCount +=1;
+            }
         }
         public void Nevent009()
         {
+            for (int j = 0; j < pText.normalEvent009.Count; j++)
+            {
+                if (pText.normalEvent009[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent009[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
 
+                    Ui.rollText(pText.normalEvent009[j].chName, pText.normalEvent009[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("의뢰를 받는다", "지나친다");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(41, 42);
+            if (chBtn.choiceControlNum == 41)
+            {
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 42)
+            {
+                endingCount +=1;
+            }
         }
         public void Nevent010()
         {
+            for (int j = 0; j < pText.normalEvent010.Count; j++)
+            {
+                if (pText.normalEvent010[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent010[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
 
+                    Ui.rollText(pText.normalEvent010[j].chName, pText.normalEvent010[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("치안대를 부른다", "지나친다");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(43, 44);
+            if (chBtn.choiceControlNum == 43)
+            {
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 44)
+            {
+                endingCount +=1;
+            }
         }
-
+        public void Nevent011()
+        {
+            for (int j = 0; j < 9; j++)
+            {
+                if (pText.normalEvent011[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent011[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Ui.rollText(pText.normalEvent011[j].chName, pText.normalEvent011[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("바닥에 놓여있는 컵라면 통을 던진다", "도망친다");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(45, 46);
+            if (chBtn.choiceControlNum == 45)
+            {
+                for (int j = 9; j < pText.normalEvent011.Count; j++)
+                {
+                    if (pText.normalEvent011[j].chName == "시스템")
+                    {
+                        if (j %4 == 0)
+                        {
+                            Ui.MiddleClearUi();
+                        }
+                        Console.SetCursorPosition(3, 10+(j%4)*2);
+                        Ui.TextAPEvent(pText.normalEvent011[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Ui.rollText(pText.normalEvent011[j].chName, pText.normalEvent011[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                }
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 46)
+            {
+                endingCount +=1;
+            }
+        }
+        public void Nevent012()
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                if (pText.normalEvent012[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent012[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Ui.rollText(pText.normalEvent012[j].chName, pText.normalEvent012[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("고개를 힘겹게 내젓는다", "힘차게 끄덕인다");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(47, 48);
+            if (chBtn.choiceControlNum == 47)
+            {
+                for (int j = 5; j < pText.normalEvent012.Count; j++)
+                {
+                    if (pText.normalEvent012[j].chName == "시스템")
+                    {
+                        if (j %4 == 0)
+                        {
+                            Ui.MiddleClearUi();
+                        }
+                        Console.SetCursorPosition(3, 10+(j%4)*2);
+                        Ui.TextAPEvent(pText.normalEvent012[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Ui.rollText(pText.normalEvent012[j].chName, pText.normalEvent012[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                }
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 48)
+            {
+                endingCount +=1;
+            }
+        }
+        public void Nevent013()
+        {
+            for (int j = 0; j < pText.normalEvent013.Count; j++)
+            {
+                if (pText.normalEvent013[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent013[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Ui.rollText(pText.normalEvent013[j].chName, pText.normalEvent013[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            endingCount +=1;
+        }
+        public void Nevent014()
+        {
+            for (int j = 0; j < pText.normalEvent014.Count; j++)
+            {
+                if (pText.normalEvent014[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent014[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Ui.rollText(pText.normalEvent014[j].chName, pText.normalEvent014[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            endingCount += 1;
+        }
+        public void Nevent015()
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                if (pText.normalEvent015[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent015[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Ui.rollText(pText.normalEvent015[j].chName, pText.normalEvent015[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("하지만 바쁘다, 떠난다", "아직도 옛일을 신경쓰고 있어? 괜찮아. ");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(49, 50);
+            if (chBtn.choiceControlNum == 49)
+            {
+                for (int j = 5; j < pText.normalEvent015.Count; j++)
+                {
+                    if (pText.normalEvent015[j].chName == "시스템")
+                    {
+                        if (j %4 == 0)
+                        {
+                            Ui.MiddleClearUi();
+                        }
+                        Console.SetCursorPosition(3, 10+(j%4)*2);
+                        Ui.TextAPEvent(pText.normalEvent015[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Ui.rollText(pText.normalEvent015[j].chName, pText.normalEvent015[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                }
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 50)
+            {
+                endingCount +=1;
+            }
+        }
+        public void Nevent016()
+        {
+            for (int j = 0; j < 2; j++)
+            {
+                if (pText.normalEvent016[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%3)*2);
+                    Ui.TextAPEvent(pText.normalEvent016[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Ui.rollText(pText.normalEvent016[j].chName, pText.normalEvent016[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("사람인가? 도와주세요!", "괴물이다 도망쳐!");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(51, 52);
+            if (chBtn.choiceControlNum == 51)
+            {
+                for (int j = 3; j < pText.normalEvent016.Count; j++)
+                {
+                    if (pText.normalEvent016[j].chName == "시스템")
+                    {
+                        if (j %9 == 0)
+                        {
+                            Ui.MiddleClearUi();
+                        }
+                        Console.SetCursorPosition(3, 10+(j%3)*2);
+                        Ui.TextAPEvent(pText.normalEvent016[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Ui.rollText(pText.normalEvent016[j].chName, pText.normalEvent016[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                }
+                //hp회복
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 52)
+            {
+                //전투 발생
+                endingCount +=1;
+            }
+        }
+        public void Nevent017()
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                if (pText.normalEvent017[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent017[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Ui.rollText(pText.normalEvent017[j].chName, pText.normalEvent017[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("그래 함께 해볼까?", "아 미안, 시간이 없어.");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(53, 54);
+            if (chBtn.choiceControlNum == 53)
+            {
+                for (int j = 4; j < pText.normalEvent017.Count; j++)
+                {
+                    if (pText.normalEvent017[j].chName == "시스템")
+                    {
+                        if (j %5 == 0)
+                        {
+                            Ui.MiddleClearUi();
+                        }
+                        Console.SetCursorPosition(3, 10+(j%4)*2);
+                        Ui.TextAPEvent(pText.normalEvent017[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Ui.rollText(pText.normalEvent017[j].chName, pText.normalEvent017[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                }
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 54)
+            {
+                endingCount +=1;
+            }
+        }
+        public void Nevent018()
+        {
+            for (int j = 0; j < 2; j++)
+            {
+                if (pText.normalEvent018[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent018[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Ui.rollText(pText.normalEvent018[j].chName, pText.normalEvent018[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("당겨본다", "지나친다");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(55, 56);
+            if (chBtn.choiceControlNum == 55)
+            {
+                for (int j = 2; j < 8; j++)
+                {
+                    if (pText.normalEvent018[j].chName == "시스템")
+                    {
+                        if (j %2 == 0 || j % 7 == 0)
+                        {
+                            Ui.MiddleClearUi();
+                        }
+                        Console.SetCursorPosition(3, 10+(j%4)*2);
+                        Ui.TextAPEvent(pText.normalEvent018[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Ui.rollText(pText.normalEvent018[j].chName, pText.normalEvent018[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                }
+                chBtn.SettingTwoChoice("용서한다", "협박한다");
+                chBtn.PrintChoice();
+                chBtn.ControlChoice(57, 58);
+                if (chBtn.choiceControlNum == 57)
+                {
+                    for (int j = 8; j < pText.normalEvent018.Count; j++)
+                    {
+                        if (pText.normalEvent018[j].chName == "시스템")
+                        {
+                            if (j %9 == 0)
+                            {
+                                Ui.MiddleClearUi();
+                            }
+                            Console.SetCursorPosition(3, 10+(j%4)*2);
+                            Ui.TextAPEvent(pText.normalEvent018[j].chText, 50);
+                            Console.ReadLine();
+                        }
+                        else
+                        {
+                            Ui.rollText(pText.normalEvent018[j].chName, pText.normalEvent018[j].chText, 50);
+                            Console.ReadLine();
+                        }
+                    }
+                }
+                else if(chBtn.choiceControlNum ==58)
+                {
+                    //hp 소모
+                    endingCount +=1;
+                }
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 56)
+            {
+                endingCount +=1;
+            }
+        }
+        public void Nevent019()
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                if (pText.normalEvent019[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent019[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Ui.rollText(pText.normalEvent019[j].chName, pText.normalEvent019[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("당당하게 맞선다", "도망친다");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(59, 60);
+            if (chBtn.choiceControlNum == 59)
+            {
+                for (int j = 5; j < pText.normalEvent019.Count; j++)
+                {
+                    if (pText.normalEvent019[j].chName == "시스템")
+                    {
+                        if (j %5 == 0)
+                        {
+                            Ui.MiddleClearUi();
+                        }
+                        Console.SetCursorPosition(3, 10+(j%5)*2);
+                        Ui.TextAPEvent(pText.normalEvent019[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Ui.rollText(pText.normalEvent019[j].chName, pText.normalEvent019[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                }
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 60)
+            {
+                endingCount +=1;
+                //게임종료 엔딩
+            }
+        }
+        public void Nevent020()
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                if (pText.normalEvent020[j].chName == "시스템")
+                {
+                    if (j %4 == 0)
+                    {
+                        Ui.MiddleClearUi();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.normalEvent020[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Ui.rollText(pText.normalEvent020[j].chName, pText.normalEvent020[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
+            chBtn.SettingTwoChoice("변명한다", "도주한다");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(61, 62);
+            if (chBtn.choiceControlNum == 61)
+            {
+                for (int j = 5; j < pText.normalEvent020.Count; j++)
+                {
+                    if (pText.normalEvent020[j].chName == "시스템")
+                    {
+                        if (j %4 == 0)
+                        {
+                            Ui.MiddleClearUi();
+                        }
+                        Console.SetCursorPosition(3, 10+(j%4)*2);
+                        Ui.TextAPEvent(pText.normalEvent020[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Ui.rollText(pText.normalEvent020[j].chName, pText.normalEvent020[j].chText, 50);
+                        Console.ReadLine();
+                    }
+                }
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 62)
+            {
+                endingCount +=1;
+            }
+        }
 
 
 
@@ -381,6 +1068,8 @@ namespace ForMyBrother
 
         #endregion
 
+    
+
         public void EventControl(int randomNumber)
         {
             if (randomNumber == 1)
@@ -397,112 +1086,112 @@ namespace ForMyBrother
             }
             else if (randomNumber == 4)
             {
-
+                Nevent004();
             }
             else if (randomNumber == 5)
             {
-
+                Nevent005();
             }
             else if (randomNumber == 6)
             {
-
+                Nevent006();
             }
             else if (randomNumber == 7)
             {
-
+                Nevent007();
             }
             else if (randomNumber == 8)
             {
-
+                Nevent008();
             }
             else if (randomNumber == 9)
             {
-
+                Nevent009();
             }
             else if (randomNumber == 10)
             {
-
+                Nevent010();
             }
             else if (randomNumber == 11)
             {
-
+                Nevent011();
             }
             else if (randomNumber == 12)
             {
-
+                Nevent012();
             }
             else if (randomNumber == 13)
             {
-
+                Nevent013();
             }
             else if (randomNumber == 14)
             {
-
+                Nevent014();
             }
             else if (randomNumber == 15)
             {
-
+                Nevent015();
             }
             else if (randomNumber == 16)
             {
-
+                Nevent016();
             }
             else if (randomNumber == 17)
             {
-
+                Nevent017();
             }
             else if (randomNumber == 18)
             {
-
+                Nevent018();
             }
             else if (randomNumber == 19)
             {
-
+                Nevent019();
             }
             else if (randomNumber == 20)
             {
-
+                Nevent020();
             }
-            else if (randomNumber == 21)
-            {
+            //else if (randomNumber == 21)
+            //{
 
-            }
-            else if (randomNumber == 22)
-            {
+            //}
+            //else if (randomNumber == 22)
+            //{
 
-            }
-            else if (randomNumber == 23)
-            {
+            //}
+            //else if (randomNumber == 23)
+            //{
 
-            }
-            else if (randomNumber == 24)
-            {
+            //}
+            //else if (randomNumber == 24)
+            //{
 
-            }
-            else if (randomNumber == 25)
-            {
+            //}
+            //else if (randomNumber == 25)
+            //{
 
-            }
-            else if (randomNumber == 26)
-            {
+            //}
+            //else if (randomNumber == 26)
+            //{
 
-            }
-            else if (randomNumber == 27)
-            {
+            //}
+            //else if (randomNumber == 27)
+            //{
 
-            }
-            else if (randomNumber == 28)
-            {
+            //}
+            //else if (randomNumber == 28)
+            //{
 
-            }
-            else if (randomNumber == 29)
-            {
+            //}
+            //else if (randomNumber == 29)
+            //{
 
-            }
-            else if (randomNumber == 30)
-            {
+            //}
+            //else if (randomNumber == 30)
+            //{
 
-            }
+            //}
 
         }
     }

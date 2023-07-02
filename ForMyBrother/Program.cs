@@ -73,7 +73,7 @@ namespace ForMyBrother
                         //{
                         //    allEvent.event001(); //이벤트 텍스트 모음 출력
                         //}
-                        //normalCount = 3;
+                        
                        // Console.ReadLine();
                        if (maineventCount  == 5) 
                         {
@@ -89,7 +89,12 @@ namespace ForMyBrother
                         }
                        else
                         {
-                            normalCount = rand.Next(1, 10);
+                            //normalCount = rand.Next(1, 10);
+                            normalCount = 20;
+                            if(normalCount == 6)
+                            { 
+                                user.SubWill(); 
+                            }    
                             allEvent.EventControl(normalCount);
                         }
                     }

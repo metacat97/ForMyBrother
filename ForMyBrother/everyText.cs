@@ -43,16 +43,16 @@ namespace ForMyBrother
         public List<textBase> normalEvent018 = new List<textBase>();
         public List<textBase> normalEvent019 = new List<textBase>();
         public List<textBase> normalEvent020 = new List<textBase>();
-        public List<textBase> normalEvent021 = new List<textBase>();
-        public List<textBase> normalEvent022 = new List<textBase>();
-        public List<textBase> normalEvent023 = new List<textBase>();
-        public List<textBase> normalEvent024 = new List<textBase>();
-        public List<textBase> normalEvent025 = new List<textBase>();
-        public List<textBase> normalEvent026 = new List<textBase>();
-        public List<textBase> normalEvent027 = new List<textBase>();
-        public List<textBase> normalEvent028 = new List<textBase>();
-        public List<textBase> normalEvent029 = new List<textBase>();
-        public List<textBase> normalEvent030 = new List<textBase>();
+        //public List<textBase> normalEvent021 = new List<textBase>();
+        //public List<textBase> normalEvent022 = new List<textBase>();
+        //public List<textBase> normalEvent023 = new List<textBase>();
+        //public List<textBase> normalEvent024 = new List<textBase>();
+        //public List<textBase> normalEvent025 = new List<textBase>();
+        //public List<textBase> normalEvent026 = new List<textBase>();
+        //public List<textBase> normalEvent027 = new List<textBase>();
+        //public List<textBase> normalEvent028 = new List<textBase>();
+        //public List<textBase> normalEvent029 = new List<textBase>();
+        //public List<textBase> normalEvent030 = new List<textBase>();
         #endregion
         public List<textBase> etc1Text = new List<textBase>();//기타1 리스트
         public List<textBase> etc2Text = new List<textBase>();//기타2 리스트
@@ -328,35 +328,22 @@ namespace ForMyBrother
 
             #region 중요 이벤트 대사 모음
             #region 중요1
-            textBase mainEvent001 = new textBase();
-            mainEvent001.InitText(2, "시스템", "집을 나서려는 순간");
-            mainEvent1.Add(mainEvent001);
+            textBase mainEvent101 = new textBase();
+            mainEvent101.InitText(2, "시스템", "집을 나서려는 순간");
+            mainEvent1.Add(mainEvent101);
 
-            textBase mainEvent002 = new textBase();
-            mainEvent002.InitText(2, "    ", "동생의 방에서 쿵 소리가 들려온다");
-            mainEvent1.Add(mainEvent002);
-
-            textBase mainEvent003 = new textBase();
-            mainEvent003.InitText(2, "    ", "당신은 곧장 동생의 방으로 달려가 ");
-            mainEvent1.Add(mainEvent003);
-
-            textBase mainEvent004 = new textBase();
-            mainEvent004.InitText(2, "    ", "문을 열고 무슨 일인지 보니까");
-            mainEvent1.Add(mainEvent004);
-
-            textBase mainEvent005 = new textBase();
-            mainEvent005.InitText(2, "    ", "쓰러져 있는 동생을 발견했다.");
-            mainEvent1.Add(mainEvent005);
-
-            textBase mainEvent006 = new textBase();
-            mainEvent006.InitText(2, "    ", "감기로 인해 열이 나는 것 같다.");
-            mainEvent1.Add(mainEvent006);
-
-            textBase mainEvent007 = new textBase();
-            mainEvent007.InitText(2, "    ", "내가 지금 할 수 있는 일은??");
-            mainEvent1.Add(mainEvent007);
+            
 
             #endregion
+
+
+            #region 중요2
+            textBase mainEvent201 = new textBase();
+            mainEvent201.InitText(2, "시스템", "");
+            mainEvent2.Add(mainEvent201);
+
+            #endregion
+
 
             #endregion
 
@@ -614,19 +601,19 @@ namespace ForMyBrother
             normalEvent004.Add(noEvent404);
 
             textBase noEvent405 = new textBase();
-            noEvent405.InitText(11, "시스템", "안녕하십니까? 저는 이 앞의 순은 철갑상어 여관에서 ");
+            noEvent405.InitText(11, "학생", "안녕하십니까? 저는 이 앞의 순은 철갑상어 여관에서 ");
             normalEvent004.Add(noEvent405);
 
             textBase noEvent406 = new textBase();
-            noEvent406.InitText(11, "시스템", "견습 요리사로 일하고 있습니다.요즘은 고등어 요리를 공부 중인데");
+            noEvent406.InitText(11, "학생", "견습 요리사로 일하고 있습니다.요즘은 고등어 요리를 공부 중인데");
             normalEvent004.Add(noEvent406);
 
             textBase noEvent407 = new textBase();
-            noEvent407.InitText(11, "시스템", " 개인적으로 매번 구매하기가 쉽지 않아서요. 요리는 공짜로 해드릴테니 ");
+            noEvent407.InitText(11, "학생", " 개인적으로 매번 구매하기가 쉽지 않아서요. 요리는 공짜로 해드릴테니 ");
             normalEvent004.Add(noEvent407);
 
             textBase noEvent408 = new textBase();
-            noEvent408.InitText(11, "시스템", "혹시 고등어가 있다면 하나 주실 수 있으신가요?");
+            noEvent408.InitText(11, "학생", "혹시 고등어가 있다면 하나 주실 수 있으신가요?");
             normalEvent004.Add(noEvent408);
 
 
@@ -654,35 +641,37 @@ namespace ForMyBrother
             normalEvent005.Add(noEvent505);
 
             textBase noEvent506 = new textBase();
-            noEvent506.InitText(11, "시스템", "배가 고파서 그런데 먹을걸 주면 ");
+            noEvent506.InitText(11, "이즈미", "배가 고파서 그런데 먹을걸 주면 ");
             normalEvent005.Add(noEvent506);
 
             textBase noEvent507 = new textBase();
-            noEvent507.InitText(11, "시스템", "도움이 될만한 물건을 드릴게요!");
+            noEvent507.InitText(11, "이즈미", "도움이 될만한 물건을 드릴게요!");
             normalEvent005.Add(noEvent507);
             //준다 안준다
             textBase noEvent508 = new textBase();
-            noEvent508.InitText(11, "시스템", "그녀는 해맑게 웃으며 당신에게 감사하다고 말했다.");
+            noEvent508.InitText(11, "이즈미", "그녀는 해맑게 웃으며 당신에게 감사하다고 말했다.");
             normalEvent005.Add(noEvent508);
 
             textBase noEvent509 = new textBase();
-            noEvent509.InitText(11, "시스템", "그리고 주머니에서 구슬을 하나 꺼내 내밀었다.");
+            noEvent509.InitText(11, "이즈미", "그리고 주머니에서 구슬을 하나 꺼내 내밀었다.");
             normalEvent005.Add(noEvent509);
 
 
             textBase noEvent510 = new textBase();
-            noEvent510.InitText(11, "시스템", "이게 도움이 되면 좋겠네요!");
+            noEvent510.InitText(11, "이즈미", "이게 도움이 되면 좋겠네요!");
             normalEvent005.Add(noEvent510);
 
 
             textBase noEvent511 = new textBase();
-            noEvent511.InitText(11, "시스템", "그럼 나중에 또 봐요!");
+            noEvent511.InitText(11, "이즈미", "그럼 나중에 또 봐요!");
             normalEvent005.Add(noEvent511);
 
 
             textBase noEvent512 = new textBase();
             noEvent512.InitText(11, "시스템", "그녀는 음식을 입에 넣고 떠나갔다.");
             normalEvent005.Add(noEvent512);
+
+           
 
             #endregion
 
@@ -697,7 +686,7 @@ namespace ForMyBrother
             //불에 태운다, 세게 턴다(힘확률 영향)
 
             textBase noEvent603 = new textBase();
-            noEvent603.InitText(11, "시스템", "당신은 불로 태워야 겠나는 생각이 들었으나 불을 지필 물건이 없다.");
+            noEvent603.InitText(11, "시스템", "당신은 불로 태워야 겠다는 생각이 들었으나 불을 지필 물건이 없다.");
             normalEvent006.Add(noEvent603);
             
 
@@ -726,11 +715,11 @@ namespace ForMyBrother
             
             #region noevent7
             textBase noEvent701 = new textBase();
-            noEvent701.InitText(11, "시스템", "당신은 길에서 살짝 벗어난 위치에 부서진 마차를 발견했다.");
+            noEvent701.InitText(11, "시스템", "당신은 길에서 살짝 벗어난 위치에 부서진 차를 발견했다.");
             normalEvent007.Add(noEvent701);
 
             textBase noEvent702 = new textBase();
-            noEvent702.InitText(11, "시스템", "마차에는 약간 손상되었지만, 잘 포장된 화물들이 있다.");
+            noEvent702.InitText(11, "시스템", "차는 약간 손상되었지만, 잘 포장된 화물들이 있다.");
             normalEvent007.Add(noEvent702);
             //뭐가 있는지 살펴본다   다른 곳으로 간다
             #endregion 
@@ -745,26 +734,26 @@ namespace ForMyBrother
             normalEvent008.Add(noEvent802);
 
             textBase noEvent803 = new textBase();
-            noEvent803.InitText(11, "시스템", "저 조각상으로 말할 것 같으면... 우리를 돌봐주는");
+            noEvent803.InitText(11, "노파", "저 조각상으로 말할 것 같으면... 우리를 돌봐주는");
             normalEvent008.Add(noEvent803);
 
             textBase noEvent804 = new textBase();
-            noEvent804.InitText(11, "시스템", "수호신을 기리는 조각이란다");
+            noEvent804.InitText(11, "노파", "수호신을 기리는 조각이란다");
             normalEvent008.Add(noEvent804);
 
             textBase noEvent805 = new textBase();
-            noEvent805.InitText(11, "시스템", "너도 정성껏 기도를 드리면, 축복을 내려주실지도 모르지.");
+            noEvent805.InitText(11, "노파", "너도 정성껏 기도를 드리면, 축복을 내려주실지도 모르지.");
             normalEvent008.Add(noEvent805);
             //기도한다, 지나간다, 부순다
             #endregion
 
             #region noevent9
             textBase noEvent901 = new textBase();
-            noEvent901.InitText(11, "시스템", "당신은 도시의 게시판에 공고를 붙이고 있는");
+            noEvent901.InitText(11, "시스템", "당신은 마을의 게시판에 공고를 붙이고 있는");
             normalEvent009.Add(noEvent901);
 
             textBase noEvent902 = new textBase();
-            noEvent902.InitText(11, "시스템", "정의실현부 학생을 발견했다. 공고를 붙인 그는 옆구리에 ");
+            noEvent902.InitText(11, "시스템", "정의실현부 학생을 발견했다. 공고를 붙인 학생은 옆구리에 ");
             normalEvent009.Add(noEvent902);
 
             textBase noEvent903 = new textBase();
@@ -783,9 +772,9 @@ namespace ForMyBrother
             noEvent906.InitText(11, "시스템", "불량배들을 몰아내주세요.");
             normalEvent009.Add(noEvent906);
             //의뢰를 받는다>전투발생, 하지 않는다 > 스킵 
-            textBase noEvent907 = new textBase();
-            noEvent907.InitText(11, "시스템", "당신은 게시판의 의뢰를 무시하고 다른곳으로 향했다.");
-            normalEvent009.Add(noEvent907);
+            //textBase noEvent907 = new textBase();
+            //noEvent907.InitText(11, "시스템", "당신은 게시판의 의뢰를 무시하고 다른곳으로 향했다.");
+            //normalEvent009.Add(noEvent907);
 
             #endregion
 
@@ -803,7 +792,7 @@ namespace ForMyBrother
             normalEvent010.Add(noEvent1003);
 
             textBase noEvent1004 = new textBase();
-            noEvent1004.InitText(11, "시스템", "하! 빨리 덤벼 죽여주마!");
+            noEvent1004.InitText(11, "시스템", "하! 빨리 덤벼 없애주마!");
             normalEvent010.Add(noEvent1004);
 
             textBase noEvent1005 = new textBase();
@@ -857,32 +846,36 @@ namespace ForMyBrother
             noEvent1110.InitText(11, "아루", "꺄악, 지금 뭐하는거야!! 이거 뭐야? 끈적거려!");
             normalEvent011.Add(noEvent1110);
 
+            textBase noEvent1111 = new textBase();
+            noEvent1111.InitText(11, "시스템", "당신은 간신히 도망치는데 성공했다");
+            normalEvent011.Add(noEvent1111);
+
             #endregion
 
             #region noevent12
             textBase noEvent1201 = new textBase();
             noEvent1201.InitText(11, "시스템", "당신은 힘이 다해 바닥에 넘어진다.");
-            normalEvent011.Add(noEvent1201);
+            normalEvent012.Add(noEvent1201);
 
 
             textBase noEvent1202 = new textBase();
             noEvent1202.InitText(11, "시스템", "누군가가 급하게 달려와 당신을 등에 업는다");
-            normalEvent011.Add(noEvent1202);
+            normalEvent012.Add(noEvent1202);
 
 
             textBase noEvent1203 = new textBase();
             noEvent1203.InitText(11, "시스템", "당신은 무언가 작고 따뜻한 등에 업힌 것에 부끄럽다");
-            normalEvent011.Add(noEvent1203);
+            normalEvent012.Add(noEvent1203);
 
 
             textBase noEvent1204 = new textBase();
             noEvent1204.InitText(11, "이오리", "서,선생님? 어디서 어떤 녀석이 이렇게 만든거야!?");
-            normalEvent011.Add(noEvent1204);
+            normalEvent012.Add(noEvent1204);
 
 
             textBase noEvent1205 = new textBase();
             noEvent1205.InitText(11, "이오리", "걱정하지 마. 선생님 내가 그들이 저지른 일에 대해 처벌할게!");
-            normalEvent011.Add(noEvent1205);
+            normalEvent012.Add(noEvent1205);
 
 
             //고개를 힘겹게 내젓는다 아래 대사 후 이벤트 종료.
@@ -890,129 +883,129 @@ namespace ForMyBrother
 
             textBase noEvent1206 = new textBase();
             noEvent1206.InitText(11, "이오리", "걱정마, 가벼운 벌을 줄거야, 학생답게 행동하는 법을 알도록.");
-            normalEvent011.Add(noEvent1206);
+            normalEvent012.Add(noEvent1206);
             #endregion
 
             #region noevent13
             textBase noEvent1301 = new textBase();
             noEvent1301.InitText(11, "시스템", "당신은 편의점 앞 쓰레기통에 걸려넘어진다.");
-            normalEvent011.Add(noEvent1301);
+            normalEvent013.Add(noEvent1301);
 
 
             textBase noEvent1302 = new textBase();
             noEvent1302.InitText(11, "시스템", "누군가 총총 걸어오는 소리가 들려온다.");
-            normalEvent011.Add(noEvent1302);
+            normalEvent013.Add(noEvent1302);
 
 
             textBase noEvent1303 = new textBase();
             noEvent1303.InitText(11, "미야코", "서-선생님?");
-            normalEvent011.Add(noEvent1303);
+            normalEvent013.Add(noEvent1303);
 
 
             textBase noEvent1304 = new textBase();
             noEvent1304.InitText(11, "시스템", "미야코는 앉아서 부상이나 출혈이 있는지 확인합니다.");
-            normalEvent011.Add(noEvent1304);
+            normalEvent013.Add(noEvent1304);
 
 
             textBase noEvent1305 = new textBase();
             noEvent1305.InitText(11, "미야코", "선생님! 무슨 일이 일었던거에요? 다쳤어요?");
-            normalEvent011.Add(noEvent1305);
+            normalEvent013.Add(noEvent1305);
 
 
             textBase noEvent1306 = new textBase();
             noEvent1306.InitText(11, "선생님", "배-배고파");
-            normalEvent011.Add(noEvent1306);
+            normalEvent013.Add(noEvent1306);
 
 
             textBase noEvent1307 = new textBase();
             noEvent1307.InitText(11, "시스템", "하지만 그 순간 미야코의 뱃속에서도 당신의 뱃속과 같은 소리가 울려퍼진다.");
-            normalEvent011.Add(noEvent1307);
+            normalEvent013.Add(noEvent1307);
 
             textBase noEvent1308 = new textBase();
             noEvent1308.InitText(11, "미야코", "그-근처의 쓰레기통을 찾아보도록 하죠, 아직 남아있는 곳이 있을 수 있어요");
-            normalEvent011.Add(noEvent1308);
+            normalEvent013.Add(noEvent1308);
 
 
             textBase noEvent1309 = new textBase();
             noEvent1309.InitText(11, "시스템", "미야코와 함께 폐기를 찾았다, 미야코와의 사이가 깊어진것같다!");
-            normalEvent011.Add(noEvent1309);
+            normalEvent013.Add(noEvent1309);
 
             #endregion
 
             #region noevent14
             textBase noEvent1401 = new textBase();
             noEvent1401.InitText(11, "시스템", "당신은 들개에 쫓기다 쓰레기통을 휘둘렀지만 생각보다 무거워 넘어집니다.");
-            normalEvent011.Add(noEvent1401);
+            normalEvent014.Add(noEvent1401);
 
 
             textBase noEvent1402 = new textBase();
             noEvent1402.InitText(11, "시스템", "당신 앞에 서 있는 몸집이 작은 소녀가 소매를 잡아당겨 멍함에서 벗어날 수 있습니다.");
-            normalEvent011.Add(noEvent1402);
+            normalEvent014.Add(noEvent1402);
 
 
             textBase noEvent1403 = new textBase();
             noEvent1403.InitText(11, "미유", "아, 안녕 미유! 정말 미안해, 거기서 못 봤어.");
-            normalEvent011.Add(noEvent1403);
+            normalEvent014.Add(noEvent1403);
 
 
             textBase noEvent1404 = new textBase();
             noEvent1404.InitText(11, "미유", "저-저는 괜찮아요 선생님... 아무도 눈치 못채는게 익숙해서...");
-            normalEvent011.Add(noEvent1404);
+            normalEvent014.Add(noEvent1404);
 
             textBase noEvent1405 = new textBase();
             noEvent1405.InitText(11, "시스템", "미유는 시선을 아래로 내리깔고 치마자락을 만지작거린다");
-            normalEvent011.Add(noEvent1405);
+            normalEvent014.Add(noEvent1405);
 
             textBase noEvent1406 = new textBase();
             noEvent1406.InitText(11, "선생님", "그-그래? 미안하니까 그 혹시 밥은 먹었니?");
-            normalEvent011.Add(noEvent1406);
+            normalEvent014.Add(noEvent1406);
 
             textBase noEvent1407 = new textBase();
             noEvent1407.InitText(11, "시스템", "미유는 누군가 자신에게 놀란듯 눈을 동그랗게 뜨고 당신을 올려다봅니다");
-            normalEvent011.Add(noEvent1407);
+            normalEvent014.Add(noEvent1407);
             textBase noEvent1408 = new textBase();
             noEvent1408.InitText(11, "미유", "정-정말인가요 선생님?");
-            normalEvent011.Add(noEvent1408);
+            normalEvent014.Add(noEvent1408);
 
             textBase noEvent1409 = new textBase();
             noEvent1409.InitText(11, "시스템", "당신은 그녀의 어깨를 꽉 쥐어줍니다.");
-            normalEvent011.Add(noEvent1409);
+            normalEvent014.Add(noEvent1409);
 
             textBase noEvent1410 = new textBase();
             noEvent1410.InitText(11, "선생님", "물론이지! 가자!");
-            normalEvent011.Add(noEvent1410);
+            normalEvent014.Add(noEvent1410);
 
             textBase noEvent1411 = new textBase();
             noEvent1411.InitText(11, "시스템", "하지만 당신은 지갑을 갖고오지않았다는 사실을 잊고있었다");
-            normalEvent011.Add(noEvent1411);
+            normalEvent014.Add(noEvent1411);
 
             textBase noEvent1412 = new textBase();
             noEvent1412.InitText(11, "시스템", "미유와 같이 모래를 주워먹었다, 미유와 관계가 깊어진것같다.");
-            normalEvent011.Add(noEvent1412);
+            normalEvent014.Add(noEvent1412);
 
             #endregion
 
             #region noevent15
             textBase noEvent1501 = new textBase();
             noEvent1501.InitText(11, "시스템", "과자와 음료수가 든 봉지를 들고 편의점을 나오니 입구 근처에 낯익은 인물이 서 있는 것이 보였다.");
-            normalEvent011.Add(noEvent1501);
+            normalEvent015.Add(noEvent1501);
 
 
             textBase noEvent1502 = new textBase();
             noEvent1502.InitText(11, "사오리", "서-선생님...여-여기서 만날줄은 몰랐어");
-            normalEvent011.Add(noEvent1502);
+            normalEvent015.Add(noEvent1502);
 
             textBase noEvent1503 = new textBase();
             noEvent1503.InitText(11, "선생님", "사오리, 오랜만이야. 잘 지냈어?");
-            normalEvent011.Add(noEvent1503);
+            normalEvent015.Add(noEvent1503);
 
             textBase noEvent1504 = new textBase();
             noEvent1504.InitText(11, "사오리", "괘-괜찮다, 그냥 일상에서 잠시 쉬고 있을 뿐이야.");
-            normalEvent011.Add(noEvent1504);
+            normalEvent015.Add(noEvent1504);
 
             textBase noEvent1505 = new textBase();
             noEvent1505.InitText(11, "시스템", "나는 그녀의 주위에서 우울한 공기를 느낄 수 있었고 그녀는 그녀의 마음에 뭔가가 있는 것 같았다.");
-            normalEvent011.Add(noEvent1505);
+            normalEvent015.Add(noEvent1505);
 
             //하지만 내인생이 바쁘다, 떠난다  이벤트 종료
             //아직도 옛일 신경쓰고있어? 난 괜찮아.추가 대화 후 종료
@@ -1020,80 +1013,80 @@ namespace ForMyBrother
 
             textBase noEvent1506 = new textBase();
             noEvent1506.InitText(11, "사오리", "...선생이야 말로 제대로 신경써");
-            normalEvent011.Add(noEvent1506);
+            normalEvent015.Add(noEvent1506);
 
             textBase noEvent1507 = new textBase();
             noEvent1507.InitText(11, "시스템", "사오리의 표정이 아까보다는 좋은 것 같다");
-            normalEvent011.Add(noEvent1507);
+            normalEvent015.Add(noEvent1507);
 
             #endregion
 
             #region noevent16
             textBase noEvent1601 = new textBase();
-            noEvent1601.InitText(11, "시스템", "뜨거운 태양이 끝없이 펼쳐진 모래사장을 내리쬐는 사막을 지나는데 문득 저 멀리 낯익은 모습이 보였다.");
-            normalEvent011.Add(noEvent1601);
+            noEvent1601.InitText(11, "시스템", "뜨거운 태양이 내리쬐는 사막을 지나는데 저 멀리 낯익은 모습이 보였다.");
+            normalEvent016.Add(noEvent1601);
 
             textBase noEvent1602 = new textBase();
             noEvent1602.InitText(11, "선생님", "누-누가 좀 도와줘!");
-            normalEvent011.Add(noEvent1602);
+            normalEvent016.Add(noEvent1602);
 
             textBase noEvent1603 = new textBase();
             noEvent1603.InitText(11, "시스템", "눈앞에서 무언가 검은형태의 것이 다가오는 것으로 보인다, 저건?");
-            normalEvent011.Add(noEvent1603);
+            normalEvent016.Add(noEvent1603);
 
             //괴물이다! 도망쳐!!  전투발생 후 이벤트 종료
             //사람인가? 도와주세요!대화이벤트 진행
 
             textBase noEvent1604 = new textBase();
             noEvent1604.InitText(11, "선생님", "시-시로코?");
-            normalEvent011.Add(noEvent1604);
+            normalEvent016.Add(noEvent1604);
 
             textBase noEvent1605 = new textBase();
             noEvent1605.InitText(11, "시로코", "응");
-            normalEvent011.Add(noEvent1605);
+            normalEvent016.Add(noEvent1605);
 
             textBase noEvent1606 = new textBase();
             noEvent1606.InitText(11, "선생님", "무-물 좀");
-            normalEvent011.Add(noEvent1606);
+            normalEvent016.Add(noEvent1606);
 
             textBase noEvent1607 = new textBase();
             noEvent1607.InitText(11, "시로코", "선생, 단련 부족");
-            normalEvent011.Add(noEvent1607);
+            normalEvent016.Add(noEvent1607);
 
             textBase noEvent1608 = new textBase();
             noEvent1608.InitText(11, "선생님", "뭐?우-우선 물을 좀");
-            normalEvent011.Add(noEvent1608);
+            normalEvent016.Add(noEvent1608);
 
             textBase noEvent1609 = new textBase();
             noEvent1609.InitText(11, "시로코", "나를 잡으면 줄게, 뛰어");
-            normalEvent011.Add(noEvent1609);
+            normalEvent016.Add(noEvent1609);
 
             textBase noEvent1610 = new textBase();
             noEvent1610.InitText(11, "시스템", "시로코와 미친듯이 달리기 연습했다, 건강해진것같다.");
-            normalEvent011.Add(noEvent1610);
+            normalEvent016.Add(noEvent1610);
             //최대체력 10+
 
             #endregion
 
             #region noevent17
             textBase noEvent1701 = new textBase();
-            noEvent1701.InitText(11, "시스템", "밀레니엄의 한적한 거리를 함께 걷다 보면 아리스의 시선이 먼 곳에서 흥분으로 바뀌고 새로운 게임을 꺼내는 것을 볼 수 있습니다.");
-            normalEvent011.Add(noEvent1701);
+            noEvent1701.InitText(11, "시스템", "아리스가 흥분하며 내가 달려온다");
+            normalEvent017.Add(noEvent1701);
 
 
             textBase noEvent1702 = new textBase();
             noEvent1702.InitText(11, "아리스", "선생님, 모두 함께 새로운 프로그램을 개발했습니다!");
-            normalEvent011.Add(noEvent1702);
+            normalEvent017.Add(noEvent1702);
 
 
             textBase noEvent1703 = new textBase();
             noEvent1703.InitText(11, "아리스", "플레이어가 다양한 시나리오에서 다양한 캐릭터와 상호 작용할 수 있는 가상 시뮬레이션입니다!");
-            normalEvent011.Add(noEvent1703);
+            normalEvent017.Add(noEvent1703);
 
 
             textBase noEvent1704 = new textBase();
             noEvent1704.InitText(11, "시스템", "그녀는 기대감을 가지고 당신에게로 향합니다.");
-            normalEvent011.Add(noEvent1704);
+            normalEvent017.Add(noEvent1704);
 
 
 
@@ -1103,112 +1096,238 @@ namespace ForMyBrother
 
             textBase noEvent1705 = new textBase();
             noEvent1705.InitText(11, "아리스", "좋아요! 선생님 이쪽으로 와주세요!");
-            normalEvent011.Add(noEvent1705);
+            normalEvent017.Add(noEvent1705);
 
             textBase noEvent1706 = new textBase();
             noEvent1706.InitText(11, "시스템", "그녀는 당신을 빈 교실로 안내하고 컴퓨터 앞에 앉힙니다.");
-            normalEvent011.Add(noEvent1706);
+            normalEvent017.Add(noEvent1706);
 
             textBase noEvent1707 = new textBase();
             noEvent1707.InitText(11, "시스템", "아리스와 놀랍고 똥겜같은 게임으로 즐거운 시간을 보냅니다.");
-            normalEvent011.Add(noEvent1707);
+            normalEvent017.Add(noEvent1707);
 
 
             textBase noEvent1708 = new textBase();
-            noEvent1708.InitText(11, "시스템", "아리스와의 관계가 오묘해진것같다.");
-            normalEvent011.Add(noEvent1708);
+            noEvent1708.InitText(11, "시스템", "아리스와의 관계가 좋아졌다");
+            normalEvent017.Add(noEvent1708);
 
             #endregion
 
             #region noevent18
             textBase noEvent1801 = new textBase();
-            noEvent1801.InitText(11, "시스템", "");
-            normalEvent008.Add(noEvent1801);
+            noEvent1801.InitText(11, "시스템", "당신은 길을 걷다가 수상하게 튀어나온 줄을 바라봅니다.");
+            normalEvent018.Add(noEvent1801);
+
+
+            textBase noEvent1802 = new textBase();
+            noEvent1802.InitText(11, "선생님", "이게 뭐지?");
+            normalEvent018.Add(noEvent1802);
+
+
+            //당겨본다
+            //당겨본다
+
+            textBase noEvent1803 = new textBase();
+            noEvent1803.InitText(11, "시스템", "갑자스럽게 치익하는 소리와 함께 거대한 폭발이 일어났다");
+            normalEvent018.Add(noEvent1803);
+
+            textBase noEvent1804 = new textBase();
+            noEvent1804.InitText(11, "시스템", "하루카는 그것을 보고 당황하기 시작했고 눈물이 얼굴을 타고 흘러내렸다.");
+            normalEvent018.Add(noEvent1804);
+
+
+            textBase noEvent1805 = new textBase();
+            noEvent1805.InitText(11, "하루카", "죄-죄송합니다...제-제발 게헨나 학원에서 제적시키지 말아주세요!!");
+            normalEvent018.Add(noEvent1805);
+            textBase noEvent1806 = new textBase();
+            noEvent1806.InitText(11, "시스템", "다행히도 폭발은 기적적으로 빗겨나갔다 당신은 하루카를 쳐다본다");
+            normalEvent018.Add(noEvent1806);
+
+            textBase noEvent1807 = new textBase();
+            noEvent1807.InitText(11, "하루카", "다-다시는 이런 일이 안 일어나게...아-아니 선생을 제거하면 목격자가 없으니까...");
+            normalEvent018.Add(noEvent1807);
+
+            textBase noEvent1808 = new textBase();
+            noEvent1808.InitText(11, "시스템", "슬슬, 가만놔두면 위험해보인다");
+            normalEvent018.Add(noEvent1808);
+
+            //협박한다 체력 피해를 입고 이벤트 종료
+            //용서해준다다음 대사로 이동
+
+
+            textBase noEvent1809 = new textBase();
+            noEvent1809.InitText(11, "하루카", "하-하지만 내가 모든 걸 망쳤는데...규칙도 어겨버렸는데...");
+            normalEvent018.Add(noEvent1809);
+
+
+            textBase noEvent1810 = new textBase();
+            noEvent1810.InitText(11, "시스템", "하루카를 달래주며 인생삼담까지 해주었다.");
+            normalEvent018.Add(noEvent1810);
+
+
+            textBase noEvent1811 = new textBase();
+            noEvent1811.InitText(11, "시스템", "지갑이 얇아지긴 했지만 하루카는 웃는얼굴로 떠났다.");
+            normalEvent018.Add(noEvent1811);
+
+            textBase noEvent1812 = new textBase();
+            noEvent1812.InitText(11, "시스템", "하루카와의 관게가 좋아진 것 같다.");
+            normalEvent018.Add(noEvent1812);
 
             #endregion
 
             #region noevent19
             textBase noEvent1901 = new textBase();
-            noEvent1901.InitText(11, "시스템", "");
+            noEvent1901.InitText(11, "시스템", "눈앞에서 탱크가 폭발하며 누군가가 착지한다.");
             normalEvent019.Add(noEvent1901);
+
+            textBase noEvent1902 = new textBase();
+            noEvent1902.InitText(11, "와카모", "후후후♥ 선생님, 당신은 저를 오래 기다리게 만들었습니다.");
+            normalEvent019.Add(noEvent1902);
+
+            textBase noEvent1903 = new textBase();
+            noEvent1903.InitText(11, "시스템", "당신은 무언가 불길한 느낌이 들어 벗어나려고한다.");
+            normalEvent019.Add(noEvent1903);
+
+            textBase noEvent1904 = new textBase();
+            noEvent1904.InitText(11, "와카모", "우후후⋯ 후후후후후⋯");
+            normalEvent019.Add(noEvent1904);
+
+            textBase noEvent1905 = new textBase();
+            noEvent1905.InitText(11, "와카모", "하아, 이 흘러넘치는 행복⋯ 저를 이렇게 만들어버린 책임, 져 주.세.요? ");
+            normalEvent019.Add(noEvent1905);
+
+            //도망친다 --게임오버
+            //당당하게 맞선다  --이벤트진행
+
+            textBase noEvent1906 = new textBase();
+            noEvent1906.InitText(11, "시스템", "당신은 당당하게 와카모의 손을 잡는다");
+            normalEvent019.Add(noEvent1906);
+
+            textBase noEvent1907 = new textBase();
+            noEvent1907.InitText(11, "와카모", "어머 비록 폭염과 화약 연기가 자욱하다고 해도⋯⋯");
+            normalEvent019.Add(noEvent1907);
+
+            textBase noEvent1908 = new textBase();
+            noEvent1908.InitText(11, "와카모", "네에, 저 와카모⋯. 절대로  이 손을 놓치지 않을 거랍니다♥");
+            normalEvent019.Add(noEvent1908);
+
+            textBase noEvent1909 = new textBase();
+            noEvent1909.InitText(11, "시스템", "와카모에게 붙들려 데이트로 하루를 보냈다");
+            normalEvent019.Add(noEvent1909);
+
+            textBase noEvent1910 = new textBase();
+            noEvent1910.InitText(11, "시스템", "중간에 경찰학원에게 쫓기기도 했지만 와카모와 인연이 깊어진것같다!");
+            normalEvent019.Add(noEvent1910);
 
             #endregion
 
             #region noevent20
             textBase noEvent2001 = new textBase();
-            noEvent2001.InitText(11, "시스템", "");
+            noEvent2001.InitText(11, "시스템", "식당에서 나오자 어딘선가 서늘한 기운이 느껴진다");
             normalEvent020.Add(noEvent2001);
 
-            #endregion
 
-            #region noevent21
-            textBase noEvent2101 = new textBase();
-            noEvent2101.InitText(11, "시스템", "");
-            normalEvent008.Add(noEvent2101);
+            textBase noEvent2002 = new textBase();
+            noEvent2002.InitText(11, "유우카", "선・생・님・?");
+            normalEvent020.Add(noEvent2002);
 
-            #endregion
+            textBase noEvent2003 = new textBase();
+            noEvent2003.InitText(11, "시스템", "그녀의 손에는 요금고지서가 쥐고있었다");
+            normalEvent020.Add(noEvent2003);
 
-            #region noevent22
-            textBase noEvent2201 = new textBase();
-            noEvent2201.InitText(11, "시스템", "");
-            normalEvent022.Add(noEvent2201);
+            textBase noEvent2004 = new textBase();
+            noEvent2004.InitText(11, "유우카", "선생님? 정말이상하네요 이번달 지출이 생각보다 많아요?");
+            normalEvent020.Add(noEvent2004);
 
-            #endregion
+            textBase noEvent2005 = new textBase();
+            noEvent2005.InitText(11, "시스템", "유우카는 입이 웃고있는데 눈이 전혀 웃고있지않았다");
+            normalEvent020.Add(noEvent2005);
 
-            #region noevent23
-            textBase noEvent2301 = new textBase();
-            noEvent2301.InitText(11, "시스템", "");
-            normalEvent023.Add(noEvent2301);
 
-            #endregion
+            //변명한다 선택지 효과없음
+            //도주한다 선택지 효과없음
 
-            #region noevent24
-            textBase noEvent2401 = new textBase();
-            noEvent2401.InitText(11, "시스템", "");
-            normalEvent024.Add(noEvent2401);
+            textBase noEvent2006 = new textBase();
+            noEvent2006.InitText(11, "유우카", "정말이지…어른이면서 어린이처럼 굴려하시고 안되겠네요");
+            normalEvent020.Add(noEvent2006);
 
-            #endregion
+            textBase noEvent2007 = new textBase();
+            noEvent2007.InitText(11, "유우카", "타의 모범이 되어야 할 교육자로서 참으세요");
+            normalEvent020.Add(noEvent2007);
 
-            #region noevent25
-            textBase noEvent2501 = new textBase();
-            noEvent2501.InitText(11, "시스템", "");
-            normalEvent025.Add(noEvent2501);
+            textBase noEvent2008 = new textBase();
+            noEvent2008.InitText(11, "시스템", "모든 돈을 압수당했다");
+            normalEvent020.Add(noEvent2008);
 
             #endregion
 
-            #region noevent26
-            textBase noEvent2601 = new textBase();
-            noEvent2601.InitText(11, "시스템", "");
-            normalEvent026.Add(noEvent2601);
+            #region noevent21~30 //쓰지 못한 것들
+            //textBase noEvent2101 = new textBase();
+            //noEvent2101.InitText(11, "시스템", "");
+            //normalEvent008.Add(noEvent2101);
 
-            #endregion
+            //#endregion
 
-            #region noevent27
-            textBase noEvent2701 = new textBase();
-            noEvent2701.InitText(11, "시스템", "");
-            normalEvent027.Add(noEvent2701);
+            //#region noevent22
+            //textBase noEvent2201 = new textBase();
+            //noEvent2201.InitText(11, "시스템", "");
+            //normalEvent022.Add(noEvent2201);
 
-            #endregion
+            //#endregion
 
-            #region noevent28
-            textBase noEvent2801 = new textBase();
-            noEvent2801.InitText(11, "시스템", "");
-            normalEvent028.Add(noEvent2801);
+            //#region noevent23
+            //textBase noEvent2301 = new textBase();
+            //noEvent2301.InitText(11, "시스템", "");
+            //normalEvent023.Add(noEvent2301);
 
-            #endregion
+            //#endregion
 
-            #region noevent29
-            textBase noEvent2901 = new textBase();
-            noEvent2901.InitText(11, "시스템", "");
-            normalEvent029.Add(noEvent2901);
+            //#region noevent24
+            //textBase noEvent2401 = new textBase();
+            //noEvent2401.InitText(11, "시스템", "");
+            //normalEvent024.Add(noEvent2401);
 
-            #endregion
+            //#endregion
 
-            #region noevent30
-            textBase noEvent3001 = new textBase();
-            noEvent3001.InitText(11, "시스템", "");
-            normalEvent030.Add(noEvent3001);
+            //#region noevent25
+            //textBase noEvent2501 = new textBase();
+            //noEvent2501.InitText(11, "시스템", "");
+            //normalEvent025.Add(noEvent2501);
 
+            //#endregion
+
+            //#region noevent26
+            //textBase noEvent2601 = new textBase();
+            //noEvent2601.InitText(11, "시스템", "");
+            //normalEvent026.Add(noEvent2601);
+
+            //#endregion
+
+            //#region noevent27
+            //textBase noEvent2701 = new textBase();
+            //noEvent2701.InitText(11, "시스템", "");
+            //normalEvent027.Add(noEvent2701);
+
+            //#endregion
+
+            //#region noevent28
+            //textBase noEvent2801 = new textBase();
+            //noEvent2801.InitText(11, "시스템", "");
+            //normalEvent028.Add(noEvent2801);
+
+            //#endregion
+
+            //#region noevent29
+            //textBase noEvent2901 = new textBase();
+            //noEvent2901.InitText(11, "시스템", "");
+            //normalEvent029.Add(noEvent2901);
+
+            //#endregion
+
+            //#region noevent30
+            //textBase noEvent3001 = new textBase();
+            //noEvent3001.InitText(11, "시스템", "");
+            //normalEvent030.Add(noEvent3001);
             #endregion
             #endregion
 

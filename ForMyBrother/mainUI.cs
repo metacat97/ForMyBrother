@@ -229,6 +229,7 @@ namespace ForMyBrother
             Console.SetCursorPosition(30,40);
             Console.WriteLine(" "+text+"                                                               ");
         }//메인화면에 항상 보여줄
+
         public void userTextBorder()
         {
             Console.SetCursorPosition(0,consoleHeight-14 );//주인공 대사
