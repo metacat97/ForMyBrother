@@ -30,6 +30,7 @@ namespace ForMyBrother
                 allEvent.endingCount = 0;
                 int normalCount = 0;
                 int alleventCount = 0;
+                int maineventCount = 0;
                 ui.setUi();//콘솔창 크기 고정
                 ui.PrintUi();//처음 도화지 출력
                 ui.PrintTitle(); // 타이틀 로고 출력
@@ -65,6 +66,7 @@ namespace ForMyBrother
                     chButton.ControlThree(6, 7,8,user);
                     if (chButton.choiceControlNum == 6)//6이면 무작위 이벤트 출력
                     {
+                        maineventCount += 1;
                         alleventCount += 1;
                         ui.MiddleClearUi();//여기다가 중앙화면만 지워주는 공백 그려줄려고요
                         //if (alleventCount == 1)
@@ -73,8 +75,23 @@ namespace ForMyBrother
                         //}
                         //normalCount = 3;
                        // Console.ReadLine();
-                        normalCount = rand.Next(1, 10);
-                        allEvent.EventControl(normalCount);
+                       if (maineventCount  == 5) 
+                        {
+                            
+                        }
+                       else if(maineventCount == 10)
+                        {
+
+                        }
+                       else if(maineventCount == 15)
+                        {
+
+                        }
+                       else
+                        {
+                            normalCount = rand.Next(1, 10);
+                            allEvent.EventControl(normalCount);
+                        }
                     }
                     else if (chButton.choiceControlNum == 7)
                     {

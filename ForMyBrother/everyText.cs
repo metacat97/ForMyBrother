@@ -329,14 +329,39 @@ namespace ForMyBrother
             #region 중요 이벤트 대사 모음
             #region 중요1
             textBase mainEvent001 = new textBase();
-            mainEvent001.InitText(2, "시스템", "당신은 길을 걷다가 ");
+            mainEvent001.InitText(2, "시스템", "집을 나서려는 순간");
             mainEvent1.Add(mainEvent001);
+
+            textBase mainEvent002 = new textBase();
+            mainEvent002.InitText(2, "    ", "동생의 방에서 쿵 소리가 들려온다");
+            mainEvent1.Add(mainEvent002);
+
+            textBase mainEvent003 = new textBase();
+            mainEvent003.InitText(2, "    ", "당신은 곧장 동생의 방으로 달려가 ");
+            mainEvent1.Add(mainEvent003);
+
+            textBase mainEvent004 = new textBase();
+            mainEvent004.InitText(2, "    ", "문을 열고 무슨 일인지 보니까");
+            mainEvent1.Add(mainEvent004);
+
+            textBase mainEvent005 = new textBase();
+            mainEvent005.InitText(2, "    ", "쓰러져 있는 동생을 발견했다.");
+            mainEvent1.Add(mainEvent005);
+
+            textBase mainEvent006 = new textBase();
+            mainEvent006.InitText(2, "    ", "감기로 인해 열이 나는 것 같다.");
+            mainEvent1.Add(mainEvent006);
+
+            textBase mainEvent007 = new textBase();
+            mainEvent007.InitText(2, "    ", "내가 지금 할 수 있는 일은??");
+            mainEvent1.Add(mainEvent007);
+
             #endregion
 
             #endregion
 
             #region 노멀 이벤트 
-           
+
             textBase noEvent201 = new textBase();
             noEvent201.InitText(11, "시스템", " 숲 속에서 정적을 깨는 알 수 없는 동물의 울부짖음이 들렸다.");
             normalEvent002.Add(noEvent201);
@@ -786,9 +811,22 @@ namespace ForMyBrother
             #endregion
 
             #region noevent11
+
             textBase noEvent1101 = new textBase();
             noEvent1101.InitText(11, "시스템", "");
             normalEvent011.Add(noEvent1101);
+
+            textBase noEvent1102 = new textBase();
+            noEvent1102.InitText(11, "김형준", "안녕하세요. 주우영씨");
+            normalEvent011.Add(noEvent1102);
+
+            textBase noEvent1103 = new textBase();
+            noEvent1103.InitText(11, "시스템", "");
+            normalEvent011.Add(noEvent1103);
+            
+            textBase noEvent1104 = new textBase();
+            noEvent1104.InitText(11, "시스템", "");
+            normalEvent011.Add(noEvent1104);
 
             #endregion
 

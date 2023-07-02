@@ -165,7 +165,23 @@ namespace ForMyBrother
         }
         public void event002()
         {
-
+            for (int j = 0; j < pText.mainEvent1.Count; j++)
+            {
+                Console.SetCursorPosition(1, 20+(j%4)*2);
+                Ui.TextAPEvent(pText.mainEvent1[j].chText, 50);
+                Console.ReadLine();
+            }
+            chBtn.SettingTwoChoice("기습한다", "지나친다");
+            chBtn.PrintChoice();
+            chBtn.ControlChoice(27, 28);
+            if (chBtn.choiceControlNum == 27)
+            {
+                endingCount +=1;
+            }
+            else if (chBtn.choiceControlNum == 28)
+            {
+                endingCount +=1;
+            }
         }
         #endregion
         #region 노멀이벤트

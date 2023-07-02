@@ -30,8 +30,14 @@ namespace ForMyBrother
             int[] mapItemY = new int[100];
             int[] mapItemX = new int[100];
             //이벤트 담을 배열
-            int[] eventY = new int[100];
-            int[] eventX = new int[100];
+            int[] mapeventY = new int[100];
+            int[] mapeventX = new int[100];
+            //적 담을 배열
+            int[] mapenemyY = new int[100];
+            int[] mapenemyX = new int[100];
+            //포탈 담을 배열
+            int[] mapportalY = new int[100];
+            int[] mapportalX = new int[100];
             //escape count 만들기
             int escCount = 1;
 
@@ -64,19 +70,34 @@ namespace ForMyBrother
                 map[wallY[i], wallX[i]] = "■";
             }
             //아이템 생성
-            for (int i = 0; i <3; i++)
-            {
-                mapItemY[i]=rand.Next(2, yFirst_Map_Area-2);
-                mapItemX[i]=rand.Next(2, xFirst_Map_Area-2);
-                map[mapItemY[i], mapItemX[i]] = "ⓐ";
-            }
-            //이벤트 생성
             for (int i = 0; i <1; i++)
             {
                 mapItemY[i]=rand.Next(2, yFirst_Map_Area-2);
                 mapItemX[i]=rand.Next(2, xFirst_Map_Area-2);
-                map[mapItemY[i], mapItemX[i]] = "？";
+                map[mapItemY[i], mapItemX[i]] = "♬";
             }
+            //이벤트 생성
+            for (int i = 0; i <1; i++)
+            {
+                mapeventY[i]=rand.Next(2, yFirst_Map_Area-2);
+                mapeventX[i]=rand.Next(2, xFirst_Map_Area-2);
+                map[mapeventY[i], mapeventX[i]] = "？";
+            }
+            //적 생성
+            for (int i = 0; i <4; i++)
+            {
+                mapenemyY[i]=rand.Next(2, yFirst_Map_Area-2);
+                mapenemyX[i]=rand.Next(2, xFirst_Map_Area-2);
+                map[mapenemyY[i], mapenemyX[i]] = "ⓐ";
+            }
+            //포탈
+            for (int i = 0; i <1; i++)
+            {
+                mapportalY[i]=1;
+                mapportalX[i]=xFirst_Map_Area/2;
+                map[mapportalY[i], mapportalX[i]] = "★";
+            }
+
             #endregion;
             Console.SetCursorPosition(0, 0);
             for (int i = 0; i < yFirst_Map_Area; i++)
@@ -135,7 +156,7 @@ namespace ForMyBrother
                     {
                         if (map[(player.uyPos-1), player.uxPos] == "■")
                         {
-
+                            Console.WriteLine("벽에 막혀 갈 수 없습니다.");
                         }
                         else if (map[(player.uyPos-1), player.uxPos] == "ⓐ")
                         {
@@ -147,7 +168,25 @@ namespace ForMyBrother
                         }
                         else if(map[(player.uyPos-1), player.uxPos] == "？")
                         {
+                            Console.WriteLine("이벤트 발생");
 
+                            player.SubyPos(1);
+                            map[player.uyPos, player.uxPos] ="♥";
+                            map[player.uyPos+1, player.uxPos] ="　";
+                        }
+                        else if (map[(player.uyPos-1), player.uxPos] == "♬")
+                        {
+                            Console.WriteLine("체력을 회복합니다");
+                           
+                            player.Heal();
+
+                            player.SubyPos(1);
+                            map[player.uyPos, player.uxPos] ="♥";
+                            map[player.uyPos+1, player.uxPos] ="　";
+                        }
+                        else if (map[(player.uyPos-1), player.uxPos] == "★")
+                        {
+                            Console.WriteLine("포탈 발견");
                         }
                         else
                         {
@@ -169,14 +208,10 @@ namespace ForMyBrother
                     {
                         if (map[(player.uyPos+1), player.uxPos] == "■")
                         {
-                            //Console.WriteLine("적 문양 잘 만남");
-                            //player.SumyPos(1);
-                            //map[player.uyPos, player.uxPos] ="♥";
-                            //map[player.uyPos-1, player.uxPos] ="　";
+                            Console.WriteLine("벽에 막혀 갈 수 없습니다.");
                         }
                         else if (map[(player.uyPos+1), player.uxPos] == "ⓐ")
                         {
-                            //Console.WriteLine("클로버 문양 발견");
                             battle.startBattle(player);
 
                             player.SumyPos(1);
@@ -185,12 +220,26 @@ namespace ForMyBrother
                         }
                         else if (map[(player.uyPos+1), player.uxPos] == "？")
                         {
-                            Console.WriteLine("클로버 문양 발견");
+                            Console.WriteLine("이벤트 발견");
 
+                            player.SumyPos(1);
+                            map[player.uyPos, player.uxPos] ="♥";
+                            map[player.uyPos-1, player.uxPos] ="　";
+                        }
+                        else if (map[(player.uyPos+1), player.uxPos] == "♬")
+                        {
+                            Console.WriteLine("체력을 회복합니다");
+                            
+                            player.Heal();
 
-                            //player.SumyPos(1);
-                            //map[player.uyPos, player.uxPos] ="♥";
-                            //map[player.uyPos-1, player.uxPos] ="　";
+                            player.SumyPos(1);
+                            map[player.uyPos, player.uxPos] ="♥";
+                            map[player.uyPos-1, player.uxPos] ="　";
+                        }
+                        else if (map[(player.uyPos+1), player.uxPos] == "★")
+                        {
+                            Console.WriteLine("포탈 발견");
+
                         }
                         else
                         {
@@ -213,27 +262,36 @@ namespace ForMyBrother
                     {
                         if (map[player.uyPos, (player.uxPos-1)] == "■")
                         {
-                            //Console.WriteLine("벽 발견");
-                            //player.SubxPos(1);
-                            //map[player.uyPos, player.uxPos] ="♥";
-                            //map[player.uyPos, player.uxPos+1] ="　";
+                           
                         }
                         else if (map[player.uyPos, (player.uxPos-1)] == "ⓐ")
                         {
                             //Console.WriteLine("적 발견");
                             battle.startBattle(player);
-                            player.SubxPos(1);
-                            map[player.uyPos, player.uxPos] ="♥";
-                            map[player.uyPos, player.uxPos+1] ="　";
+                            
 
                         }
                         else if (map[player.uyPos, (player.uxPos-1)] == "？")
                         {
-                            Console.WriteLine("클로버 발견");
-                            //player.SubxPos(1);
-                            //map[player.uyPos, player.uxPos] ="♥";
-                            //map[player.uyPos, player.uxPos+1] ="　";
+                            Console.WriteLine("이벤트 발생");
+                            player.SubxPos(1);
+                            map[player.uyPos, player.uxPos] ="♥";
+                            map[player.uyPos, player.uxPos+1] ="　";
+                        }
+                        else if (map[player.uyPos, (player.uxPos-1)] == "♬")
+                        {
+                            Console.WriteLine("체력을 회복합니다");
+                            
+                            player.Heal();
 
+                            player.SubxPos(1);
+                            map[player.uyPos, player.uxPos] ="♥";
+                            map[player.uyPos, player.uxPos+1] ="　";
+                        }
+                        else if (map[player.uyPos, (player.uxPos-1)] == "★")
+                        {
+                            Console.WriteLine("포탈 발견");
+                           
                         }
                         else
                         {
@@ -255,10 +313,8 @@ namespace ForMyBrother
                     {
                         if (map[player.uyPos, (player.uxPos+1)] == "■")
                         {
-                            Console.WriteLine("전투를 시작합니다.\n");
-                            //player.SumxPos(1);
-                            //map[player.uyPos, player.uxPos] ="♥";
-                            //map[player.uyPos, player.uxPos-1] ="　";
+                            
+                            
                         }
                         else if (map[player.uyPos, (player.uxPos+1)] == "ⓐ")
                         {
@@ -269,10 +325,24 @@ namespace ForMyBrother
                         }
                         else if (map[player.uyPos, (player.uxPos+1)] == "？")
                         {
-                            Console.WriteLine("카드 게임을 시작합니다.");
-                            //player.SumxPos(1);
-                            //map[player.uyPos, player.uxPos] ="&";
-                            //map[player.uyPos, player.uxPos-1] ="　";
+                            Console.WriteLine("이벤트 발생");
+                            player.SumxPos(1);
+                            map[player.uyPos, player.uxPos] ="♥";
+                            map[player.uyPos, player.uxPos-1] ="　";
+                        }
+                        else if (map[player.uyPos, (player.uxPos+1)] == "♬")
+                        {
+                            Console.WriteLine("체력을 회복합니다");
+                           
+                            player.Heal();
+
+                            player.SumxPos(1);
+                            map[player.uyPos, player.uxPos] ="♥";
+                            map[player.uyPos, player.uxPos-1] ="　";
+                        }
+                        else if (map[player.uyPos, (player.uxPos+1)] == "★")
+                        {
+                            Console.WriteLine("포탈 발견");
                         }
                         else
                         {

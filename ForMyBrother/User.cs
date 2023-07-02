@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ForMyBrother
 {
@@ -16,13 +17,14 @@ namespace ForMyBrother
         public int expMax { get; private set; }//경험치 상한치입니다.
         public int coin { get; private set; }
         public int shopIO { get; set; }//출입 관련 카운트 
+        
         goblin test = new goblin();
         public User()
         {
             user = "♥";
             name = "김형준";
             level = 1;
-            healthPointMax = 40;
+            healthPointMax = 50;
             healthPoint = healthPointMax;
             willPowerMax = 5;
             willPower = willPowerMax;
@@ -41,15 +43,30 @@ namespace ForMyBrother
             level += 1;
             healthPointMax += 5;
             healthPoint = healthPointMax;
-            willPowerMax += 1;
-            willPower = willPowerMax;
             strong += 1;
-            wisdom += 1;
             speed += 1;
-            
-
+            wisdom += 1;    
             exp -= expMax;
             expMax += (int)(expMax*1.1f);
+        }
+        public void Heal() //20% 회복시켜주는 함수
+        {
+            healthPoint += (int)(healthPoint*1.2f);
+            if(healthPoint > healthPointMax)
+            {
+                healthPoint = healthPointMax;   
+            }
+        }
+        public void UserCritHit(int damage, int randomNum) // 30 % 확률로 크리티컬 피해를 입게끔
+        {
+            if (randomNum > 0 && randomNum < 4)
+            {
+                healthPoint -= (int)(damage*1.5f);
+                if (healthPoint < 0)
+                {
+                    healthPoint = 0;
+                }
+            }
         }
         public void UserHit (int damage)
         {

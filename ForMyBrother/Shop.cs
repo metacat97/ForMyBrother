@@ -46,7 +46,7 @@ namespace ForMyBrother
 
 
             items normal06 = new items();
-            normal06.InitItem("수정구", 5000, 3, 2);
+            normal06.InitItem("영롱한 수정구", 5000, 3, 2);
             Item.Add(normal06);
             #endregion
 
@@ -81,10 +81,6 @@ namespace ForMyBrother
             //items Rich = new items();
             //Rich.InitSpItem("부유한 사람의 원념", 1000, 1);
             //SpecialItem.Add(Rich);
-
-
-
-
 
             #endregion
 
