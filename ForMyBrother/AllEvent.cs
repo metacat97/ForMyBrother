@@ -11,9 +11,12 @@ namespace ForMyBrother
     {
 
         public int endingCount { get; set; }
+        public int badEndingCount { get; set; }
         mainUI Ui = new mainUI();
         everyText pText = new everyText();
-        choiceButton chBtn = new choiceButton(); //chBtn은 choiceButton의 약자 입니다.
+        //choiceButton chBtn = new choiceButton(); //chBtn은 choiceButton의 약자 입니다.
+        Battle battle = new Battle();  
+        User player = new User();
         #region 프롤로그와 질문 이벤트
         public void Prololog()
         {
@@ -23,7 +26,7 @@ namespace ForMyBrother
                 Console.ReadLine();
             }
         }
-        public void PllQ1(User player)
+        public void PllQ1(User player, choiceButton chBtn)
         {
             for (int j = 0; j < 2; j++)
             {
@@ -47,7 +50,7 @@ namespace ForMyBrother
                 player.UpStat();
             }
         }
-        public void PllQ2(User player)
+        public void PllQ2(User player,choiceButton chBtn)
         {
             for (int j = 0; j < 4; j++)
             {
@@ -71,7 +74,7 @@ namespace ForMyBrother
                 player.UpStat();
             }
         }
-        public void PllQ3(User player)
+        public void PllQ3(User player, choiceButton chBtn)
         {
             for (int j = 0; j < 9; j++)
             {
@@ -143,7 +146,7 @@ namespace ForMyBrother
         #endregion
 
         #region 메인 이벤트
-        public void event001()
+        public void event001(choiceButton chBtn)
         {
             for (int j = 0; j < 10; j++)
             {
@@ -163,7 +166,7 @@ namespace ForMyBrother
             }
 
         }
-        public void event002()
+        public void event002(choiceButton chBtn)
         {
             for (int j = 0; j < pText.mainEvent1.Count; j++)
             {
@@ -185,7 +188,7 @@ namespace ForMyBrother
         }
         #endregion
         #region 노멀이벤트
-        public void Nevent001()//아니 이;건 사실 히든 이벤트다!
+        public void Nevent001(choiceButton chBtn)//아니 이;건 사실 히든 이벤트다!
         {
             for (int j = 0; j < 81; j++)
             {
@@ -204,11 +207,11 @@ namespace ForMyBrother
                 endingCount +=1;
             }
         }
-        public void Nevent002()
+        public void Nevent002(choiceButton chBtn)
         {
             for (int j = 0; j < pText.normalEvent002.Count; j++)
             {
-                Console.SetCursorPosition(1, 20+(j%4)*2);
+                Console.SetCursorPosition(1, 10+(j%4)*2);
                 Ui.TextAPEvent(pText.normalEvent002[j].chText, 50);
                 Console.ReadLine();
             }
@@ -217,14 +220,15 @@ namespace ForMyBrother
             chBtn.ControlChoice(23, 24);
             if (chBtn.choiceControlNum == 23)
             {
+                chBtn.setTestNum(30);
                 endingCount +=1;
             }
             else if (chBtn.choiceControlNum == 24)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
-        public void Nevent003()
+        public void Nevent003(choiceButton chBtn)
         {
             for (int j = 0; j < 7; j++)
             {
@@ -241,7 +245,7 @@ namespace ForMyBrother
             chBtn.ControlChoice(25, 26);
             if (chBtn.choiceControlNum == 25)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
             else if (chBtn.choiceControlNum == 26)
             {
@@ -275,22 +279,23 @@ namespace ForMyBrother
                     chBtn.ControlChoice(31, 32);
                     if (chBtn.choiceControlNum == 31)
                     {
-                        endingCount  +=1;
+                       
                     }
                     else if (chBtn.choiceControlNum == 32)
                     {
-                        endingCount -=1;
+                        endingCount -= 1;
+                        badEndingCount +=1;
                     }
                 }
                 else if (chBtn.choiceControlNum == 28)
                 {
-                    endingCount +=1;
+                    badEndingCount +=1;
 
                 }
 
             }
         }
-        public void Nevent004()
+        public void Nevent004(choiceButton chBtn)
         {
             for (int j = 0; j < pText.normalEvent004.Count; j++)
             {
@@ -316,14 +321,14 @@ namespace ForMyBrother
             chBtn.ControlChoice(33, 34);
             if (chBtn.choiceControlNum == 33)
             {
-                endingCount +=1;
+                
             }
             else if (chBtn.choiceControlNum == 34)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
-        public void Nevent005()
+        public void Nevent005(choiceButton chBtn)
         {
             for (int j = 0; j < 7; j++)
             {
@@ -343,7 +348,7 @@ namespace ForMyBrother
                     Console.ReadLine();
                 }
             }
-            chBtn.SettingTwoChoice("음식을 준다", "지나친다");
+            chBtn.SettingTwoChoice("초콜릿을 준다", "지나친다");
             chBtn.PrintChoice();
             chBtn.ControlChoice(35, 36);
             if (chBtn.choiceControlNum == 35)
@@ -370,7 +375,7 @@ namespace ForMyBrother
             }
             else if (chBtn.choiceControlNum == 36)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
         public void Nevent006()
@@ -395,10 +400,10 @@ namespace ForMyBrother
                 }
             }
             //안좋은 이벤트 
-           
-            endingCount +=1;
+            
+            badEndingCount +=1;
         }
-        public void Nevent007()
+        public void Nevent007(choiceButton chBtn)
         {
             for (int j = 0; j < pText.normalEvent007.Count; j++)
             {
@@ -428,10 +433,10 @@ namespace ForMyBrother
             }
             else if (chBtn.choiceControlNum == 38)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
-        public void Nevent008()
+        public void Nevent008(choiceButton chBtn)
         {
             for (int j = 0; j < pText.normalEvent008.Count; j++)
             {
@@ -461,10 +466,10 @@ namespace ForMyBrother
             }
             else if (chBtn.choiceControlNum == 40)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
-        public void Nevent009()
+        public void Nevent009(choiceButton chBtn)
         {
             for (int j = 0; j < pText.normalEvent009.Count; j++)
             {
@@ -485,7 +490,7 @@ namespace ForMyBrother
                     Console.ReadLine();
                 }
             }
-            chBtn.SettingTwoChoice("의뢰를 받는다", "지나친다");
+            chBtn.SettingTwoChoice("치안대에게 요청한다", "지나친다");
             chBtn.PrintChoice();
             chBtn.ControlChoice(41, 42);
             if (chBtn.choiceControlNum == 41)
@@ -494,10 +499,10 @@ namespace ForMyBrother
             }
             else if (chBtn.choiceControlNum == 42)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
-        public void Nevent010()
+        public void Nevent010(choiceButton chBtn)
         {
             for (int j = 0; j < pText.normalEvent010.Count; j++)
             {
@@ -527,10 +532,10 @@ namespace ForMyBrother
             }
             else if (chBtn.choiceControlNum == 44)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
-        public void Nevent011()
+        public void Nevent011(choiceButton chBtn)
         {
             for (int j = 0; j < 9; j++)
             {
@@ -555,6 +560,7 @@ namespace ForMyBrother
             chBtn.ControlChoice(45, 46);
             if (chBtn.choiceControlNum == 45)
             {
+                Ui.profileAru();
                 for (int j = 9; j < pText.normalEvent011.Count; j++)
                 {
                     if (pText.normalEvent011[j].chName == "시스템")
@@ -577,10 +583,10 @@ namespace ForMyBrother
             }
             else if (chBtn.choiceControlNum == 46)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
-        public void Nevent012()
+        public void Nevent012(choiceButton chBtn)
         {
             for (int j = 0; j < 5; j++)
             {
@@ -627,7 +633,7 @@ namespace ForMyBrother
             }
             else if (chBtn.choiceControlNum == 48)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
         public void Nevent013()
@@ -674,7 +680,7 @@ namespace ForMyBrother
             }
             endingCount += 1;
         }
-        public void Nevent015()
+        public void Nevent015(choiceButton chBtn)
         {
             for (int j = 0; j < 5; j++)
             {
@@ -694,13 +700,14 @@ namespace ForMyBrother
                     Console.ReadLine();
                 }
             }
-            chBtn.SettingTwoChoice("하지만 바쁘다, 떠난다", "아직도 옛일을 신경쓰고 있어? 괜찮아. ");
+            chBtn.SettingTwoChoice("아직도 옛일을 신경쓰고 있어? 괜찮아.", "바빠서 간다");
             chBtn.PrintChoice();
             chBtn.ControlChoice(49, 50);
             if (chBtn.choiceControlNum == 49)
             {
                 for (int j = 5; j < pText.normalEvent015.Count; j++)
                 {
+                    Ui.profileSaori();
                     if (pText.normalEvent015[j].chName == "시스템")
                     {
                         if (j %4 == 0)
@@ -721,10 +728,10 @@ namespace ForMyBrother
             }
             else if (chBtn.choiceControlNum == 50)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
-        public void Nevent016()
+        public void Nevent016(choiceButton chBtn)
         {
             for (int j = 0; j < 2; j++)
             {
@@ -751,6 +758,7 @@ namespace ForMyBrother
             {
                 for (int j = 3; j < pText.normalEvent016.Count; j++)
                 {
+                    Ui.profileSiro();
                     if (pText.normalEvent016[j].chName == "시스템")
                     {
                         if (j %9 == 0)
@@ -773,15 +781,16 @@ namespace ForMyBrother
             else if (chBtn.choiceControlNum == 52)
             {
                 //전투 발생
-                endingCount +=1;
+                
             }
         }
-        public void Nevent017()
+        public void Nevent017(choiceButton chBtn)
         {
             for (int j = 0; j < 4; j++)
             {
                 if (pText.normalEvent017[j].chName == "시스템")
                 {
+                    Ui.profileArisu();
                     if (j %4 == 0)
                     {
                         Ui.MiddleClearUi();
@@ -823,10 +832,10 @@ namespace ForMyBrother
             }
             else if (chBtn.choiceControlNum == 54)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
-        public void Nevent018()
+        public void Nevent018(choiceButton chBtn)
         {
             for (int j = 0; j < 2; j++)
             {
@@ -892,25 +901,26 @@ namespace ForMyBrother
                             Console.ReadLine();
                         }
                     }
+                    endingCount +=1;
                 }
                 else if(chBtn.choiceControlNum ==58)
                 {
                     //hp 소모
-                    endingCount +=1;
+                    badEndingCount +=1;
                 }
-                endingCount +=1;
             }
             else if (chBtn.choiceControlNum == 56)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
-        public void Nevent019()
+        public void Nevent019(choiceButton chBtn)
         {
             for (int j = 0; j < 5; j++)
             {
                 if (pText.normalEvent019[j].chName == "시스템")
                 {
+                    Ui.profileWakamo();
                     if (j %4 == 0)
                     {
                         Ui.MiddleClearUi();
@@ -932,6 +942,7 @@ namespace ForMyBrother
             {
                 for (int j = 5; j < pText.normalEvent019.Count; j++)
                 {
+                    
                     if (pText.normalEvent019[j].chName == "시스템")
                     {
                         if (j %5 == 0)
@@ -952,11 +963,12 @@ namespace ForMyBrother
             }
             else if (chBtn.choiceControlNum == 60)
             {
-                endingCount +=1;
+
+                badEndingCount +=1;
                 //게임종료 엔딩
             }
         }
-        public void Nevent020()
+        public void Nevent020(choiceButton chBtn)
         {
             for (int j = 0; j < 5; j++)
             {
@@ -1003,7 +1015,7 @@ namespace ForMyBrother
             }
             else if (chBtn.choiceControlNum == 62)
             {
-                endingCount +=1;
+                badEndingCount +=1;
             }
         }
 
@@ -1013,27 +1025,53 @@ namespace ForMyBrother
         #endregion
 
         #region 엔딩 이벤트
-        public void ending001()
+        public void HappyEnd()
         {
             Console.Clear();
-            Console.WriteLine("덕분에 좋아졌어");
-            Console.ReadLine();
 
-            Console.Clear();
-
-            Console.WriteLine("Happy End");
-            Console.ReadLine();
+            for (int j = 0; j < pText.ending01.Count; j++)
+            {
+                if (pText.ending01[j].chName == "시스템")
+                {
+                   // Ui.profileWakamo();
+                    if (j %4 == 0)
+                    {
+                        Console.Clear();
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.ending01[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Ui.rollText(pText.ending01[j].chName, pText.ending01[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
 
         }
-        public void ending002()
+        public void BadEnd()
         {
-            Console.Clear();
-            Console.WriteLine("게임은 끝났어");
-            Console.ReadLine();
-            Console.Clear();
-
-            Console.WriteLine("Bad End");
-            Console.ReadLine();
+            for (int j = 0; j < pText.ending02.Count; j++)
+            {
+                if (pText.ending02[j].chName == "시스템")
+                {
+                    
+                    if (j %4 == 0)
+                    {
+                       Console.Clear() ;
+                    }
+                    Console.SetCursorPosition(3, 10+(j%4)*2);
+                    Ui.TextAPEvent(pText.ending02[j].chText, 50);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Console.SetCursorPosition(40, 10);
+                    Ui.rollText(pText.ending02[j].chName, pText.ending02[j].chText, 50);
+                    Console.ReadLine();
+                }
+            }
 
 
         }
@@ -1070,7 +1108,7 @@ namespace ForMyBrother
 
     
 
-        public void EventControl(int randomNumber)
+        public void EventControl(int randomNumber, choiceButton chBtn)
         {
             if (randomNumber == 1)
             {
@@ -1078,19 +1116,19 @@ namespace ForMyBrother
             }
             else if (randomNumber == 2)
             {
-                Nevent002();
+                Nevent002(chBtn);
             }
             else if (randomNumber == 3)
             {
-                Nevent003();
+                Nevent003(chBtn);
             }
             else if (randomNumber == 4)
             {
-                Nevent004();
+                Nevent004(chBtn);
             }
             else if (randomNumber == 5)
             {
-                Nevent005();
+                Nevent005(chBtn);
             }
             else if (randomNumber == 6)
             {
@@ -1098,27 +1136,27 @@ namespace ForMyBrother
             }
             else if (randomNumber == 7)
             {
-                Nevent007();
+                Nevent007(chBtn);
             }
             else if (randomNumber == 8)
             {
-                Nevent008();
+                Nevent008(chBtn);
             }
             else if (randomNumber == 9)
             {
-                Nevent009();
+                Nevent009(chBtn);
             }
             else if (randomNumber == 10)
             {
-                Nevent010();
+                Nevent010(chBtn);
             }
             else if (randomNumber == 11)
             {
-                Nevent011();
+                Nevent011(chBtn);
             }
             else if (randomNumber == 12)
             {
-                Nevent012();
+                Nevent012(chBtn);
             }
             else if (randomNumber == 13)
             {
@@ -1130,27 +1168,27 @@ namespace ForMyBrother
             }
             else if (randomNumber == 15)
             {
-                Nevent015();
+                Nevent015(chBtn);
             }
             else if (randomNumber == 16)
             {
-                Nevent016();
+                Nevent016(chBtn);
             }
             else if (randomNumber == 17)
             {
-                Nevent017();
+                Nevent017(chBtn);
             }
             else if (randomNumber == 18)
             {
-                Nevent018();
+                Nevent018(chBtn);
             }
             else if (randomNumber == 19)
             {
-                Nevent019();
+                Nevent019(chBtn);
             }
             else if (randomNumber == 20)
             {
-                Nevent020();
+                Nevent020(chBtn);
             }
             //else if (randomNumber == 21)
             //{

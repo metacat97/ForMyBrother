@@ -11,6 +11,7 @@ namespace ForMyBrother
     {
         mainUI ui = new mainUI();
         public int choiceControlNum {  get; set; } 
+        public int testNum { get; set; }
         /*
          6 = 던전
          7 = 무작위 이벤트
@@ -23,6 +24,11 @@ namespace ForMyBrother
 
         public int xchoicePo;
         public int ychoicePo;
+
+        public void setTestNum(int Num)
+        {
+            testNum = Num;
+        }
         public void SettingTwoChoice(string text1, string text2)
         {
             choice1 = text1;

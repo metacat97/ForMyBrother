@@ -265,6 +265,545 @@ namespace ForMyBrother
             Console.WriteLine("└────────────────────────┘");
 
         }
+        public void profileSiro()
+        {
+
+            Console.SetCursorPosition(108, 6);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡾⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 7);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⠉⠛⠿⣶⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⣀⣀⣀⠀⠀⠀⠀⠀⢀⣀⣤⡶⠟⠁⢸⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 8);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣧⠀⠀⠀⠉⠙⠻⠷⢶⣤⣤⡶⠾⠟⠛⠛⠉⠉⠉⠉⠉⠉⠛⠛⠻⠿⢶⣶⡟⠛⠉⠁⠀⠀⢠⡿⢿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 9);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣛⣻⣧⡀⠀⠀⠀⠀⠰⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣟⡀⢘⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108,10);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⠻⢷⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢋⡿⠃⢠⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 11);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣀⣴⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡶⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠟⠀⢺⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 12);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⣠⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣠⣖⣆⠀⠀⠀⠀⠀⠹⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 13);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠋⠀⠀⠀⠀⠀⣤⣾⠿⠟⠛⠁⣰⠞⣿⠇⠀⠀⠀⠀⠀⣼⡃⠀⠀⠀⠀⢉⡉⠉⠻⡿⢷⡀⠀⠀⠀⠀⠈⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 14);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⣰⣿⠟⣠⠀⠀⠀⠀⠀⠈⠛⢁⠀⠀⢠⡾⠁⠀⣿⠀⠀⠀⠀⠀⢸⣿⡇⠀⠀⠀⠀⣾⡇⠀⠀⠘⢆⠹⣄⡴⢊⡱⠀⠀⠈⢻⣧⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 15);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⣼⡿⢃⣼⠋⠀⠀⠀⠀⠀⢀⣴⠏⠀⣠⠏⠀⠀⠀⣿⡄⠀⠀⠀⠀⣿⡏⢿⡄⠀⠀⠀⣿⣿⡄⠀⢀⣤⠗⡈⢴⡉⠀⠀⠀⠀⠀⢻⣧⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 16);
+            Console.WriteLine("⠀⠀⠀⠀⠀⣸⣿⠁⣾⠇⠀⠀⠀⠀⢀⣴⣿⡏⠀⢠⠏⠀⠀⠀⠀⢻⣧⠀⠀⠀⠀⣿⡇⠈⢿⣆⢀⣀⢹⣟⢿⣄⠻⣵⠞⠙⢦⡳⡄⠀⠀⠀⠀⠀⢻⣇⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 17);
+            Console.WriteLine("⠀⠀⠀⠀⠀⣿⣇⣴⣿⠀⠀⠀⠀⢀⣾⠏⢹⣷⣶⣿⡿⠿⠿⣶⣤⡈⢿⣦⠀⠀⠀⠸⣧⠀⠀⠙⠿⣿⠿⠿⠎⠻⣦⡀⠀⠀⠈⠓⠂⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 18);
+            Console.WriteLine("⠀⠀⠀⠀⠀⣿⡿⢻⣿⠀⠀⠀⠀⣼⣟⣴⡿⠟⠉⣠⣴⣾⣿⣿⣿⣧⡀⠙⢷⣄⡀⢠⡾⠷⢂⣠⣤⣴⣦⣤⣄⡀⠈⠻⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 19);
+            Console.WriteLine("⠀⠀⠀⠀⠀⣿⡇⠸⣿⠀⠀⠀⠀⣿⣿⡟⠀⠀⣼⠛⠉⠀⠀⠀⠀⠘⢷⡀⠀⠉⠙⠛⢃⣼⡿⠟⠋⠉⠉⠙⠛⢿⣦⠀⠈⢩⡀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 20);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠘⣇⠀⣹⣧⠀⠀⠀⣿⠿⠀⠀⠀⣿⡄⠀⠀⠀⠀⠀⠀⣼⠇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⠛⠃⢀⣾⠃⠀⠀⠀⠀⠀⠀⠀⢠⣿⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 21);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠁⣸⠏⠙⠧⠀⠀⢿⡀⠀⠀⠀⠈⠻⢶⣤⣤⣴⡶⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠃⠀⠀⠀⠀⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 22);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⢰⡟⠀⠀⠀⠀⣠⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠁⠀⠀⢀⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 23);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⣿⠃⠀⢀⠀⠠⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠛⠉⠙⠛⠛⠁⠀⠀⠀⠀⠀⠀⠀⢠⣿⠃⠀⠀⢠⡟⠀⠀⠀⠀⠀⠀⠸⣿⡀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 24);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⣿⡄⠀⣾⡆⠀⠹⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡏⠀⠀⠀⣸⣇⠀⠀⢀⡀⠀⠸⣧⣹⣧⡀⠀⠀⠀");
+            Console.SetCursorPosition(108, 25);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠸⣧⡀⣿⣿⡄⠀⢸⣿⢿⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣿⣇⣀⠀⠀⢻⡟⣷⡄⣸⣿⡆⠀⣼⠻⠿⠷⠀⠀⠀");
+            Console.SetCursorPosition(108, 26);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠈⠛⠾⠏⠻⣶⣼⣿⣄⠈⠉⠛⢻⣿⠷⢶⡶⠄⠀⠀⣠⣤⣤⣤⣤⣶⣶⣶⣶⠿⠿⠛⠋⠉⢻⣿⠿⣦⡀⢸⣷⣼⣷⣿⣿⡇⣰⠏⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 27);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡟⠻⣷⣦⣤⣼⣇⣄⣀⣄⣀⣀⣀⣉⣉⣉⡉⠉⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣽⣶⠿⠿⠷⣿⠞⠋⠀⠘⠛⣷⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 28);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣇⠀⠀⠀⠈⢹⡏⠉⠉⠉⠉⠉⠉⠉⠙⠛⠛⠿⠿⣶⣶⣤⣤⣴⠾⠿⠛⠋⣁⣠⣴⣶⣾⣿⣿⣿⣿⣿⣿⣟⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 29);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⣿⣦⣤⣤⣤⣼⣧⣤⣤⣤⣤⣤⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 30);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⠉⠉⠉⠉⠉⣿⡏⠉⡟⠛⠿⠿⠿⠷⣶⣤⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 31);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⣿⠀⠘⣧⠀⠀⠀⠀⠀⢿⡄⠀⢸⣿⣿⡟⠛⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 32);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⣿⠀⠀⣿⠀⠀⠀⠀⠀⢸⣇⠀⠀⣿⣿⡇⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀");
+        }
+
+        public void profileAru()
+        {
+            Console.SetCursorPosition(108, 6);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠤⠤⠤⢤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 7);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⠶⠚⠛⠛⠛⠛⠒⠂⠈⠙⢦⡀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 8);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠶⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⡄⠈⠙⠶⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 9);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠀⠀⠀⠈⠻⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 10);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 11);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠖⠀⠀⠀⠀⢀⣠⢾⡇⠀⠀⠀⠀⠀⠀⠀⢻⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠀⠲⣄⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 12);//주인공 대사
+            Console.WriteLine("⣿⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠋⠀⠀⠀⠀⠀⣠⠞⠁⢸⡇⠀⠀⠀⠀⠀⠀⠀⠈⣿⢧⣤⠤⠤⢄⠀⠀⠀⠀⠀⠀⠀⢦⡘⡆⠀⠀⣀⡀⠀");
+            Console.SetCursorPosition(108, 13);//주인공 대사
+            Console.WriteLine("⢻⠀⠀⣇⠀⢰⡄⠀⢠⡞⠁⠀⠀⠀⠀⢀⣼⣋⠄⠂⠀⣷⠀⠀⠀⠀⠀⠀⠀⢀⡘⣇⠙⠳⣦⣌⣳⣤⣀⠀⠀⠀⠀⠀⠹⣽⠀⢠⣿⣷⡀");
+            Console.SetCursorPosition(108, 14);//주인공 대사
+            Console.WriteLine("⢸⠀⠀⣿⠀⠈⡇⢠⡟⠀⡠⠀⠀⠀⢐⡾⠉⠀⠀⠀⣀⡼⢧⡀⢀⠀⠀⠀⠀⠉⢉⣭⠿⠿⠿⣭⣉⠉⢯⡀⠀⠀⠀⠀⢠⡘⢠⣿⣍⢻⡇");
+            Console.SetCursorPosition(108, 15);//주인공 대사
+            Console.WriteLine("⠸⡇⠀⢸⠀⠀⠁⣼⠁⣾⠁⠀⠀⠀⣾⣥⡤⠶⢚⡯⠭⠤⣬⣷⣄⠷⣄⣀⡠⣴⠏⠀⠀⠀⠀⠀⠈⢳⡄⢻⡄⠀⠀⠀⠀⢳⣿⣿⣿⣿⡇");
+            Console.SetCursorPosition(108, 16);
+            Console.WriteLine("⠀⠇⠀⠀⠀⠀⠀⣿⠀⣿⠀⠀⠀⢠⡇⠀⠀⣰⠏⠀⠀⠀⠀⠈⢷⡁⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⢀⡟⠀⢷⡀⠀⠀⠀⠀⣿⡇⢩⡟⠀");
+            Console.SetCursorPosition(108, 17);
+            Console.WriteLine("⠀⠀⠀⠀⠀⣾⡦⢿⠀⣿⡄⠀⠀⠈⡟⢦⡀⢿⡀⠀⠀⠀⠀⠀⣸⠇⠀⠀⠀⠘⢧⣄⣀⠀⢀⣀⣤⠞⠁⠀⠸⣇⠀⠹⡄⠀⢸⠐⠉⠀⠀");
+            Console.SetCursorPosition(108, 18);
+            Console.WriteLine("⠀⠀⠀⠀⠀⢹⣧⣿⣧⣷⣿⣦⡀⠀⠁⠀⡷⠘⢷⣤⣀⣀⣤⡾⠋⠀⠀⠀⢀⡀⠤⠭⢍⠛⠋⠉⠀⠀⠀⠀⠀⣿⠀⠀⣿⠀⠀⠀⣄⠀⠀");
+            Console.SetCursorPosition(108, 19);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠻⣿⣿⠛⢿⢿⣷⠂⠀⢸⠃⠀⡄⡀⠉⠉⠀⠀⡠⠄⠄⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⢐⣠⡶⠋⣿⠀⠀⣿⠀⠀⠀⠈⠳⣄");
+            Console.SetCursorPosition(108, 20);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠈⠙⠓⠒⠀⠸⣇⠀⠘⢧⣄⡈⠁⠀⠀⠀⠀⢇⡀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣴⣾⣿⣥⣤⣴⠟⢀⣴⠃⠀⠀⠀⠀⠀⠈");
+            Console.SetCursorPosition(108, 21);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠉⠓⠀⠀⠈⠙⢛⣶⣦⣤⣤⡀⠀⠀⠀⠀⠀⢐⣾⠿⣿⠟⠿⢿⣿⣿⣿⣿⣿⣿⣷⣤⠀⠀⠠⠀⠀⠰");
+            Console.SetCursorPosition(108, 22);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡾⠋⣠⠄⠀⠀⠀⣠⣾⣿⣿⣿⡿⠟⠋⡾⠀⢳⣠⡶⠋⠀⢰⠇⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⡇⠀⠀");
+            Console.SetCursorPosition(108, 23);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⢠⡟⢀⡴⡏⠀⠀⠀⠰⣿⣿⣿⣿⣿⣷⡄⠀⣧⣴⣿⣾⡿⣿⣶⡾⠀⠀⠈⢹⣿⣿⣿⣿⣿⣿⡍⠀⠀⠀⠀⠀⠀⢀");
+            Console.SetCursorPosition(108, 24);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⡾⠀⣇⠀⠀⠀⢀⣼⣿⣿⣿⣿⠟⣽⣿⠋⢁⣿⣿⣇⠙⢿⣳⡄⠀⢀⣼⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⢀⣴⠟");
+            Console.SetCursorPosition(108, 25);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⠈⠂⠹⣦⣀⣀⣾⣿⣿⣿⣿⣿⠀⠘⢿⡦⣞⣿⣿⣽⣾⠿⠞⠁⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 26);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢹⣿⣿⣿⣿⣿⡏⠀⠀⠀⠉⡿⡏⢸⢻⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀");
+            Console.SetCursorPosition(108, 27);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣇⠀⠀⠀⠀⢧⠇⠘⣯⠇⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀");
+            Console.SetCursorPosition(108, 28);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣧⣀⣀⠠⡀⠀⠀⣀⣀⣀⣀⣀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀");
+            Console.SetCursorPosition(108, 29);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀");
+            Console.SetCursorPosition(108, 30);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⣿⣿⣿⣿⣿⠉⠉⠉⠉⠉⣿⡏⠉⡟⠛⠿⠿⠿⠷⣶⣤⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(108, 31);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⢸⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⣿⠀⠘⣧⠀⠀⠀⠀⠀⢿⡄⠀⢸⣿⣿⡟⠛⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(108, 32);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⣿⠀⠀⣿⠀⠀⠀⠀⠀⢸⣇⠀⠀⣿⣿⡇⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷");
+        }
+
+
+        public void profileArisu()
+        {
+
+           
+            Console.SetCursorPosition(108, 6);//주인공 대사
+            Console.WriteLine("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⣀⣠⣤⣶⣶⣷⣦⣤⣶⣶⣾⡷⠶⠛⠛⠉⠉⠉⠉⠉⠉⠉⠉⠉⠙⠛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(108, 7);//주인공 대사
+            Console.WriteLine("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⠉⠣⠀⠀⠀⠈⠉⢻⣿⣿⣿⣿⣿⢟⣛⣩⣤⡤⢤⣄⣤⠤⠶⠶⠶⠶⠶⠶⠶⢦⣤⣤⣀⣀⠀⠀⠉⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(108, 8);//주인공 대사
+            Console.WriteLine("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⠿⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠳⢶⣤⣀⠀⠈⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⡿⢿⣿⣿⣿⣿");
+            Console.SetCursorPosition(108, 9);//주인공 대사
+            Console.WriteLine("⣿⣿⣿⣿⡿⠿⢿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⣀⡿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠷⣦⣄⡀⠙⠻⣿⣿⣿⣿⣿⣿⣆⠉⢻⣿⣿");
+            Console.SetCursorPosition(108, 10);//주인공 대사
+            Console.WriteLine("⣿⣿⣿⣿⡀⠀⠀⠙⠋⠀⠀⢀⡄⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⢶⣤⡈⠻⣿⣿⣿⣿⣿⣆⠀⢿⡟");
+            Console.SetCursorPosition(108, 11);//주인공 대사
+            Console.WriteLine("⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⣴⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⢦⣌⣿⠀⠀⠀⣹⠀⣼⣇");
+            Console.SetCursorPosition(108, 12);
+            Console.WriteLine("⣿⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡇⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡇⠀⠀⢀⣿⡴⠿⠛");
+            Console.SetCursorPosition(108, 13);
+            Console.WriteLine("⣿⣿⣿⡿⠁⠀⠀⣴⠂⠀⠀⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠀⠀⠀⠀⠀⠀⠀⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠁⠀⠀⣸⠏⠀⠀⠀");
+            Console.SetCursorPosition(108, 14);
+            Console.WriteLine("⣿⣿⣿⣧⣀⣀⣼⣧⡀⢀⣠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⠀⠀⠀⠀⠀⠀⠀⣿⠘⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡏⠀⠀⢀⡟⠀⠀⠀");
+            Console.SetCursorPosition(108, 15);
+            Console.WriteLine("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠔⠒⣹⠏⢹⠁⠀⠀⠀⠀⠀⠀⣿⠀⠈⢳⣄⠀⠉⠁⠐⠠⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠃⠀⠀⣸⠇⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 16);
+            Console.WriteLine("⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠉⠀⣠⡾⠁⠀⢸⡄⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠙⢷⣄⠀⠀⠀⠀⠙⠂⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⣿⠀⠀⠀⣿⣀⣀⡀⠀⠀");
+            Console.SetCursorPosition(108, 17);
+            Console.WriteLine("⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⣠⡼⠋⠀⠀⠀⠘⣇⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠉⠳⣤⡀⠀⠀⠀⠀⡇⠀⠀⠀⣸⢀⣀⣠⢤⡏⠀⠀⢸⣿⣉⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 18);
+            Console.WriteLine("⣿⣿⣿⣿⣿⣿⡿⠁⠀⢠⠀⠀⠀⠀⠀⠀⠀⠀⢰⣧⠞⠉⠀⠀⠀⠀⠀⠀⢹⡀⠀⠀⠀⠀⠀⠈⡇⠀⠀⠀⠀⠀⠀⠀⠙⠷⣤⣀⠀⣧⠀⠀⠀⣿⣤⣄⣀⣀⣿⡀⠀⠘⣿⠉⠃⠀⠀⠀");
+            Console.SetCursorPosition(108, 19);
+            Console.WriteLine("⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠀⢀⣀⡀⠀⠀⠀⠀⠀⠀⢧⠀⠀⠀⠀⠀⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⣿⠀⠀⠀⣿⠀⠈⠉⠉⠹⣧⠀⠀⢻⡆⡀⠀⠀⠀");
+            Console.SetCursorPosition(108, 20);
+            Console.WriteLine("⣿⣿⣿⣿⡟⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠿⣿⣿⣿⣶⣦⣄⣀⠐⠸⣧⠀⠀⠀⠀⠀⠘⣇⠠⠄⠀⠀⠀⠀⣀⣀⣠⣤⡄⢸⠀⠀⠀⣿⡶⠶⠶⠾⠛⢻⡆⠀⠘⣿⡇⠀⠀⠀");
+            Console.SetCursorPosition(108, 21);
+            Console.WriteLine("⣿⣿⣿⡿⠁⠀⠀⠀⣴⣿⡇⠀⠀⠀⠀⠀⠀⣀⡇⣀⣀⣀⣈⣙⣛⣿⣿⣿⣿⣶⡜⣧⠀⠀⠀⠀⠀⢹⣦⣶⣶⣾⣿⣿⣿⠿⠿⠿⠗⢸⠀⠀⠀⣿⣿⠴⠒⠒⠶⣬⣿⡀⢠⡿⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 22);
+            Console.WriteLine("⣿⣿⣿⠇⠀⠀⢀⣾⣿⣿⡇⠀⠀⠀⠀⣠⠞⠁⠀⠿⠿⠿⠿⠿⠿⠿⠿⠟⠛⠛⠃⠈⢧⡀⠀⠀⠀⠀⢻⣿⣿⣿⣷⣦⣤⣤⣄⣀⡀⢸⠀⠀⢠⡟⠁⠀⠀⣀⣀⠈⢻⣷⣾⠃⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 23);
+            Console.WriteLine("⣿⣿⣿⠀⠀⢀⣾⣿⣿⣿⡇⠀⠀⠀⢰⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠈⢷⠉⠉⠙⠛⠛⠛⠿⠿⠇⢸⠀⠀⢸⡇⠀⡴⠚⠁⠀⠀⠈⣿⠇⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 24);
+            Console.WriteLine("⣿⣿⡇⠀⠀⣼⣿⣿⣿⢻⡇⠀⠀⠀⠸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠒⠒⠻⣆⠀⠀⠀⠘⣧⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⢸⠀⠾⠓⢶⡀⠀⠀⢰⡏⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 25);
+            Console.WriteLine("⣿⣿⡇⠀⢠⣿⣿⣿⡏⠈⣇⠀⠀⠀⠀⠻⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡀⠀⠀⠀⠈⢷⡀⠀⠀⠈⢧⡀⠀⠀⠀⠀⠀⠀⢸⠀⠀⣾⠀⠀⣠⠞⠁⠀⢠⡟⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 26);
+            Console.WriteLine("⣿⣿⡇⠀⢸⢻⣿⡿⠀⠀⢹⠀⠀⠀⠀⠀⠈⠷⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⢄⠀⠀⠀⠀⡹⢦⡀⠀⠈⢷⡀⠀⠀⠀⠀⠀⢸⠀⠀⡿⠀⠀⠀⢀⣠⣶⣿⠁⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 27);
+            Console.WriteLine("⣿⣿⣷⠀⠸⠀⢻⠇⠀⠀⠈⠂⠀⠀⠀⠀⠀⠀⠈⠙⠷⣦⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠈⠁⠀⠀⠻⣦⡀⠈⢳⣄⠀⠀⠀⣀⣼⠀⢠⡿⠛⠛⠛⠋⠁⣾⠃⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 28);
+            Console.WriteLine("⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣉⣙⣻⣶⣦⣤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⣦⡀⠹⣶⣾⣟⣋⣿⠀⢸⣇⣀⣀⣀⣀⣰⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 29);
+            Console.WriteLine("⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠛⠋⠉⠉⠉⠉⠉⠉⠉⠉⠉⢩⡿⠲⡀⠀⠀⠀⣠⠖⠋⠛⢯⡻⢦⡈⢿⣍⠉⣿⠀⣾⠋⠛⠛⠛⢻⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 30);
+            Console.WriteLine("⣿⣿⡟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠋⠀⠀⢱⣄⡤⠞⠁⠀⠀⠀⢠⠿⡄⠙⠷⣝⢶⡏⠀⣿⠀⠀⠀⠀⣾⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 31);
+            Console.WriteLine("⣿⣿⣿⣦⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⢠⠟⣆⠀⢠⡾⠷⠷⣄⠀⠀⠀⣰⠋⠀⠹⣆⠀⠈⢹⡇⢸⡇⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 32);
+            Console.WriteLine("⣿⣿⣿⡟⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⡶⠟⠁⠈⣿⠀⠀⠀⠀⠀⠀⠀⣴⠋⠀⠈⢦⠏⣇⣀⣰⠏⢧⣀⡞⠁⠀⠀⠀⠹⡄⠀⣸⠁⣼⠀⠀⠀⠀⣸⡏⠙⢦⣀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 33);
+            Console.WriteLine("⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⢀⣤⠾⠛⠉⠀⠀⠀⠀⢹⡆⠀⠀⠀⠀⢀⡾⠁⠀⠀⠀⠀⢀⡏⠉⢹⡀⠀⠉⠀⠀⠀⠀⠀⠀⢻⡄⡟⢀⡟⠀⠀⠀⢀⡿⠀⠀⠀⠉⠳⣦⣄⠀⠀⠀⠀⠀");
+
+        }
+        public void profileShop()
+        {
+
+            Console.SetCursorPosition(60, 6);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡄⠀⠀⠀⠀⠀⠀⢀⣠⣤");
+            Console.SetCursorPosition(60, 7);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠴⠖⠛⠛⠛⠛⠛⠓⠲⠦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⡇⠀⢀⣀⣤⣶⣾⣿⣿⣿");
+            Console.SetCursorPosition(60, 8);//주인공 대사
+            Console.WriteLine("⠀⠀⢀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⣀⣠⣤⠴⠶⠶⠛⠛⠛⠛⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠶⣄⠀⠀⠀⠀⠀⢠⣾⣿⣿⣷⣾⣿⣿⣿⣿⣿⣿⣿⡿");
+            Console.SetCursorPosition(60, 9);//주인공 대사
+            Console.WriteLine("⠉⠀⠀⠀⠀⣠⠊⠁⠀⣠⣴⠖⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⣦⡀⢂⢀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⡐");
+            Console.SetCursorPosition(60, 10);//주인공 대사
+            Console.WriteLine("⠈⠀⠀⠠⢊⠕⣁⡴⠞⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣆⠁⠁⠀⠹⣿⣿⣿⣿⣿⣿⣟⣋⣀⣈⠀");
+            Console.SetCursorPosition(60, 11);//주인공 대사
+            Console.WriteLine("⠀⠀⢀⠜⣠⡾⠋⠀⠀⠀⠀⠀⠀⠀⣀⡤⠴⠒⠂⠙⠛⠛⠓⠲⠶⠤⣀⠀⢀⡴⠚⠉⠉⠙⠓⠦⣀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⡿⠛⠀");
+            Console.SetCursorPosition(60, 12);//주인공 대사
+            Console.WriteLine("⣀⠜⢁⡾⠋⠀⠀⠀⠀⠀⠀⢀⠔⠈⠁⠀⠀⠀⠀⠀⠀⠉⠈⠉⠈⠉⠈⠁⠀⣤⠒⠠⡌⠀⠀⠀⠘⠷⣄⠀⠀⠀⠀⠀⠀⠀⠻⣄⠀⠀⠘⣿⣿⣿⣿⣿⣧⣄⣀⠀");
+            Console.SetCursorPosition(60, 13);//주인공 대사
+            Console.WriteLine("⡁⣰⡟⠀⠀⠀⠀⠀⠀⢀⠐⠁⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠂⠀⠀⠀⠀⠀⠀⠀⠘⢆⠀⠀⠀⠀⠀⠀⠀⠹⡄⠰⡀⢹⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(60, 14);//주인공 대사
+            Console.WriteLine("⢰⡟⠀⠀⠀⠀⠀⠀⡠⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠘⡆⠀⠀⠀⠀⠀⠀⠀⢻⡄⢻⠈⣿⣿⣿⣿⣿⡿⠿⠿");
+            Console.SetCursorPosition(60, 15);//주인공 대사
+            Console.WriteLine("⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠾⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡀⠀⠀⠀⠀⠀⠀⠈⣿⡌⡇⣴⣶⡆⢀⡀⠀⠀⠀");
+            Console.SetCursorPosition(60, 16);
+            Console.WriteLine("⠃⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡇⠀⠀⠀⠀⠀⠀⠀⠸⣧⠁⣿⣿⡷⠛⠻⠤⠤⠤");
+            Console.SetCursorPosition(60, 17);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⢻⡀⣿⣿⡇⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(60, 18);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⢹⣿⣷⣿⣿⣤⣤⣤");
+            Console.SetCursorPosition(60, 19);
+            Console.WriteLine("⠀⠀⠀⠀⢸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⢸⣿⣏⢩⣭⣭⣭⣭");
+            Console.SetCursorPosition(60, 20);
+            Console.WriteLine("⠀⠀⠀⠀⣾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⣸⣿⢿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(60, 21);
+            Console.WriteLine("⠀⠀⠀⢰⡿⠀⠀⠀⣀⠀⠀⠀⠀⠀⠘⠒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⢸⡗⠙⠛⠛⠛⠛⠛⠛⠛");
+            Console.SetCursorPosition(60, 22);
+            Console.WriteLine("⠀⠀⠀⢸⣷⣤⣤⣶⣿⣿⣷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠒⠲⠶⠀⠀⠀⠀⠀⠀⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⢀⣀⣀⣀⣀⣀⣀⣀");
+            Console.SetCursorPosition(60, 23);
+            Console.WriteLine("⠀⠀⠀⢸⡇⠹⣿⠛⠛⠛⠛⠿⢿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⣾⢳⣿⠿⠿⠿⠿⣿⣿⣿");
+            Console.SetCursorPosition(60, 24);
+            Console.WriteLine("⣦⡀⣀⣸⡇⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⢿⣷⡌⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⠀⠀⠀⢰⣿⣴⠾⠛⠛⢿⣿⣈⣿⣿");
+            Console.SetCursorPosition(60, 25);
+            Console.WriteLine("⣯⠟⠋⢸⡇⠀⠀⠀⠀⠀⢰⡏⠻⢿⣿⣷⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣤⣤⣤⣤⣤⣄⢸⡇⠀⠀⠀⠀⠀⢀⣾⣯⠤⠤⠦⠤⣤⡤⠙⢳⣜");
+            Console.SetCursorPosition(60, 26);
+            Console.WriteLine("⡟⠀⠀⢸⡇⠀⠀⠀⠀⠀⠉⠀⠀⣿⠁⠏⠘⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣶⣿⣿⠿⠿⠿⢿⣿⠿⠿⣿⣿⣿⣿⣷⡄⠀⠀⠀⠀⣾⣿⡩⢶⣾⡛⠿⢶⣅⠀⢈⡛");
+            Console.SetCursorPosition(60, 27);
+            Console.WriteLine("⣧⠀⢠⡿⠁⠀⠀⠀⠀⠀⣶⠀⠀⠘⠏⠀⢀⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡿⢺⢻⣿⣿⣿⣿⣿⠀⠀⠀⠀⠿⠟⣿⡄⠀⠀⠀⢠⣿⡈⣿⠘⣿⡙⣿⣶⣄⢃⠘⢿");
+            Console.SetCursorPosition(60, 28);
+            Console.WriteLine("⠘⣦⣸⡇⠀⠀⠀⠀⠀⠀⠘⢦⣀⠀⢀⣠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠉⢙⣿⠋⠛⠻⠟⠀⠀⠀⠀⠀⢸⡏⠻⣦⣀⡴⠋⣿⣿⡜⣧⠘⣷⡙⢳⢆⣜⣓⣾");
+            Console.SetCursorPosition(60, 29);
+            Console.WriteLine("⠀⠀⢙⠿⣄⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⣄⠀⠁⢀⣠⠄⠀⠀⠀⠀⠀⠀⣿⠁⠀⠀⣿⠁⠀⣿⣿⣷⡹⠿⢛⣵⣾⣿⣿⣿⣿");
+            Console.SetCursorPosition(60, 30);
+            Console.WriteLine("⠀⣠⠏⠀⠈⠳⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣷⣾⣷⣶⣿⣦⠀⠀⠈⠙⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⣸⠇⢀⣴⠃⠀⢸⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(60, 31);
+            Console.WriteLine("⡴⠃⠀⠀⠀⠀⠀⠙⠻⢶⣤⣀⡀⠀⠀⠀⠀⠀⠸⣿⣯⣭⣉⣩⣝⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠟⠚⠋⠁⠀⠀⢸⣿⣷⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(60, 32);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢉⣻⠿⠶⣦⣤⣄⣀⣀⠀⠀⠉⠁⠉⡈⠋⠀⠀⠀⠀⠀⠀⣀⣀⣀⣤⣴⠾⡟⠁⠀⠀⠀⠀⠀⠀⢸⡇⢸⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(60, 33);
+            Console.WriteLine("⣠⣤⣤⣤⣤⣄⡀⠀⠀⢀⡴⠋⠁⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠿⢻⣿⣿⣏⠉⠉⠀⠀⠀⣇⠀⠀⠀⠀⠀⠀⠀⠘⣿⣾⡇⣀⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(60, 34);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠉⣙⣂⣴⠋⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀⢸⡿⢻⡏⠳⣄⢠⡴⠶⠛⠛⠛⠃⠁⠀⠠⣀⠀⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(60, 35);
+            Console.WriteLine("⡇⠀⠴⠶⣶⣾⣋⣙⠛⠷⢦⣄⡀⠀⠀⠀⠀⠀⠹⣿⣿⣿⠿⣿⣿⣿⣿⠁⠀⠀⣿⡇⢸⠇⣠⡘⢷⡶⠶⠶⣤⣤⣄⡀⠀⠀⠈⠀⣿⠋⡇⢹⣿⣿⣿⣿⣿⣿⣿⣿\r\n");
+
+        }
+
+
+
+        
+
+        public void profileShop2()
+        {
+
+            Console.SetCursorPosition(108, 6);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 7);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀");
+            Console.SetCursorPosition(108, 8);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡿⠋⠀⠀⠈⢻⣿⣿⡇⠀⠀");
+            Console.SetCursorPosition(108, 9);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⣸⣿⣿⡇⠀⠀");
+            Console.SetCursorPosition(108, 10);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣴⣾⣿⣟⡏⠉⣡⠾⠋⠙⠛⠛⠛⠶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⢠⣾⣿⣿⡿⠁⠀⠀");
+            Console.SetCursorPosition(108, 11);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠊⠉⠉⠀⠀⠀⠩⠭⡟⣻⣧⣄⠀⠀⣀⣀⣀⣀⣀⠉⠛⢶⣄⡀⠀⠀⠀⠀⢀⣀⡀⠀⢀⣿⣿⣿⠋⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 12);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠞⠉⠀⠀⠀⠀⣠⡞⠿⣿⡛⠛⣻⣿⣽⣿⣷⣿⣿⣿⣿⣿⣿⣿⣦⡀⠈⠻⣦⠀⠀⠾⠟⠛⠁⠀⠸⣿⣿⡿⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 13);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⣠⣾⣿⣯⣭⡭⠟⠛⠋⠉⠉⠉⠉⠉⠉⠉⠉⠉⠙⠲⢮⣿⣦⡀⠈⠳⣄⠀⠀⠀⠀⠀⠀⠉⣋⡁⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 14);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⢀⡼⠁⠀⠀⠀⠀⠀⣼⠟⣫⡿⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣷⠀⠀⠙⢧⠀⠀⠀⠀⠀⣾⣿⣿⡄⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 15);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⢀⡞⠀⠀⠀⣰⠃⠀⢰⣇⣼⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣧⠀⠀⠈⢧⠀⠀⠀⠀⠙⠛⠋⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 16);
+            Console.WriteLine("⠀⠀⠀⠀⠀⢀⡾⠀⠀⠀⣰⠃⠀⢀⣿⡿⠁⠀⠀⠀⠀⠀⠀⣀⡤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⠀⢹⣇⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 17);
+            Console.WriteLine("⠀⠀⠀⠀⠀⣼⠁⠀⠀⢰⡇⠀⠀⢸⣿⠃⠀⠀⠀⠀⠀⠒⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣆⠀⠀⢹⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 18);
+            Console.WriteLine("⠀⠀⠀⠀⢠⡏⠀⠀⠀⠈⠀⠀⠀⣾⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣐⣤⣤⣤⣄⣌⣿⣆⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 19);
+            Console.WriteLine("⠀⠀⠀⠀⢸⡇⠀⠀⠀⣠⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⣀⣤⣴⣿⣿⣶⡄⠀⠀⠀⠀⠀⠀⠀⣾⣿⠋⠙⢿⡟⢻⣿⣿⣆⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 20);
+            Console.WriteLine("⠀⠀⠀⠀⢸⣇⡀⠀⠀⣿⠀⠀⠀⣿⡇⠀⠀⣀⢠⣴⣾⢿⣿⠋⠁⠈⢻⣯⠀⠀⠀⠀⠀⠀⠀⢸⣇⠀⠀⠈⣿⢸⡟⠛⢿⣦⡈⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 21);
+            Console.WriteLine("⠀⠀⠀⣴⠾⣿⣿⡆⢀⠇⠀⠀⠀⢹⡇⠀⠀⠻⢿⣿⠁⢸⣿⠀⠀⠀⠀⣿⡄⠀⠀⠀⠀⠀⠀⠀⢿⡄⠀⠀⣸⠃⠀⠀⠀⢿⣟⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 22);
+            Console.WriteLine("⠀⣠⡾⢁⣼⣿⣿⣆⣨⠤⠤⣤⣴⢸⡇⠀⠀⠀⠘⠿⠀⠀⢿⡄⠀⠀⠀⣿⠇⠀⠀⠀⠀⠀⠀⠀⠈⠻⠶⠴⠋⠀⠀⢠⣤⣾⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 23);
+            Console.WriteLine("⢠⡟⢀⡾⠡⣿⣿⠟⠁⠀⠀⠈⠉⠻⣷⠀⠀⠀⠀⠀⠀⠀⠈⠻⢦⣠⡾⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠉⢸⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 24);
+            Console.WriteLine("⣿⠁⣾⠃⠀⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⡴⠒⠒⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 25);
+            Console.WriteLine("⣿⣶⣿⠀⠀⣿⡇⠀⠀⠠⣶⠶⣤⡀⠀⠀⠀⠀⠀⢠⢷⠿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 26);
+            Console.WriteLine("⢿⣿⣿⠀⠀⣿⣿⡀⠀⠀⠻⠂⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⠶⣿⠉⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 27);
+            Console.WriteLine("⠘⠙⠿⠀⠀⣿⠈⠻⣤⣀⠀⠀⠀⠀⠀⣀⣠⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡶⠚⠋⠉⠉⢀⣤⣿⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 28);
+            Console.WriteLine("⠀⠀⠀⠀⠀⣿⠀⡀⠀⠉⠛⠓⢶⡞⠛⠉⠀⠀⠉⠙⢛⡛⠻⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠰⡟⣿⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 29);
+            Console.WriteLine("⠀⠀⠀⠀⠀⣿⠀⡇⠀⠀⠀⠀⢸⣷⢠⣤⡀⠀⠀⠀⢸⡿⢀⣿⣆⡀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣷⡀⠀⠀⠀⠐⠀⣿⠀⠀⢽⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 30);
+            Console.WriteLine("⠀⠀⠀⠀⠀⣿⠀⡇⠀⢸⡆⠀⠘⣿⡼⣿⠇⠀⠀⢀⣤⣶⣿⡏⠈⠛⠓⠲⠂⠤⣴⣶⡾⠉⠀⠘⣿⣦⣄⡀⠀⠀⡀⠀⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 31);
+            Console.WriteLine("⠀⠀⠀⠀⠀⣿⠀⠃⠀⢸⣇⠀⠀⣿⠀⠈⠀⢠⣾⠿⣅⠀⠙⣿⣄⠀⢀⣀⣠⣾⣯⣬⣿⣦⣀⢀⣾⠟⣿⡿⣦⠀⣿⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 32);
+            Console.WriteLine("⠀⠀⠀⠀⢠⣿⠀⠀⠀⢸⣿⠀⠀⣿⠀⠀⢠⡿⠋⠘⢿⣧⠀⠘⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⢸⣷⣿⣦⡏⠀⠀⢿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 32);
+            Console.WriteLine("⠀⠀⠀⠀⡼⣿⠀⠀⠀⢸⣿⠀⠀⣿⠁⠀⣼⠇⠀⠀⠈⣿⡀⠀⢹⡄⣿⣿⣯⣿⣿⢻⣿⣿⣿⡿⢻⣧⣼⣿⠋⢹⣧⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 32);
+            Console.WriteLine("⠀⠀⠀⢠⠇⣿⠀⠀⠀⢸⣿⠀⢀⣿⠀⠀⣿⠀⠀⠀⠀⣿⡇⠀⠸⣧⠈⠛⢿⣿⠇⠀⣿⣿⣿⣷⢿⣏⣸⣿⢿⡟⠛⠀⠀⢸⣿⡀⠀⠀⠀⠀⠀⠀\r\n");
+        }
+        public void profileWakamo()
+        {
+
+            Console.SetCursorPosition(108, 6);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⣶⠶⠛⠛⠛⢻⡆⠀⠀⠀⠀⣠⠄⠀⣀⠀⢸⡇⢸⡇⠀⠀⠀⠀⠀⠀⠀⢠⡀⠀⠀⠀⠀⣠⠀⠀⣀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 7);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⢸⡇⠀⠀⠀⢠⡟⠀⢠⣿⠀⠈⣷⣤⣿⠀⠀⠛⠛⠛⣷⣤⣾⡇⠀⠀⠀⢠⡟⠀⢠⡟⠀⣀⣀⣿⠀⠀⠀⠀⣀⠀⠀⠀⣠⠀⠀⠀");
+            Console.SetCursorPosition(108, 8);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠈⠷⠶⠶⠶⠛⠃⠀⠀⢠⡿⠙⢻⣿⠉⠻⠀⣿⠀⣿⠀⠀⠀⠀⢸⣧⣴⢾⡇⠀⠀⢀⡾⠻⣦⣾⢷⣄⠉⠉⣿⠀⠀⠰⠟⠉⠛⠶⠞⠋⠀⠀⠀");
+            Console.SetCursorPosition(108, 9);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⣀⣀⣠⣤⣤⡴⠶⠆⠀⠈⠁⠀⠀⠁⠀⠀⢀⣀⠀⠙⠀⠀⠀⠀⣾⠀⠀⠀⣿⠀⠀⠘⠃⠀⠸⠃⠀⠉⠀⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 10);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠉⠉⠁⠀⢸⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⠟⠉⠻⣆⠀⠀⠀⠀⠉⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 11);//주인공 대사
+            Console.WriteLine("⠙⠲⢤⡀⠀⠀⠀⠀⠀⠸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣄⣀⣴⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤");
+            Console.SetCursorPosition(108, 12);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⢳⡀⠀⠀⣴⠤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⡤⢤⣶⣾⣿⠁⠀");
+            Console.SetCursorPosition(108, 13);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠙⠢⣄⣸⠀⠀⠈⣿⣷⣶⠦⠤⣄⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣤⣤⣶⣶⣿⣿⣿⣿⣷⣶⣶⣶⣶⣖⠛⠛⠉⠉⠉⠁⠀⠀⢸⣿⣿⣿⠀⠀");
+            Console.SetCursorPosition(108, 14);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠈⠙⠀⠀⠀⣿⣿⣿⠀⠀⠀⣠⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⣾⣿⣿⡿⠀⠀");
+            Console.SetCursorPosition(108, 15);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⡄⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀⣸⣿⣿⣿⡇⠀⠀");
+            Console.SetCursorPosition(108, 16);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⣴⣿⣿⣿⣿⠀⠀⠀");
+            Console.SetCursorPosition(108, 17);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀");
+            Console.SetCursorPosition(108, 18);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 19);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⡿⢫⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 20);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⠏⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 21);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⢻⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 22);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠁⠹⣿⣿⣿⣿⣿⣿⠿⠿⠃⠀⠀⠈⠛⠛⠛⠋⠉⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 23);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⡇⠀⠶⣶⣶⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣴⣶⣿⠿⠿⠿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 24);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠉⠙⠛⠀⠀⠀⠀⠀⠀⠀⠈⠛⠋⠁⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 25);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠖⠊⠉⠳⡤⢤⡀⠀⠀⠀⠀⠀⠀⠘⠁⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 26);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 27);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣷⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⢳⠀⠀⠀⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 28);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⡷⢦⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣠⣴⣶⣿⣯⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 29);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⡏⠀⣿⠄⢽⡟⠙⣿⣿⣿⣿⣿⣿⣿⣇⢀⣀⣀⣀⡀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀");
+            Console.SetCursorPosition(108, 30);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⣀⣾⣿⣿⣿⣿⢀⣿⣷⣾⡇⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀");
+            Console.SetCursorPosition(108, 31);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀");
+            Console.SetCursorPosition(108, 32);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆");
+        }
+
+        public void profileSaori()
+        {
+
+            Console.SetCursorPosition(110, 5);//주인공 대사
+            Console.WriteLine("⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣴⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(110, 6);//주인공 대사
+            Console.WriteLine("⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⢀⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(110, 7);//주인공 대사
+            Console.WriteLine("⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(110, 8);//주인공 대사
+            Console.WriteLine("⣿⣿⣿⣿⣿⡇⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(110, 9);//주인공 대사
+            Console.WriteLine("⣿⣿⣿⣿⣿⠇⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀");
+            Console.SetCursorPosition(110, 10);//주인공 대사
+            Console.WriteLine("⣿⣿⣿⣿⣿⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀");
+            Console.SetCursorPosition(110, 11);//주인공 대사
+            Console.WriteLine("⣿⣿⡿⠟⣋⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀");
+            Console.SetCursorPosition(110, 12);//주인공 대사
+            Console.WriteLine("⡿⢋⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀");
+            Console.SetCursorPosition(110, 13);//주인공 대사
+            Console.WriteLine("⣴⣿⣿⡿⠟⢉⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀");
+            Console.SetCursorPosition(110, 14);//주인공 대사
+            Console.WriteLine("⣿⣿⠛⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀");
+            Console.SetCursorPosition(110, 15);
+            Console.WriteLine("⣿⠁⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀");
+            Console.SetCursorPosition(110, 16);
+            Console.WriteLine("⣿⣶⣦⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡷⠼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀");
+            Console.SetCursorPosition(110, 17);
+            Console.WriteLine("⣉⣛⡋⢻⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀");
+            Console.SetCursorPosition(110, 18);
+            Console.WriteLine("⣿⣿⡇⣾⣿⣿⣿⣿⣿⣿⡟⣁⣤⣤⣤⣀⣘⣿⣿⣿⣿⣿⣿⡝⢿⣿⣿⣿⣿⣿⣿⣿⣧⣀⣹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀");
+            Console.SetCursorPosition(110, 19);
+            Console.WriteLine("⣿⣿⠇⣿⣿⣿⣿⣿⣿⣿⠀⠉⠉⠉⠉⠉⠉⠛⠻⢿⣿⢿⣿⣿⡄⠙⠿⠿⠿⡿⠿⠿⠿⠟⠉⠉⠉⠉⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀");
+            Console.SetCursorPosition(110, 20);
+            Console.WriteLine("⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⣠⠶⠛⠛⠛⠲⣤⡀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠚⠛⠛⠓⢦⡀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀");
+            Console.SetCursorPosition(110, 21);
+            Console.WriteLine("⣿⣿⢀⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⣼⠃⠀⠀⠀⠀⠀⠈⢷⠀⠀⠀⠀⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⢹⡄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆");
+            Console.SetCursorPosition(110, 22);
+            Console.WriteLine("⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⢸⠂⠀⠀⠀⠀⠀⢸⡃⠀⠀⠀⠀⠀⠀⢀⡇⢸⣿⣿⣿⣿⣿⠉⠙⣿⣿⣿⣿⣿⡇");
+            Console.SetCursorPosition(110, 23);
+            Console.WriteLine("⣿⣿⢸⣿⣿⣿⣿⡿⠟⠛⠀⠀⠀⠘⠧⣤⣀⣀⣀⣠⡴⠏⠀⠀⠀⠀⠀⠀⠈⠳⣤⣀⣀⣀⣠⣤⠞⠀⢸⣿⣿⣿⣿⣿⡀⠀⢸⣿⣿⣿⣿⡇");
+            Console.SetCursorPosition(110, 24);
+            Console.WriteLine("⣿⣿⢸⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣠⢤⣠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⠹⠀⣸⣿⣿⣿⣿⡇");
+            Console.SetCursorPosition(110, 25);
+            Console.WriteLine("⣿⣿⠸⣿⣿⣿⣷⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⡠⠀⠀⢸⣿⣿⣿⣿⣿⢀⣠⣿⣿⣿⣿⣿⡇");
+            Console.SetCursorPosition(110, 26);
+            Console.WriteLine("⣿⣿⢨⣿⣿⣿⣿⣿⣿⡿⣶⣶⣶⣤⣤⣤⣤⣤⣤⣤⣀⣀⣀⣀⣀⣀⣀⣀⣤⣤⣤⣤⣤⣤⣤⣤⣴⣶⣾⣿⣿⣿⣿⣿⣿⠟⣿⣿⣿⣿⣿⡇");
+            Console.SetCursorPosition(110, 27);
+            Console.WriteLine("⣿⣿⠀⣿⣿⣿⣿⣿⣿⣧⣠⣿⣀⣼⡿⠋⢀⣾⡟⠉⢩⡿⠋⠉⠉⠉⠉⠉⠉⠉⠉⠀⠀⠀⣾⡇⠀⠀⣿⣿⣿⣿⣿⡟⠻⣷⣼⣿⣿⣿⣿⡇");
+            Console.SetCursorPosition(110, 28);
+            Console.WriteLine("⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠀⢀⣾⠏⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠁⠀⠀⣿⣿⣿⣿⣿⡇⠀⠙⣿⣿⣿⣿⣿⡇");
+            Console.SetCursorPosition(110, 29);
+            Console.WriteLine("⣿⣿⠀⣿⣿⣿⣿⣿⣿⡟⣫⣿⠏⠀⣠⡾⠋⠀⠀⣾⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠀⠀⠀⣿⣿⣿⣿⣿⡇⠀⠀⠈⣿⣯⣿⣿⣷");
+            Console.SetCursorPosition(110, 30);
+            Console.WriteLine("⣿⣿⠀⣿⣿⣿⣿⣿⣿⣇⣿⡇⢠⣾⠋⠀⠀⠀⠀⢿⣇⠀⠀⠀⠀⠀⡞⠀⠀⠀⠀⠀⢀⣾⠃⠀⠀⠀⣿⣿⣿⣿⣿⠇⣠⣴⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(110, 31);
+            Console.WriteLine("⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⣝⣿⡿⠁⠀⠀⠀⠀⠀⠈⠻⣷⣦⣤⣤⣼⣅⣀⣤⣤⣴⡶⠟⠃⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(110, 32);
+            Console.WriteLine("⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(110, 33);
+            Console.WriteLine("⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+            Console.SetCursorPosition(110, 34);
+            Console.WriteLine("⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+            //Console.SetCursorPosition(108, 35);
+            //Console.WriteLine("⣿⣿⡄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠛⠛⠛⠛⠋⠉⠀⠀⠀⠀⠀⠈⠉⠉⠙⠛⠛⠛⠛⠋⠉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+        }
+
+        public void ShowBadEnding()
+        {
+
+            Console.SetCursorPosition(108, 6);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡀⣤⣤⣤⣤⣤⣤⣤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 7);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣯⣼⣷⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 8);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 9);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 10);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 11);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 12);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⡁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 13);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣬⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠙⢿⣿⣿⡏⠀⢹⣿⡇⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 14);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⣷⡄⠀⢻⣿⡇⠀⢼⣿⠁⠀⣷⡄⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 15);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⣿⣿⠀⠈⣿⡇⠀⣿⣿⠀⠀⣿⣿⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 16);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⣿⣿⠀⠀⣿⡇⠀⣿⣿⠀⠀⣿⣿⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 17);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⣿⡟⠀⢸⣿⡇⠀⣿⣿⠀⠀⣿⡟⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 18);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠟⠁⢠⣿⣿⡇⠀⣿⣿⠀⠀⠟⠁⢀⣾⣿⣿⣿⣿⣿⣿⣿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 19);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡿⣿⣿⣿⣿⣿⣿⣿⠀⠀⣀⠀⠸⣿⣿⡇⠀⢸⣿⡀⠀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 20);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⡄⠀⣿⡄⠀⣿⣿⡇⠀⢸⣿⡇⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 21);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⢀⣿⣇⢀⣽⣿⣧⠀⣸⣿⣇⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 22);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 23);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 24);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 25);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 26);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 27);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣶⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 28);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 29);
+            Console.WriteLine("⠀⠀⠀⠀⠀⢠⣤⣤⣤⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣤⣤⣤⡄⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 30);
+            Console.WriteLine("⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 31);
+            Console.WriteLine("⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 32);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠘⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠃⠀⠀⠀⠀⠀");
+        }
+
+
+        public void ShowHappyEnding()
+        {
+
+            Console.SetCursorPosition(108, 6);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⣀⣀⣤⣤⣀⠀⠀⣠⣶⣦⠀⠀⠀⣠⣾⣿⣆⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 7);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⢀⣤⣄⠀⠀⠀⠀⢀⣠⣤⡀⠀⠀⠀⠀⣶⣿⣿⣿⣿⣷⣄⢸⣿⣿⣿⣿⣿⣿⡄⣿⣿⣿⣇⠀⣰⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 8);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣧⠀⠀⣾⣿⣿⡆⠀⠀⢀⣾⣿⣿⣿⡄⠀⠀⠀⣿⣿⣿⠛⣿⣿⣿⢸⣿⣿⡏⢹⣿⣿⣿⢻⣿⣿⣿⣴⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 9);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⡆⠀⣿⣿⣿⣷⠀⠀⣼⣿⣿⣿⣿⣿⠀⠀⠀⣿⣿⣿⣠⣿⣿⣿⢸⣿⣿⣧⣾⣿⣿⠏⠀⢿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 10);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣷⠀⣹⣿⣿⣿⡀⠀⣿⣿⣿⣿⣿⣿⣇⠀⢰⣿⣿⣿⣿⣿⡿⠁⢸⣿⣿⣿⣿⡿⠋⠀⠀⠈⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 11);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⡿⠿⣿⣿⣿⡇⢠⣿⣿⡿⠿⣿⣿⣿⡀⢸⣿⣿⣿⠛⠁⠀⠀⢸⣿⣿⡏⠁⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 12);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⡇⠀⣿⣿⣿⡇⢸⣿⣿⡇⠀⢿⣿⣿⣧⠸⣿⣿⣿⠀⠀⠀⠀⢸⣿⣿⡇⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 13);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣇⠀⢹⣿⣿⣿⢸⣿⣿⠃⠀⠸⣿⣿⣿⠀⣿⣿⣿⠀⠀⠀⠀⢸⣿⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 14);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⠀⠸⣿⣿⣿⠸⣿⡟⠀⠀⠀⠻⣿⣿⠀⢻⣿⡿⠀⠀⠀⠀⠀⢿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠙⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 15);//주인공 대사
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⠏⠀⠀⠹⠿⠃⠀⠉⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡀⢀⣤⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 16);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣤⣄⠀⣤⣤⡀⠀⠀⢸⣿⣿⡇⢸⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 17);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣾⣿⣿⣿⣿⣿⣿⠟⢰⣿⣿⣿⡄⠀⣾⣿⣿⡇⢸⣿⣿⠙⢿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 18);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⡟⠛⠋⠉⠀⠀⣼⣿⣿⣿⣷⠀⣿⣿⣿⡇⢸⣿⣿⠀⠀⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 19);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿⠀⠀⣼⣿⣿⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 20);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⡟⠛⠉⠀⠀⠀⣿⣿⣿⢿⣿⣿⣿⣿⣿⠇⣿⣿⣿⠀⢠⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 21);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣷⣶⣶⣦⡀⢰⣿⣿⣿⠈⣿⣿⣿⣿⣿⠀⣿⣿⣿⣠⣿⣿⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 22);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⠇⢸⣿⣿⡇⠀⠘⣿⣿⣿⡟⠀⢿⣿⣿⣿⣿⡿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+            Console.SetCursorPosition(108, 23);
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠿⠿⠿⠿⠛⠉⠀⠀⢿⡿⠁⠀⠀⠈⠛⠛⠁⠀⠈⠙⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+        }
+
         public void BattleUi()
         {
             //배틀 시작시 UI입니다.

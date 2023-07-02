@@ -88,6 +88,7 @@ namespace ForMyBrother
 
         public void Purchase(User player)
         {
+            mainUI ui  = new mainUI();
             player.shopIO = 0;
             Console.SetCursorPosition(30,25);
             Console.WriteLine("사고 싶은걸 입력해주세요");
@@ -100,6 +101,8 @@ namespace ForMyBrother
                 {
                     if (Item[i].itemPrice > player.coin)
                     {
+                        ui.MiddleClearUi();
+                        ui.profileShop();
                         Console.SetCursorPosition(30, 27);
                         Console.WriteLine("소지금이 부족하여 퇴출당합니다.");
                         Console.SetCursorPosition(30, 25);

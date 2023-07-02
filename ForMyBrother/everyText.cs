@@ -423,7 +423,7 @@ namespace ForMyBrother
             normalEvent003.Add(noEvent313);
 
             textBase noEvent314 = new textBase();
-            noEvent314.InitText(11, "시스템", "모험가님 잠시 시간좀 내주시겠어요?");
+            noEvent314.InitText(11, "시스템", "선생님 잠시 시간좀 내주시겠어요?");
             normalEvent003.Add(noEvent314);
             //그래 얼마든지  , 귀찮게 굴지 마
 
@@ -502,7 +502,7 @@ namespace ForMyBrother
             normalEvent003.Add(noEvent332);
 
             textBase noEvent333 = new textBase();
-            noEvent333.InitText(11, "시스템", "당신의 앞에서 라바 골렘이 걸어가고 있었던 것이다.");
+            noEvent333.InitText(11, "시스템", "당신의 앞에서 페로로질라가 걸어가고 있었던 것이다.");
             normalEvent003.Add(noEvent333);
             //말을 걸어본다, 공격한다
 
@@ -511,7 +511,7 @@ namespace ForMyBrother
             normalEvent003.Add(noEvent334);
 
             textBase noEvent335 = new textBase();
-            noEvent335.InitText(11, "시스템", "거대한 라바 골렘은 고개를 갸웃했는데,");
+            noEvent335.InitText(11, "시스템", "거대한 페로로질라는 고개를 갸웃했는데,");
             normalEvent003.Add(noEvent335);
 
             textBase noEvent336 = new textBase();
@@ -1004,7 +1004,7 @@ namespace ForMyBrother
             normalEvent015.Add(noEvent1504);
 
             textBase noEvent1505 = new textBase();
-            noEvent1505.InitText(11, "시스템", "나는 그녀의 주위에서 우울한 공기를 느낄 수 있었고 그녀는 그녀의 마음에 뭔가가 있는 것 같았다.");
+            noEvent1505.InitText(11, "시스템", "사오리의 주위에 우울한 공기를 느끼며 그녀의 마음에 뭔가가 있어 보였다.");
             normalEvent015.Add(noEvent1505);
 
             //하지만 내인생이 바쁘다, 떠난다  이벤트 종료
@@ -1212,7 +1212,7 @@ namespace ForMyBrother
             normalEvent019.Add(noEvent1908);
 
             textBase noEvent1909 = new textBase();
-            noEvent1909.InitText(11, "시스템", "와카모에게 붙들려 데이트로 하루를 보냈다");
+            noEvent1909.InitText(11, "시스템", "와카모에게 붙들려 하루를 보냈다");
             normalEvent019.Add(noEvent1909);
 
             textBase noEvent1910 = new textBase();
@@ -1334,15 +1334,141 @@ namespace ForMyBrother
             #region 엔딩 대사 모음
             #region ending1
             textBase ending101 = new textBase();
-            ending101.InitText(11, "시스템", "엔딩1. 행복한 결말");
+            ending101.InitText(11, "시스템", "왠일로 사무실에 불이 꺼져있다");
             ending01.Add(ending101);
+
+            textBase ending102 = new textBase();
+            ending102.InitText(11, "시스템", "당신이 불을 키자 바로 옆에서 폭죽이 터진다");
+            ending01.Add(ending102);
+
+            textBase ending103 = new textBase();
+            ending103.InitText(11, "학생들", "생신 축하드려요 선생님!!");
+            ending01.Add(ending103);
+
+            textBase ending104 = new textBase();
+            ending104.InitText(11, "선생님", "어...? 그-그래 고맙다");
+            ending01.Add(ending104);
+
+            textBase ending105 = new textBase();
+            ending105.InitText(11, "시스템", "당신은 갑작스러운 상황에 놀란다");
+            ending01.Add(ending105);
+
+            textBase ending106 = new textBase();
+            ending106.InitText(11, "시스템", "바쁜 일탓에 오늘이 자신의 생일인지조차 몰랐다");
+            ending01.Add(ending106);
+
+            textBase ending107 = new textBase();
+            ending107.InitText(11, "유우카", "또-또 표정보니까, 잊어버리셨죠?");
+            ending01.Add(ending107);
+
+            textBase ending108 = new textBase();
+            ending108.InitText(11, "시스템", "당신은 머쓱하게 고개를 끄덕인다");
+            ending01.Add(ending108);
+
+            textBase ending109 = new textBase();
+            ending109.InitText(11, "유우카", "하여간, 여기 선물이에요");
+            ending01.Add(ending109);
+
+            textBase ending110 = new textBase();
+            ending110.InitText(11, "시스템", "모두가 다 같이 선물하나씩을 건내자");
+            ending01.Add(ending110);
+
+            textBase ending111 = new textBase();
+            ending111.InitText(11, "시스템", "탑을 쌓을정도로 많았다");
+            ending01.Add(ending111);
+
+            textBase ending112 = new textBase();
+            ending112.InitText(11, "아리스", "선생님 아리스가 사진을 찍는것입니다!");
+            ending01.Add(ending112);
+
+            textBase ending113 = new textBase();
+            ending113.InitText(11, "아리스", " 빨리 자리를 잡아주세요!");
+            ending01.Add(ending113);
+            textBase ending114 = new textBase();
+            ending114.InitText(11, "시스템", "당신은 모두에게 이끌려 사진을 찰칵하고 찍힌다");
+            ending01.Add(ending114);
+
+            textBase ending115 = new textBase();
+            ending115.InitText(11, "시스템", "모두가 함께모여 왁자지껄 했던걸 대체 얼마만일까?");
+            ending01.Add(ending115);
+
+            textBase ending116 = new textBase();
+            ending116.InitText(11, "히후미", "선생님, 어서 여기와서 사진 좀 봐보세요!");
+            ending01.Add(ending116);
+
+            textBase ending117 = new textBase();
+            ending117.InitText(11, "시스템", "학생들과 찍은 사진은 어색한 미소와 함께 남아있었다");
+            ending01.Add(ending117);
+
+            textBase ending118 = new textBase();
+            ending118.InitText(11, "시스템", "부디 앞으로도 행복하길");
+            ending01.Add(ending118);
+
+            textBase ending119 = new textBase();
+            ending119.InitText(11, "시스템", "엔딩1. 행복한 결말");
+            ending01.Add(ending119);
 
             #endregion
 
             #region ending2
             textBase ending201 = new textBase();
-            ending201.InitText(11, "시스템", "엔딩2. 불행한 결말");
+            ending201.InitText(11, "시스템", "당신은 달릴 수 있는 한 최대한 빠르게 달린다");
             ending02.Add(ending201);
+
+            textBase ending202 = new textBase();
+            ending202.InitText(11, "선생님", "헉,헉 여기까지면 못쫓아오겠지?");
+            ending02.Add(ending202);
+
+            textBase ending203 = new textBase();
+            ending203.InitText(11, "미카", "내가 문제아였던 것 정도는 선생님도 알고 있었잖아?");
+            ending02.Add(ending203);
+
+            textBase ending204 = new textBase();
+            ending204.InitText(11, "시스템", "하지만 등뒤의 벽은 무안하게 순식간에 부서진다");
+            ending02.Add(ending204);
+
+            textBase ending205 = new textBase();
+            ending205.InitText(11, "세리나", "선생님 이쪽으로");
+            ending02.Add(ending205);
+
+            textBase ending206 = new textBase();
+            ending206.InitText(11, "시스템", "언제부터거기있었는지 모르겠지만");
+            ending02.Add(ending206);
+
+            textBase ending207 = new textBase();
+            ending207.InitText(11, "시스템", "어느새 세리나가 뒤에 있었다");
+            ending02.Add(ending207);
+            textBase ending208 = new textBase();
+            ending208.InitText(11, "선생님", "고-고마워 세리..ㄴ..?");
+            ending02.Add(ending208);
+
+            textBase ending209 = new textBase();
+            ending209.InitText(11, "세리나", "선생님을 독점하고싶지만, 그건 안될일이겠죠?");
+            ending02.Add(ending209);
+
+            textBase ending210 = new textBase();
+            ending210.InitText(11, "시스템", "어느 새 주사기가 내 목에 꽂혀있었다");
+            ending02.Add(ending210);
+
+            textBase ending211 = new textBase();
+            ending211.InitText(11, "세리나", "그래도 오늘만큼은!...");
+            ending02.Add(ending211);
+
+            textBase ending212 = new textBase();
+            ending212.InitText(11, "시스템", "점점 의심이 흐린해진다");
+            ending02.Add(ending212);
+
+            textBase ending213 = new textBase();
+            ending213.InitText(11, "시스템", "그렇게 나는...");
+            ending02.Add(ending213);
+
+            textBase ending214 = new textBase();
+            ending214.InitText(11, "시스템", "생각보다 포기하고 다 잘해주니까 편한것 같았다");
+            ending02.Add(ending214);
+
+            textBase ending215 = new textBase();
+            ending215.InitText(11, "시스템", "엔딩2.굴복엔딩 -포기하면 편해-");
+            ending02.Add(ending215);
 
             #endregion
 
