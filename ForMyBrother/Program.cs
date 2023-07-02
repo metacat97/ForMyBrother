@@ -40,12 +40,12 @@ namespace ForMyBrother
                 Console.Clear();//지워주고
 
                 ui.resizeUi(110, 40);//사이즈 재조정
-                //allEvent.Prololog();//프롤로그 텍스트 출력
-               // allEvent.PllQ1(user);//스테이터스 질문 1
+                allEvent.Prololog();//프롤로그 텍스트 출력
+                allEvent.PllQ1(user,chButton);//스테이터스 질문 1
                 Console.Clear();
-                //allEvent.PllQ2(user);// 스테이터스 질문 2
+                allEvent.PllQ2(user, chButton);// 스테이터스 질문 2
                 Console.Clear();
-                //allEvent.PllQ3(user);//스테이터스 질문 3
+                allEvent.PllQ3(user, chButton);//스테이터스 질문 3
 
                 while (true)//주 게임 반복문 시작
                 {
@@ -69,15 +69,15 @@ namespace ForMyBrother
                         maineventCount += 1;
                         alleventCount += 1;
                         ui.MiddleClearUi();//여기다가 중앙화면만 지워주는 공백 그려줄려고요
-                        //if (alleventCount == 1)
-                        //{
-                        //    allEvent.event001(); //이벤트 텍스트 모음 출력
-                        //}
-                        
-                       // Console.ReadLine();
-                       
-                            //normalCount = rand.Next(1, 20);
-                            normalCount = 4;
+                        if (alleventCount == 1)
+                        {
+                            allEvent.event001(chButton); //이벤트 텍스트 모음 출력
+                        }
+
+                        Console.ReadLine();
+
+                        //normalCount = rand.Next(1, 20);
+                        normalCount = 4;
                        
                         if (normalCount == 6)
                         {
